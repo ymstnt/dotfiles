@@ -37,11 +37,13 @@ alias -g ls='exa --color=always --group-directories-first --icons' # Fancier ls 
 alias -g cat='bat --style snip --style changes --style header' # Fancier cat with better previews. Press q to quit
 alias -g grep='rg -i --color=auto' # Faster grep
 
+alias -g lls="ls"
+
 # Bashmount
 alias bm='bashmount'
 
 # Autocomplete
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # This speeds up pasting w/ autosuggest
@@ -83,3 +85,4 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Starship
 eval "$(starship init zsh)"
+export GPG_TTY=$(tty)

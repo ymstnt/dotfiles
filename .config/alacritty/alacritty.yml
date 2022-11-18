@@ -123,7 +123,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: firacode
+    family: Fira Code
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -134,7 +134,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: firacode
+    family: Fira Code
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -145,7 +145,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: firacode
+    family: Fira Code
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -156,7 +156,7 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: firacode
+    family: Fira Code
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
@@ -187,6 +187,29 @@ font:
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
+
+colors:
+    primary:
+      background: '0x0c0c0c'
+      foreground: '0xcccccc'
+    normal:
+      black:      '0x0c0c0c'
+      red:        '0xc50f1f'
+      green:      '0x13a10e'
+      yellow:     '0xc19c00'
+      blue:       '0x0037da'
+      magenta:    '0x881798'
+      cyan:       '0x3a96dd'
+      white:      '0xcccccc'
+    bright:
+      black:      '0x767676'
+      red:        '0xe74856'
+      green:      '0x16c60c'
+      yellow:     '0xf9f1a5'
+      blue:       '0x3b78ff'
+      magenta:    '0xb4009e'
+      cyan:       '0x61d6d6'
+      white:      '0xf2f2f2'
 
 # Colors (Tomorrow Night)
 #colors:
