@@ -1,0 +1,17 @@
+[user]
+  name = YMSTNT
+  email = 21342713+YMSTNT@users.noreply.github.com
+	signingkey = 0926B0A379B74A46
+[init]
+  defaultBranch = main
+[alias]
+  s = status -uno
+  d = diff
+  c = commit -m
+  p = !git pull && git push
+  br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+  lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+[core]
+	editor = micro
+[github]
+	user = YMSTNT

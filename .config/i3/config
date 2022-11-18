@@ -1,6 +1,6 @@
 # i3 config file (v4)
 #
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+# Please see https://i3wm.org/docs/usergide.html for a complete reference!
 
 set $mod Mod4
 
@@ -40,11 +40,12 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 
+# start a scratchpad terminal
+bindsym $mod+Shift+Return exec --no-startup-id alacritty --class scratchpad_term
+for_window [class=scratchpad_term] move scratchpad
+
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# start dmenu (a program launcher)
-#bindsym $mod+d exec --no-startup-id dmenu_run
 
 # start rofi (program launcher)
 bindsym $mod+d exec rofi -show drun
@@ -100,6 +101,12 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -124,6 +131,10 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+odiaeresis workspace number $ws10
+
+# switch to next and previous workspace
+bindsym Mod1+Tab workspace next
+bindsym Mod1+Shift+Tab workspace prev
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -194,6 +205,9 @@ bindsym Print exec flameshot gui
 
 # rofi window switching
 bindsym $mod+Tab exec --no-startup-id rofi -modi combi -combi-modi window -show combi
+
+# rofi-rbw bitwarden client
+bindsym $mod+b exec --no-startup-id rofi-rbw --clear-after 60 
 
 # turn off titlebars
 for_window [class=".*"] border pixel 0
