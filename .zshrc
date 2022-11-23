@@ -1,6 +1,9 @@
-# Rebind Home and End keys
+# Fix zsh keybinds to work like bash/fish
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
+bindkey "^[[3~" delete-char
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 
 # History
 HISTFILE=$HOME/.zsh_history

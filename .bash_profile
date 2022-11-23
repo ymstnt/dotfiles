@@ -1,5 +1,5 @@
 # .bash_profile
-
+export GTK_THEME=Adwaita:dark
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
