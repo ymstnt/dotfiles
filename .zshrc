@@ -1,7 +1,7 @@
 # Fix zsh keybinds to work like bash/fish
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
-bindkey "^[[3~" delete-char
+bindkey  "^[[3~"  delete-char
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
@@ -86,6 +86,10 @@ function ssh-make-key() {
 # Enable plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+
 # Starship
 eval "$(starship init zsh)"
 export GPG_TTY=$(tty)
+
+# Zsh syntax higlighting
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
