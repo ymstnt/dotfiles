@@ -84,7 +84,7 @@ function ssh-make-key() {
 }
 
 # Enable plugins
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 
 
 # Starship
@@ -92,4 +92,4 @@ eval "$(starship init zsh)"
 export GPG_TTY=$(tty)
 
 # Zsh syntax higlighting
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
