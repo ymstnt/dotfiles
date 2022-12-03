@@ -26,6 +26,7 @@ zstyle ':completion:*' menu select
 # Auto complete with case insenstivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
+
 # Aliases
 alias zshreload='source ~/.zshrc'
 alias lf='ls -la | grep'
@@ -86,10 +87,9 @@ function ssh-make-key() {
 # Enable plugins
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 
-
 # Starship
 eval "$(starship init zsh)"
 export GPG_TTY=$(tty)
 
 # Zsh syntax higlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh

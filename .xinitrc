@@ -1,4 +1,5 @@
 #!/bin/sh
+setxkbmap hu
 
 # dbus
 systemctl --user import-environment DISPLAY XAUTHORITY
@@ -9,5 +10,5 @@ redshift &
 deadd-notification-center &
 
 while true; do
-  i3 2> ~/.cache/i3.log
+  bspwm 2> ~/.cache/bspwm.log
 done
