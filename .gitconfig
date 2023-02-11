@@ -1,7 +1,6 @@
 [user]
   name = YMSTNT
   email = 21342713+YMSTNT@users.noreply.github.com
-	signingkey = 0926B0A379B74A46
 [init]
   defaultBranch = main
 [alias]
