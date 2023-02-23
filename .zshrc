@@ -84,12 +84,14 @@ function ssh-make-key() {
   echo '---------- END OF PUBLIC KEY ----------'
 }
 
+export PATH=/home/ymstnt/.local/bin:$PATH
+
 # Enable plugins
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Starship
 eval "$(starship init zsh)"
 export GPG_TTY=$(tty)
 
 # Zsh syntax higlighting
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
