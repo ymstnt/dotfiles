@@ -36,11 +36,6 @@ alias rmf='sudo rm -rf'
 alias mexec='sudo chmod a+x'
 alias cls='clear'
 
-# DNF5
-alias dnfi='sudo dnf5 install'
-alias dnfr='sudo dnf5 remove'
-alias dnfu='sudo dnf5 upgrade'
-
 # Default command switch
 alias -g ls='exa --color=always --group-directories-first --icons' # Fancier ls with icons
 alias -g cat='bat --style snip --style changes --style header' # Fancier cat with better previews. Press q to quit
@@ -92,11 +87,11 @@ function ssh-make-key() {
 export PATH=/home/ymstnt/.local/bin:$PATH
 
 # Enable plugins
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Starship
 eval "$(starship init zsh)"
 export GPG_TTY=$(tty)
 
 # Zsh syntax higlighting
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
