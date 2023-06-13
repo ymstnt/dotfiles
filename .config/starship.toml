@@ -25,8 +25,9 @@ disabled = false
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
 [os]
+format = '[󰣛 ]($style)'
 style = "bg:#003F5E"
-disabled = true # Disabled by default
+disabled = false # Disabled by default
 
 [directory]
 style = "bg:#005077"
@@ -37,7 +38,7 @@ truncation_symbol = "…/"
 # Here is how you can shorten some long paths by text replacement
 # similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
-"Documents" = " "
+"Documents" = "󰉋 "
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
