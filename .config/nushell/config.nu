@@ -543,6 +543,7 @@ let-env config = {
 # Alias
 
 alias ll = ls -ld
+alias la = ls -ad
 alias rmf = sudo rm -rf
 alias mexec = sudo chmod a+x
 alias cls = clear
