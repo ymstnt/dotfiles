@@ -266,7 +266,7 @@ let-env config = {
     max_size: 99999999 # Session has to be reloaded for this to take effect
     sync_on_enter: true # Enable to share history between multiple sessions, else you have to close the session to write history to file
     file_format: "plaintext" # "sqlite" or "plaintext"
-    history_isolation: true # true enables history isolation, false disables it. true will allow the history to be isolated to the current session. false will allow the history to be shared across all sessions.
+    #history_isolation: true # true enables history isolation, false disables it. true will allow the history to be isolated to the current session. false will allow the history to be shared across all sessions.
   }
   completions: {
     case_sensitive: false # set to true to enable case-sensitive completions
@@ -557,9 +557,6 @@ def own [filepath = "."] {
 	sudo chown -R $env.USER ($filepath)
 	sudo chgrp -R $env.USER ($filepath)
 }
-
-# Atuin
-source ~/.local/share/atuin/init.nu
 
 # Starship
 source ~/.cache/starship/init.nu
