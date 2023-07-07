@@ -11,8 +11,10 @@
     ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
+  };
 
   # Setup keyfile
   boot.initrd.secrets = {
@@ -67,6 +69,9 @@
   # Configure console keymap
   console.keyMap = "hu101";
 
+  # Enable fontDir for Flatpak
+  fonts.fontDir.enable = true;
+  
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -128,8 +133,7 @@
       firefox
       brave
       thunderbird
-      discord
-      obsidian
+      (discord.override { withOpenASAR = true; withVencord = true; })
       onlyoffice-bin
       vscodium
       syncthing
@@ -141,17 +145,9 @@
       gimp
       pika-backup
       steam
+      pkgs.gnome-extension-manager
     ];
   };
-
-  # Mod Discord with Vencord and OpenAsar
-  nixpkgs.overlays =
-   let
-     myOverlay = self: super: {
-       discord = super.discord.override { withOpenASAR = true; };
-     };
-   in
-   [ myOverlay ];
    
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -161,9 +157,10 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
+    git
     micro
     pfetch
-    nushell
+    zsh
     starship
     adw-gtk3
   ];
@@ -179,6 +176,7 @@
     gnome-music
     pkgs.gnome-photos
     pkgs.gnome-connections
+    pkgs.gnome-tour
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
