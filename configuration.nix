@@ -4,10 +4,17 @@
 
 { config, pkgs, ... }:
 
+let
+  unstable = import 
+    (builtins.fetchTarball https://github.com/nixos/nixpkgs/tarball/nixos-unstable)
+
+    { config = config.nixpkgs.config; };
+in
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./home.nix
     ];
 
   # Bootloader.
@@ -123,6 +130,9 @@
 
   # Enable flatpak
   services.flatpak.enable = true;
+
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
   
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.ymstnt = {
@@ -136,6 +146,8 @@
       (discord.override { withOpenASAR = true; withVencord = true; })
       onlyoffice-bin
       vscodium
+      unstable.obsidian
+      unstable.anytype
       syncthing
       evolution
       gnome.gnome-tweaks
@@ -145,17 +157,16 @@
       gimp
       pika-backup
       steam
+      prismlauncher
       pkgs.gnome-extension-manager
+      celluloid
     ];
   };
-   
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    vim
     wget
     git
     micro
@@ -163,6 +174,12 @@
     zsh
     starship
     adw-gtk3
+    python3
+    gnupg
+    gcc
+    nodejs
+    zip
+    unzip
   ];
 
   # GNOME debloat
