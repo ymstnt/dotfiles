@@ -1,4 +1,5 @@
 # Edit this configuration file to define what should be installed on
+# Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
@@ -44,6 +45,9 @@ in
 
   # Set your time zone.
   time.timeZone = "Europe/Budapest";
+  # Use hardware clock in local time instead of UTC
+  # This is required for compatibility with windows
+  time.hardwareClockInLocalTime = true;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
@@ -62,7 +66,9 @@ in
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-
+  services.xserver.autoRepeatDelay = 250;
+  services.xserver.autoRepeatInterval = 30;
+    
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
@@ -78,25 +84,36 @@ in
 
   # Enable fontDir for Flatpak
   fonts.fontDir.enable = true;
+
+  # Fonts
+  fonts.fonts = with pkgs; [
+    noto-fonts
+    noto-fonts-cjk-serif
+    noto-fonts-cjk-sans
+    #google-fonts
+    noto-fonts-emoji
+    mplus-outline-fonts.githubRelease
+    proggyfonts
+    jetbrains-mono
+    fira-code
+  ];
   
   # Enable CUPS to print documents.
   services.printing.enable = true;
+  hardware.sane.enable = true;
+  hardware.sane.extraBackends = [ pkgs.sane-airscan ];
+  services.avahi.enable = true;
+  services.avahi.nssmdns = true;
+  services.avahi.openFirewall = true;
 
   # Enable sound with pipewire.
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
+  hardware.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
 
   # NTFS
@@ -123,6 +140,10 @@ in
     nvidiaSettings = true;
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.stable;
+    # Fix screen tearing
+    forceFullCompositionPipeline = true;
+    # Fix weird suspend
+    powerManagement.enable = true;
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
@@ -138,7 +159,7 @@ in
   users.users.ymstnt = {
     isNormalUser = true;
     description = "YMSTNT";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "scanner" "lp" ];
     packages = with pkgs; [
       firefox
       brave
@@ -180,6 +201,14 @@ in
     nodejs
     zip
     unzip
+    unstable.blackbox-terminal
+    exa
+    bat
+    ripgrep
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    p7zip
+    tailscale
   ];
 
   # GNOME debloat
@@ -199,22 +228,32 @@ in
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
+  services.pcscd.enable = true;
+  programs.gnupg.agent = {
+     enable = true;
+  };
 
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
-
+  
+  # Enable Tailscale
+  services.tailscale.enable = true;
+  
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [ 25565 ];
+    allowedUDPPorts = [ 25565 ];
+    allowedTCPPortRanges = [
+      { from = 27005; to = 27015; }	
+    ];
+    allowedUDPPortRanges = [
+      { from = 27005; to = 27015; }
+    ];
+  };
+  
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
