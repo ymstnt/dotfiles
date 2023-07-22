@@ -66,8 +66,6 @@ in
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-  services.xserver.autoRepeatDelay = 250;
-  services.xserver.autoRepeatInterval = 30;
     
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
@@ -159,11 +157,11 @@ in
   users.users.ymstnt = {
     isNormalUser = true;
     description = "YMSTNT";
-    extraGroups = [ "networkmanager" "wheel" "scanner" "lp" ];
+    extraGroups = [ "networkmanager" "wheel" "scanner" "lp" "plugdev" ];
     packages = with pkgs; [
       firefox
       brave
-      thunderbird
+      unstable.thunderbird-bin
       (discord.override { withOpenASAR = true; withVencord = true; })
       onlyoffice-bin
       vscodium
@@ -209,6 +207,7 @@ in
     zsh-syntax-highlighting
     p7zip
     tailscale
+    android-tools
   ];
 
   # GNOME debloat
