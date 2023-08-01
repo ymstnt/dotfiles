@@ -15,6 +15,7 @@ in
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      <home-manager/nixos>
       ./home.nix
     ];
 
@@ -94,6 +95,7 @@ in
     proggyfonts
     jetbrains-mono
     fira-code
+    corefonts
   ];
   
   # Enable CUPS to print documents.
@@ -144,6 +146,16 @@ in
     powerManagement.enable = true;
   };
 
+  # Enable ZSH
+  programs.zsh.enable = true;
+  users.users.ymstnt.shell = pkgs.zsh;
+
+  # Enable Tailscale
+  services.tailscale.enable = true;
+
+  # Enable ratbagd
+  services.ratbagd.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -164,7 +176,7 @@ in
       unstable.thunderbird-bin
       (discord.override { withOpenASAR = true; withVencord = true; })
       onlyoffice-bin
-      vscodium
+      unstable.vscodium
       unstable.obsidian
       unstable.anytype
       syncthing
@@ -179,6 +191,9 @@ in
       prismlauncher
       pkgs.gnome-extension-manager
       celluloid
+      piper
+      telegram-desktop
+      obs-studio
     ];
   };
 
@@ -190,7 +205,6 @@ in
     git
     micro
     pfetch
-    zsh
     starship
     adw-gtk3
     python3
@@ -206,8 +220,9 @@ in
     zsh-autosuggestions
     zsh-syntax-highlighting
     p7zip
-    tailscale
+    unstable.tailscale
     android-tools
+    python311Packages.pip
   ];
 
   # GNOME debloat
@@ -224,6 +239,10 @@ in
     pkgs.gnome-tour
   ];
 
+  environment.shells = with pkgs; [ 
+    zsh 
+  ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -236,9 +255,6 @@ in
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
-  
-  # Enable Tailscale
-  services.tailscale.enable = true;
   
   # Open ports in the firewall.
   networking.firewall = {
