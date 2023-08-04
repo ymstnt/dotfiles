@@ -11,6 +11,8 @@
           shellAliases = {
             ll = "ls -l";
             update = "sudo nixos-rebuild switch";
+            nixconfig = "sudo micro /etc/nixos/configuration.nix";
+            homeconfig = "sudo micro /etc/nixos/home.nix";
           };
           enableAutosuggestions = true;
           enableSyntaxHighlighting = true;
