@@ -21,18 +21,11 @@ for key  kcap seq        widget (
 }
 
 # History
-HISTFILE=$HOME/.zsh_history
-HISTSIZE=9999999
-SAVEHIST=$HISTSIZE
 
 setopt EXTENDED_HISTORY          # Write the history file in the ':start:elapsed;command' format.
-setopt HIST_EXPIRE_DUPS_FIRST    # Expire a duplicate event first when trimming history.
 setopt HIST_FIND_NO_DUPS         # Do not display a previously found event.
 setopt HIST_IGNORE_ALL_DUPS      # Delete an old recorded event if a new event is a duplicate.
-setopt HIST_IGNORE_DUPS          # Do not record an event that was just recorded again.
-setopt HIST_IGNORE_SPACE         # Do not record an event starting with a space.
 setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history file.
-setopt SHARE_HISTORY             # Share history between all sessions.
 setopt INC_APPEND_HISTORY
 
 # Built in autocomplete
@@ -40,26 +33,6 @@ autoload -U compinit && compinit -u
 zstyle ':completion:*' menu select
 # Auto complete with case insenstivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
-
-# Aliases
-alias zshreload='source ~/.zshrc'
-alias lf='ls -la | grep'
-alias ff='find | grep'
-alias hisf='history | grep'
-alias rmf='sudo rm -rf'
-alias mexec='sudo chmod a+x'
-alias cls='clear'
-
-# Default command switch
-alias -g ls='exa --color=always --group-directories-first --icons' # Fancier ls with icons
-alias -g cat='bat --style snip --style changes --style header' # Fancier cat with better previews. Press q to quit
-alias -g grep='rg -i --color=auto' # Faster grep
-
-alias -g lls="ls"
-
-# Bashmount
-alias bm='bashmount'
 
 # Autocomplete
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
@@ -102,5 +75,5 @@ function ssh-make-key() {
 export PATH=/home/ymstnt/.local/bin:$PATH
 
 # Starship
-eval "$(starship init zsh)"
-export GPG_TTY=$(tty)
+#eval "$(starship init zsh)"
+#export GPG_TTY=$(tty)

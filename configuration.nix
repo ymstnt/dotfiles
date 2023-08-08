@@ -181,19 +181,25 @@ in
       unstable.anytype
       syncthing
       evolution
-      gnome.gnome-tweaks
-      gnome.dconf-editor
-      gnome.gnome-software
       cryptomator
       gimp
-      pika-backup
       steam
       prismlauncher
-      pkgs.gnome-extension-manager
-      celluloid
       piper
       telegram-desktop
       obs-studio
+      # Gnome apps
+      gnome.gnome-tweaks
+      gnome.dconf-editor
+      gnome.gnome-software
+      pkgs.gnome-extension-manager
+      unstable.fragments
+      unstable.cartridges
+      unstable.collision
+      unstable.eyedropper
+      unstable.raider
+      unstable.newsflash
+      unstable.flowtime
     ];
   };
 
