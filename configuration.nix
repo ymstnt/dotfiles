@@ -82,9 +82,8 @@ in
     noto-fonts-emoji
     mplus-outline-fonts.githubRelease
     proggyfonts
-    jetbrains-mono
-    fira-code
     corefonts
+    (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
   ];
   
   # Enable CUPS to print documents.
@@ -256,8 +255,8 @@ in
   # Open ports in the firewall.
   networking.firewall = {
     enable = true;
-    allowedTCPPorts = [ 25565 ];
-    allowedUDPPorts = [ 25565 ];
+    allowedTCPPorts = [ 25565 8384 ];
+    allowedUDPPorts = [ 25565 8384 ];
     allowedTCPPortRanges = [
       { from = 27005; to = 27015; }	
     ];
