@@ -13,28 +13,14 @@ let
 in
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [ 
+      ./boot.nix
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
       <home-manager/nixos>
       ./home.nix
     ];
 
-  # Bootloader.
-  boot.loader = {
-    systemd-boot.enable = true;
-    efi.canTouchEfiVariables = true;
-  };
-
-  # Setup keyfile
-  boot.initrd.secrets = {
-    "/crypto_keyfile.bin" = null;
-  };
-
-  # Enable swap on luks
-  boot.initrd.luks.devices."luks-29992459-3785-432a-9691-52ced97012df".device = "/dev/disk/by-uuid/29992459-3785-432a-9691-52ced97012df";
-  boot.initrd.luks.devices."luks-29992459-3785-432a-9691-52ced97012df".keyFile = "/crypto_keyfile.bin";
-
-  networking.hostName = "ymstnt-desktop"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -80,6 +66,9 @@ in
 
   # Configure console keymap
   console.keyMap = "hu101";
+
+  # Nix experimental features
+  nix.settings.experimental-features = [ "nix-command" "flakes"];
 
   # Enable fontDir for Flatpak
   fonts.fontDir.enable = true;
@@ -179,6 +168,7 @@ in
       unstable.vscodium
       unstable.obsidian
       unstable.anytype
+      vlc
       syncthing
       evolution
       cryptomator
@@ -193,6 +183,7 @@ in
       gnome.dconf-editor
       gnome.gnome-software
       pkgs.gnome-extension-manager
+      celluloid
       unstable.fragments
       unstable.cartridges
       unstable.collision
