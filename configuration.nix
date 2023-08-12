@@ -9,6 +9,8 @@ let
   unstable = import <nixos-unstable> { config = config.nixpkgs.config; };
 in
 {
+  disabledModules = [ "services/networking/tailscale.nix" ];
+
   imports =
     [
       # Include the results of the hardware scan.
@@ -19,6 +21,8 @@ in
       # Include home manager
       <home-manager/nixos>
       ./home.nix
+      # Include unstable Tailscale
+      <nixos-unstable/nixos/modules/services/networking/tailscale.nix>
     ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -54,7 +58,7 @@ in
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-    
+
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
@@ -69,7 +73,7 @@ in
   console.keyMap = "hu101";
 
   # Nix experimental features
-  nix.settings.experimental-features = [ "nix-command" "flakes"];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Enable fontDir for Flatpak
   fonts.fontDir.enable = true;
@@ -86,7 +90,7 @@ in
     corefonts
     (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
   ];
-  
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
   hardware.sane.enable = true;
@@ -135,7 +139,7 @@ in
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.ymstnt = {
     isNormalUser = true;
@@ -195,20 +199,21 @@ in
     zsh-autosuggestions
     zsh-syntax-highlighting
     p7zip
-    unstable.tailscale
     android-tools
     python311Packages.pip
     sof-firmware
     sshfs
+    rnix-lsp
+    nixpkgs-fmt
   ];
 
   # GNOME debloat
   environment.gnome.excludePackages = with pkgs.gnome; [
-    cheese      # photo booth
-    epiphany    # web browser
-    totem       # video player
-    yelp        # help viewer
-    geary       # email client
+    cheese # photo booth
+    epiphany # web browser
+    totem # video player
+    yelp # help viewer
+    geary # email client
     gnome-maps
     gnome-music
     pkgs.gnome-photos
@@ -216,8 +221,8 @@ in
     pkgs.gnome-tour
   ];
 
-  environment.shells = with pkgs; [ 
-    zsh 
+  environment.shells = with pkgs; [
+    zsh
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -225,27 +230,27 @@ in
   # programs.mtr.enable = true;
   services.pcscd.enable = true;
   programs.gnupg.agent = {
-     enable = true;
+    enable = true;
   };
 
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
-  
+
   # Open ports in the firewall.
   networking.firewall = {
     enable = true;
     allowedTCPPorts = [ 25565 8384 ];
     allowedUDPPorts = [ 25565 8384 ];
     allowedTCPPortRanges = [
-      { from = 27005; to = 27015; }	
+      { from = 27005; to = 27015; }
     ];
     allowedUDPPortRanges = [
       { from = 27005; to = 27015; }
     ];
   };
-  
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
