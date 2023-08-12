@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 
+let
+  unstable = import <nixos-unstable> { config = config.nixpkgs.config; };
+in
 {
 	home-manager.users.ymstnt = {
 	    # This should be the same value as `system.stateVersion` in
@@ -139,5 +142,13 @@
        	  	];
        	  };
        	};
+
+       	home.packages = with pkgs; [
+       		gnomeExtensions.just-perfection
+       		gnomeExtensions.draw-on-you-screen-2
+       		gnomeExtensions.extensions-sync
+       		gnomeExtensions.caffeine
+       		gnomeExtensions.vitals
+       	];
 	};
 }

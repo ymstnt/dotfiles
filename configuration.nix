@@ -6,18 +6,17 @@
 { config, pkgs, ... }:
 
 let
-  unstable = import 
-    (builtins.fetchTarball https://github.com/nixos/nixpkgs/tarball/nixos-unstable)
-
-    { config = config.nixpkgs.config; };
+  unstable = import <nixos-unstable> { config = config.nixpkgs.config; };
 in
 {
   imports =
-    [ 
-      ./boot.nix
-      ./graphics.nix
+    [
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./boot.nix
+      ./graphics.nix
+      ./games.nix
+      # Include home manager
       <home-manager/nixos>
       ./home.nix
     ];
@@ -30,6 +29,7 @@ in
 
   # Enable networking
   networking.networkmanager.enable = true;
+  systemd.network.wait-online.enable = false;
 
   # Set your time zone.
   time.timeZone = "Europe/Budapest";
@@ -96,8 +96,9 @@ in
   services.avahi.openFirewall = true;
 
   # Enable sound with pipewire.
-  security.rtkit.enable = true;
+  hardware.enableAllFirmware = true;
   hardware.pulseaudio.enable = false;
+  security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -107,6 +108,14 @@ in
 
   # NTFS
   boot.supportedFilesystems = [ "ntfs" ];
+
+  # Nvidia
+  # Make sure opengl is enabled
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
 
   # Enable ZSH
   programs.zsh.enable = true;
@@ -146,9 +155,6 @@ in
       evolution
       cryptomator
       gimp
-      steam
-      prismlauncher
-      piper
       telegram-desktop
       obs-studio
       # Gnome apps
@@ -158,7 +164,6 @@ in
       pkgs.gnome-extension-manager
       celluloid
       unstable.fragments
-      unstable.cartridges
       unstable.collision
       unstable.eyedropper
       unstable.raider
@@ -193,6 +198,8 @@ in
     unstable.tailscale
     android-tools
     python311Packages.pip
+    sof-firmware
+    sshfs
   ];
 
   # GNOME debloat
