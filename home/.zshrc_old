@@ -73,7 +73,3 @@ function ssh-make-key() {
 }
 
 export PATH=/home/ymstnt/.local/bin:$PATH
-
-# Starship
-#eval "$(starship init zsh)"
-#export GPG_TTY=$(tty)
