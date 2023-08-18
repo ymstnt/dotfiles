@@ -14,10 +14,10 @@ in
   imports =
     [
       # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./boot.nix
-      ./graphics.nix
-      ./games.nix
+      /etc/nixos/hardware-configuration.nix
+      /etc/nixos/boot.nix
+      /etc/nixos/graphics.nix
+      /etc/nixos/games.nix
       # Include home manager
       <home-manager/nixos>
       ./home.nix
