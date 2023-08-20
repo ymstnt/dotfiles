@@ -9,8 +9,6 @@ let
   unstable = import <nixos-unstable> { config = config.nixpkgs.config; };
 in
 {
-  disabledModules = [ "services/networking/tailscale.nix" ];
-
   imports =
     [
       # Include the results of the hardware scan.
@@ -21,8 +19,6 @@ in
       # Include home manager
       <home-manager/nixos>
       ./home.nix
-      # Include unstable Tailscale
-      <nixos-unstable/nixos/modules/services/networking/tailscale.nix>
     ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -57,16 +53,20 @@ in
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
+  # Enable GNOME
   # Configure keymap in X11
   services.xserver = {
+    enable = true;
     layout = "hu";
     xkbVariant = "";
+    displayManager = {
+      #defaultSession = "xfce";
+      gdm.enable = true;
+    };
+    desktopManager = {
+      gnome.enable = true;
+      #xfce.enable = true;
+    };
   };
 
   # Configure console keymap
@@ -126,7 +126,10 @@ in
   users.users.ymstnt.shell = pkgs.zsh;
 
   # Enable Tailscale
-  services.tailscale.enable = true;
+  services.tailscale = {
+    enable = true;
+    package = unstable.tailscale;
+  };
 
   # Enable ratbagd
   services.ratbagd.enable = true;
@@ -161,10 +164,11 @@ in
       gimp
       telegram-desktop
       obs-studio
+      picard
+      kdenlive
       # Gnome apps
       gnome.gnome-tweaks
       gnome.dconf-editor
-      gnome.gnome-software
       pkgs.gnome-extension-manager
       celluloid
       unstable.fragments
@@ -173,6 +177,7 @@ in
       unstable.raider
       unstable.newsflash
       unstable.flowtime
+      unstable.amberol
     ];
   };
 
