@@ -176,8 +176,9 @@ in
       unstable.eyedropper
       unstable.raider
       unstable.newsflash
-      unstable.flowtime
       unstable.amberol
+      unstable.pika-backup
+      unstable.mission-center
     ];
   };
 
@@ -210,6 +211,7 @@ in
     sshfs
     rnix-lsp
     nixpkgs-fmt
+    nix-prefetch
   ];
 
   # GNOME debloat
