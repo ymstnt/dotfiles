@@ -46,9 +46,7 @@ in
         mexec = "sudoc chmod a+x";
         cls = "clear";
         bm = "bashmount";
-        zshreload = "source $ZDOTDIR/.zshrc";
-        update = "sudo nixos-rebuild switch -I nixos-config=$HOME/dotfiles/configuration.nix";
-        channelupd = "sudo nix-channel --update";
+        zshreload = "source $HOME/.zshrc";
         nixconfig = "micro $HOME/dotfiles/configuration.nix";
         homeconfig = "micro $HOME/dotfiles/home.nix";
         nixcd = "cd /etc/nixos";
@@ -113,6 +111,16 @@ in
         }
         zstyle :bracketed-paste-magic paste-init pasteinit
         zstyle :bracketed-paste-magic paste-finish pastefinish
+
+        update () {
+          if [[ "$1" == "-c" || "$1" == "--channel" || "$1" == "-a" || "$1" == "--all" ]];
+          then
+            sudo nix-channel --update
+          fi
+          if [[ -z "$1" || "$1" == "-a" || "$1" == "--all" ]]; then
+            sudo nixos-rebuild switch -I nixos-config=$HOME/dotfiles/configuration.nix
+          fi
+        }
 
         github-ssh () {
           private_key = "$HOME/.ssh/id_ed25519"
