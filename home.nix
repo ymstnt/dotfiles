@@ -55,11 +55,9 @@ in
 
       };
 
-      shellGlobalAliases = { };
-
       profileExtra = ''
-        export GTK_THEME=Adwaita:dark # for GTK 3 and 4 apps
-        export QT_QPA_PLATFORMTHEME=gtk2 # for Qt 5 and 6 apps
+        export GTK_THEME="Adwaita:dark" # for GTK 3 and 4 apps
+        export QT_QPA_PLATFORMTHEME="gtk2" # for Qt 5 and 6 apps
       '';
 
       initExtra = ''
@@ -323,6 +321,7 @@ in
     };
 
     gtk = {
+      enable = true;
       gtk3 = {
         bookmarks = [
           "file:///home/ymstnt/Documents"
