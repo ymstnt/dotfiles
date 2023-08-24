@@ -123,7 +123,17 @@ in
 
   # Enable ZSH
   programs.zsh.enable = true;
-  users.users.ymstnt.shell = pkgs.zsh;
+
+  environment = {
+    # ZSH as default shell
+    shells = [ pkgs.zsh ];
+    sessionVariables = rec {
+      XDG_CACHE_HOME = "$HOME/.cache";
+      XDG_CONFIG_HOME = "$HOME/.config";
+      XDG_DATA_HOME = "$HOME/.local/share";
+      XDG_STATE_HOME = "$HOME/.local/state";
+    };
+  };
 
   # Enable Tailscale
   services.tailscale = {
@@ -147,10 +157,11 @@ in
   users.users.ymstnt = {
     isNormalUser = true;
     description = "YMSTNT";
+    shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" "scanner" "lp" "plugdev" ];
     packages = with pkgs; [
-      firefox
       brave
+      librewolf
       unstable.thunderbird-bin
       (discord.override { withOpenASAR = true; withVencord = true; })
       onlyoffice-bin
@@ -164,13 +175,13 @@ in
       gimp
       telegram-desktop
       obs-studio
-      picard
-      kdenlive
+      openshot-qt
       # Gnome apps
       gnome.gnome-tweaks
       gnome.dconf-editor
       pkgs.gnome-extension-manager
       celluloid
+      czkawka
       unstable.fragments
       unstable.collision
       unstable.eyedropper
@@ -226,10 +237,6 @@ in
     pkgs.gnome-photos
     pkgs.gnome-connections
     pkgs.gnome-tour
-  ];
-
-  environment.shells = with pkgs; [
-    zsh
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
