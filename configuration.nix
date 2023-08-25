@@ -91,13 +91,21 @@ in
     (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
   ];
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-  hardware.sane.enable = true;
-  hardware.sane.extraBackends = [ pkgs.sane-airscan ];
-  services.avahi.enable = true;
-  services.avahi.nssmdns = true;
-  services.avahi.openFirewall = true;
+  # Enable CUPS to print documents and SANE for scanning.
+  services = {
+    printing.enable = true;
+    avahi = {
+      enable = true;
+      nssmdns = true;
+      openFirewall = true;
+    };
+  };
+  hardware = {
+    sane = {
+      enable = true;
+      extraBackends = [ pkgs.sane-airscan ];
+    };
+  };
 
   # Enable sound with pipewire.
   hardware.enableAllFirmware = true;
@@ -187,7 +195,6 @@ in
       unstable.eyedropper
       unstable.raider
       unstable.newsflash
-      unstable.amberol
       unstable.pika-backup
       unstable.mission-center
     ];
@@ -220,6 +227,7 @@ in
     python311Packages.pip
     sof-firmware
     sshfs
+    smartmontools
     rnix-lsp
     nixpkgs-fmt
     nix-prefetch
