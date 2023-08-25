@@ -9,12 +9,6 @@ in
     # your `configuration.nix` file.
     home.stateVersion = "23.05";
 
-    programs.bash = {
-      profileExtra = ''
-        export GTK_THEME=Adwaita:dark
-      '';
-    };
-
     programs.zsh = {
       enable = true;
       enableAutosuggestions = true;
@@ -56,8 +50,7 @@ in
       };
 
       profileExtra = ''
-        export GTK_THEME="Adwaita:dark" # for GTK 3 and 4 apps
-        export QT_QPA_PLATFORMTHEME="gtk2" # for Qt 5 and 6 apps
+        export QT_QPA_PLATFORMTHEME=gtk2 # for Qt 5 and 6 apps
       '';
 
       initExtra = ''
