@@ -169,7 +169,7 @@ in
     extraGroups = [ "networkmanager" "wheel" "scanner" "lp" "plugdev" ];
     packages = with pkgs; [
       brave
-      librewolf
+      firefox
       unstable.thunderbird-bin
       (discord.override { withOpenASAR = true; withVencord = true; })
       onlyoffice-bin
