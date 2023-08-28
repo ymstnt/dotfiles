@@ -12,7 +12,6 @@ in
     programs.zsh = {
       enable = true;
       enableAutosuggestions = true;
-      enableSyntaxHighlighting = true;
       autocd = true;
 
       history = {
@@ -102,6 +101,8 @@ in
         }
         zstyle :bracketed-paste-magic paste-init pasteinit
         zstyle :bracketed-paste-magic paste-finish pastefinish
+
+        source ${pkgs.zsh-fast-syntax-highlighting}/share/zsh/site-functions/fast-syntax-highlighting.plugin.zsh
 
         update () {
           if [[ "$1" == "-c" || "$1" == "--channel" || "$1" == "-a" || "$1" == "--all" ]];
@@ -350,6 +351,7 @@ in
       gnomeExtensions.vitals
       unstable.gnomeExtensions.app-hider
       gnomeExtensions.quick-touchpad-toggle
+      gnomeExtensions.alttab-scroll-workaround
     ];
   };
 }
