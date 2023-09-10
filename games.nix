@@ -1,13 +1,17 @@
-{ config, pkgs, ... }:
+{ config, pkgs, home-manager, ... }:
 
 let
   unstable = import <nixos-unstable> { config = config.nixpkgs.config; };
 in
 {
-  users.users.ymstnt.packages = with pkgs; [
-    steam
-    prismlauncher
-    piper
-    unstable.collision
-  ];
+  services.ratbagd.enable = true;
+  programs.steam.enable = true;
+
+  home-manager.users.ymstnt = {
+    home.packages = with pkgs; [
+      prismlauncher
+      piper
+      unstable.collision
+    ];
+  };
 }
