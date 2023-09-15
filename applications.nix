@@ -24,47 +24,6 @@ in
       package = pkgs.firefox-devedition;
     };
 
-
-    xdg.mimeApps = {
-      enable = true;
-      defaultApplications = {
-        "application/zip" = [ "org.gnome.FileRoller.desktop" ];
-        "text/html" = [ "brave-browser.desktop" ];
-        "x-scheme-handler/http" = [ "brave-browser.desktop" ];
-        "x-scheme-handler/https" = [ "brave-browser.desktop" ];
-        "x-scheme-handler/about" = [ "brave-browser.desktop" ];
-        "x-scheme-handler/unknown" = [ "brave-browser.desktop" ];
-        "text/calendar" = [ "org.gnome.Calendar.desktop" ];
-        "x-scheme-handler/mailto" = [ "thunderbird.desktop" ];
-        "image/jpeg" = [ "org.gnome.eog.desktop" ];
-        "image/bmp" = [ "org.gnome.eog.desktop" ];
-        "image/gif" = [ "org.gnome.eog.desktop" ];
-        "image/jpg" = [ "org.gnome.eog.desktop" ];
-        "image/pjpeg" = [ "org.gnome.eog.desktop" ];
-        "image/png" = [ "org.gnome.eog.desktop" ];
-        "image/tiff" = [ "org.gnome.eog.desktop" ];
-        "image/webp" = [ "org.gnome.eog.desktop" ];
-        "image/x-gray" = [ "org.gnome.eog.desktop" ];
-        "image/x-bmp" = [ "org.gnome.eog.desktop" ];
-        "image/x-icb" = [ "org.gnome.eog.desktop" ];
-        "image/x-ico" = [ "org.gnome.eog.desktop" ];
-        "image/x-portable-anymap" = [ "org.gnome.eog.desktop" ];
-        "image/x-portable-bitmap" = [ "org.gnome.eog.desktop" ];
-        "image/x-portable-graymap" = [ "org.gnome.eog.desktop" ];
-        "image/x-portable-pixmap" = [ "org.gnome.eog.desktop" ];
-        "image/x-xbitmap" = [ "org.gnome.eog.desktop" ];
-        "image/x-xpixmap" = [ "org.gnome.eog.desktop" ];
-        "image/x-pcx" = [ "org.gnome.eog.desktop" ];
-        "image/svg+xml" = [ "org.gnome.eog.desktop" ];
-        "image/svg+xml-compressed" = [ "org.gnome.eog.desktop" ];
-        "image/vnd.wap.wbmp" = [ "org.gnome.eog.desktop" ];
-        "image/x-icns" = [ "org.gnome.eog.desktop" ];
-        "application/pdf" = [ "org.gnome.Evince.desktop" ];
-        "x-scheme-handler/anytype" = [ "anytype.desktop" ];
-        "text/plain" = [ "org.gnome.TextEditor.desktop" ];
-      };
-    };
-
     home.packages = with pkgs; [
       brave
       unstable.thunderbird-bin
