@@ -31,6 +31,7 @@ in
       sof-firmware
       sshfs
       smartmontools
+      yt-dlp
       rnix-lsp
       nixpkgs-fmt
       nix-prefetch
