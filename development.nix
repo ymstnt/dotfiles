@@ -25,6 +25,7 @@ in
       sqlite
       dbeaver
       android-tools
+      unstable.bun
     ];
   };
 }
