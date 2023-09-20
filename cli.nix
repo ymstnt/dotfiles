@@ -32,6 +32,7 @@ in
       sshfs
       smartmontools
       yt-dlp
+      unstable.spotdl
       rnix-lsp
       nixpkgs-fmt
       nix-prefetch
