@@ -80,7 +80,14 @@ in
   users.users.ymstnt = {
     isNormalUser = true;
     description = "YMSTNT";
-    extraGroups = [ "networkmanager" "wheel" "scanner" "lp" "plugdev" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "scanner"
+      "lp"
+      "plugdev"
+      "adbusers"
+    ];
   };
 
   # Enable touchpad support (enabled default in most desktopManager).

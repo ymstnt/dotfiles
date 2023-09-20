@@ -4,6 +4,8 @@ let
   unstable = import <nixos-unstable> { config = config.nixpkgs.config; };
 in
 {
+  programs.adb.enable = true;
+
   home-manager.users.ymstnt = {
     programs.vscode = {
       enable = true;
@@ -24,7 +26,6 @@ in
       flutter
       sqlite
       dbeaver
-      android-tools
       unstable.bun
     ];
   };
