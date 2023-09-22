@@ -14,6 +14,7 @@ in
 {
   imports = [
     /etc/nixos/games.nix
+    ./matlab.nix
   ];
 
   programs.gnupg.agent.enable = true;
