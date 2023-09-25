@@ -33,6 +33,9 @@ in
       smartmontools
       yt-dlp
       unstable.spotdl
+      unstable.bitwarden-cli
+      unstable.rbw
+      unstable.bws
       rnix-lsp
       nixpkgs-fmt
       nix-prefetch
