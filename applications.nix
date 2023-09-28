@@ -40,6 +40,9 @@ in
       telegram-desktop
       obs-studio
       openshot-qt
+      unstable.lunatask
+      wineWowPackages.staging
+      winetricks
       nix-software-center
 
       gnome.gnome-tweaks
