@@ -24,7 +24,7 @@ in
       unzip
       unrar
       p7zip
-      exa
+      unstable.eza
       bat
       ripgrep
       hck
