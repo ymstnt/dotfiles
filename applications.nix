@@ -28,7 +28,7 @@ in
     home.packages = with pkgs; [
       brave
       unstable.thunderbird-bin
-      (discord.override { withOpenASAR = true; withVencord = true; })
+      (unstable.discord.override { withOpenASAR = true; withVencord = true; })
       onlyoffice-bin
       unstable.obsidian
       unstable.anytype
