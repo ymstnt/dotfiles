@@ -57,6 +57,7 @@ in
       unstable.newsflash
       unstable.pika-backup
       unstable.mission-center
+      unstable.rnote
     ];
   };
 }
