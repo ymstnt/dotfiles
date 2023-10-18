@@ -194,7 +194,7 @@ in
           "file:///home/ymstnt/Music"
           "file:///home/ymstnt/Documents/PROJEKTEK"
           "file:///home/ymstnt/Documents/Egyetem"
-          "file:///home/ymstnt/Documents/Iskola"
+          #"file:///home/ymstnt/Documents/Iskola"
           "file:///home/ymstnt/Documents/Munka"
           "file:///home/ymstnt/dotfiles dotfiles"
           "file:///etc/nixos nixos"
