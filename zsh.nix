@@ -108,13 +108,9 @@ in
           then
             sudo nix-channel --update
           fi
-          if [[ "$1" == "-f" || "$1" == "--fork" ]];
-          then
-            sudo nixos-rebuild switch -I nixos-config=$HOME/dotfiles/configuration.nix -I nixpkgs=$HOME/Documents/PROJEKTEK/nixpkgs --fast
-          fi
           if [[ -z "$1" || "$1" == "-a" || "$1" == "--all" ]];
           then
-            sudo nixos-rebuild switch -I nixos-config=$HOME/dotfiles/configuration.nix
+            sudo nixos-rebuild switch --flake $HOME/dotfiles/configuration.nix
           fi
           
         }
