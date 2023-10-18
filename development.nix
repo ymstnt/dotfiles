@@ -1,15 +1,12 @@
-{ config, pkgs, home-manager, ... }:
+{ config, pkgs, home-manager, nixpkgs-unstable, nixpkgs-develop, ... }:
 
-let
-  unstable = import <nixos-unstable> { config = config.nixpkgs.config; };
-in
 {
   programs.adb.enable = true;
 
   home-manager.users.ymstnt = {
     programs.vscode = {
       enable = true;
-      package = unstable.pkgs.vscodium;
+      package = nixpkgs-unstable.pkgs.vscodium;
     };
 
     home.packages = with pkgs; [
@@ -26,7 +23,7 @@ in
       flutter
       sqlite
       dbeaver
-      unstable.bun
+      nixpkgs-unstable.bun
     ];
   };
 }
