@@ -1,10 +1,5 @@
-{ config, pkgs, home-manager, ... }:
+{ config, pkgs, home-manager, nixpkgs-unstable, nixpkgs-develop, ... }:
 
-let
-  unstable = import <nixos-unstable> {
-    config = config.nixpkgs.config;
-  };
-in
 {
   services.xserver = {
     enable = true;
@@ -221,7 +216,7 @@ in
       gnomeExtensions.extensions-sync
       gnomeExtensions.caffeine
       gnomeExtensions.vitals
-      unstable.gnomeExtensions.app-hider
+      nixpkgs-unstable.gnomeExtensions.app-hider
       gnomeExtensions.quick-touchpad-toggle
       gnomeExtensions.alttab-scroll-workaround
     ];

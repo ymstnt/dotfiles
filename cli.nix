@@ -1,10 +1,5 @@
-{ config, pkgs, home-manager, lib, ... }:
+{ config, pkgs, home-manager, lib, nixpkgs-unstable, nixpkgs-develop, ... }:
 
-let
-  unstable = import <nixos-unstable> {
-    config = config.nixpkgs.config;
-  };
-in
 {
   imports = [
     ./zsh.nix
@@ -13,7 +8,7 @@ in
 
   home-manager.users.ymstnt = {
     home.packages = with pkgs; [
-      unstable.blackbox-terminal
+      nixpkgs-unstable.blackbox-terminal
       wget
       micro
       pfetch
@@ -24,7 +19,7 @@ in
       unzip
       unrar
       p7zip
-      unstable.eza
+      nixpkgs-unstable.eza
       bat
       ripgrep
       hck
@@ -32,10 +27,10 @@ in
       sshfs
       smartmontools
       yt-dlp
-      unstable.spotdl
-      unstable.bitwarden-cli
-      unstable.rbw
-      unstable.bws
+      nixpkgs-unstable.spotdl
+      nixpkgs-unstable.bitwarden-cli
+      nixpkgs-unstable.rbw
+      nixpkgs-unstable.bws
       rnix-lsp
       nixpkgs-fmt
       nix-prefetch

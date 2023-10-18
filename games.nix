@@ -1,8 +1,5 @@
-{ config, pkgs, home-manager, ... }:
+{ config, pkgs, home-manager, nixpkgs-unstable, nixpkgs-develop, ... }:
 
-let
-  unstable = import <nixos-unstable> { config = config.nixpkgs.config; };
-in
 {
   services.ratbagd.enable = true;
   programs.steam.enable = true;
@@ -11,7 +8,7 @@ in
     home.packages = with pkgs; [
       prismlauncher
       piper
-      unstable.collision
+      nixpkgs-unstable.collision
     ];
   };
 }

@@ -52,7 +52,7 @@
         "type": "github"
       }
     },
-    "nixpkgs-iunstable": {
+    "nixpkgs-unstable": {
       "locked": {
         "lastModified": 1697456312,
         "narHash": "sha256-roiSnrqb5r+ehnKCauPLugoU8S36KgmWraHgRqVYndo=",
@@ -73,7 +73,7 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
-        "nixpkgs-iunstable": "nixpkgs-iunstable"
+        "nixpkgs-unstable": "nixpkgs-unstable"
       }
     }
   },

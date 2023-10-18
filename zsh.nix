@@ -1,10 +1,5 @@
-{ config, pkgs, home-manager, ... }:
+{ config, pkgs, home-manager, nixpkgs-unstable, nixpkgs-develop, ... }:
 
-let
-  unstable = import <nixos-unstable> {
-    config = config.nixpkgs.config;
-  };
-in
 {
   programs.zsh.enable = true; #necessary for zsh as default shell
   environment = { shells = [ pkgs.zsh ]; };

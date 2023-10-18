@@ -1,7 +1,6 @@
-{ config, pkgs, home-manager, ... }:
+{ config, pkgs, home-manager, nixpkgs-unstable, nixpkgs-develop, ... }:
 
 let
-  unstable = import <nixos-unstable> { config = config.nixpkgs.config; };
   nix-software-center = import
     (pkgs.fetchFromGitHub {
       owner = "vlinkz";
@@ -13,7 +12,7 @@ let
 in
 {
   imports = [
-    /etc/nixos/games.nix
+    ./games.nix
     ./matlab.nix
   ];
 
@@ -27,12 +26,12 @@ in
 
     home.packages = with pkgs; [
       brave
-      unstable.thunderbird-bin
-      (unstable.discord.override { withOpenASAR = true; withVencord = true; })
-      unstable.revolt-desktop
+      nixpkgs-unstable.thunderbird-bin
+      (nixpkgs-unstable.discord.override { withOpenASAR = true; withVencord = true; })
+      nixpkgs-unstable.revolt-desktop
       onlyoffice-bin
-      unstable.obsidian
-      unstable.anytype
+      nixpkgs-unstable.obsidian
+      nixpkgs-unstable.anytype
       vlc
       syncthing
       evolution
@@ -41,8 +40,8 @@ in
       telegram-desktop
       obs-studio
       openshot-qt
-      unstable.lunatask
-      unstable.p3x-onenote
+      nixpkgs-unstable.lunatask
+      nixpkgs-unstable.p3x-onenote
       wineWowPackages.staging
       winetricks
       nix-software-center
@@ -53,13 +52,13 @@ in
       pkgs.gnome-extension-manager
       celluloid
       czkawka
-      unstable.fragments
-      unstable.collision
-      unstable.eyedropper
-      unstable.newsflash
-      unstable.pika-backup
-      unstable.mission-center
-      unstable.rnote
+      nixpkgs-unstable.fragments
+      nixpkgs-unstable.collision
+      nixpkgs-unstable.eyedropper
+      nixpkgs-unstable.newsflash
+      nixpkgs-unstable.pika-backup
+      nixpkgs-unstable.mission-center
+      nixpkgs-unstable.rnote
     ];
   };
 }

@@ -1,8 +1,5 @@
-{ config, home-manager, ... }:
+{ config, home-manager, nixpkgs-unstable, nixpkgs-develop, ... }:
 
-let
-  unstable = import <nixos-unstable> { config = config.nixpkgs.config; };
-in
 {
   boot = {
     loader = {
@@ -51,7 +48,7 @@ in
   # Enable Tailscale
   services.tailscale = {
     enable = true;
-    package = unstable.tailscale;
+    package = nixpkgs-unstable.tailscale;
   };
 
   time.timeZone = "Europe/Budapest";
