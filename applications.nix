@@ -29,6 +29,7 @@ in
       brave
       unstable.thunderbird-bin
       (unstable.discord.override { withOpenASAR = true; withVencord = true; })
+      unstable.revolt-desktop
       onlyoffice-bin
       unstable.obsidian
       unstable.anytype
@@ -41,9 +42,11 @@ in
       obs-studio
       openshot-qt
       unstable.lunatask
+      unstable.p3x-onenote
       wineWowPackages.staging
       winetricks
       nix-software-center
+      #hifile
 
       gnome.gnome-tweaks
       gnome.dconf-editor
@@ -53,7 +56,6 @@ in
       unstable.fragments
       unstable.collision
       unstable.eyedropper
-      unstable.raider
       unstable.newsflash
       unstable.pika-backup
       unstable.mission-center
