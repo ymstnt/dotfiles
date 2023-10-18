@@ -3,9 +3,8 @@
 {
   imports =
     [
-      <home-manager/nixos>
-      /etc/nixos/hardware-configuration.nix
-      /etc/nixos/host.nix
+      ./hardware-configuration.nix
+      ./host.nix
       ./cli.nix
       ./desktop.nix
       ./development.nix
