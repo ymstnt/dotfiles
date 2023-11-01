@@ -1,4 +1,4 @@
-{ config, pkgs, home-manager, lib, nixpkgs-unstable, nixpkgs-develop, ... }:
+{ inputs, outputs, config, pkgs, home-manager, lib, ... }:
 
 {
   imports = [
@@ -6,9 +6,21 @@
     ./git.nix
   ];
 
+  nixpkgs = {
+    overlays = [
+      outputs.overlays.unstable-packages
+    ];
+
+    config = {
+      allowUnfree = true;
+      allowUnfreePredicate = _: true;
+    };
+  };
+
+
   home-manager.users.ymstnt = {
     home.packages = with pkgs; [
-      nixpkgs-unstable.blackbox-terminal
+      unstable.blackbox-terminal
       wget
       micro
       pfetch
@@ -19,7 +31,7 @@
       unzip
       unrar
       p7zip
-      nixpkgs-unstable.eza
+      unstable.eza
       bat
       ripgrep
       hck
@@ -27,10 +39,10 @@
       sshfs
       smartmontools
       yt-dlp
-      nixpkgs-unstable.spotdl
-      nixpkgs-unstable.bitwarden-cli
-      nixpkgs-unstable.rbw
-      nixpkgs-unstable.bws
+      unstable.spotdl
+      unstable.bitwarden-cli
+      unstable.rbw
+      unstable.bws
       rnix-lsp
       nixpkgs-fmt
       nix-prefetch

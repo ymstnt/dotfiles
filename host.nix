@@ -1,6 +1,17 @@
-{ config, home-manager, nixpkgs-unstable, nixpkgs-develop, ... }:
+{ inputs, outputs, config, home-manager, ... }:
 
 {
+  nixpkgs = {
+    overlays = [
+      outputs.overlays.unstable-packages
+    ];
+
+    config = {
+      allowUnfree = true;
+      allowUnfreePredicate = _: true;
+    };
+  };
+
   boot = {
     loader = {
       systemd-boot.enable = true;
@@ -48,7 +59,7 @@
   # Enable Tailscale
   services.tailscale = {
     enable = true;
-    package = nixpkgs-unstable.tailscale;
+    package = pkgs.unstable.tailscale;
   };
 
   time.timeZone = "Europe/Budapest";
@@ -92,7 +103,6 @@
 
   services.flatpak.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"

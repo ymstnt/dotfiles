@@ -1,6 +1,17 @@
-{ config, pkgs, home-manager, nixpkgs-unstable, nixpkgs-develop, ... }:
+{ inputs, outputs, config, pkgs, home-manager, ... }:
 
 {
+  nixpkgs = {
+    overlays = [
+      outputs.overlays.unstable-packages
+    ];
+
+    config = {
+      allowUnfree = true;
+      allowUnfreePredicate = _: true;
+    };
+  };
+
   services.xserver = {
     enable = true;
     layout = "hu";
@@ -216,7 +227,7 @@
       gnomeExtensions.extensions-sync
       gnomeExtensions.caffeine
       gnomeExtensions.vitals
-      nixpkgs-unstable.gnomeExtensions.app-hider
+      unstable.gnomeExtensions.app-hider
       gnomeExtensions.quick-touchpad-toggle
       gnomeExtensions.alttab-scroll-workaround
     ];

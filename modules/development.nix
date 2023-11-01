@@ -1,12 +1,23 @@
-{ config, pkgs, home-manager, nixpkgs-unstable, nixpkgs-develop, ... }:
+{ inputs, outputs, config, pkgs, home-manager, ... }:
 
 {
+  nixpkgs = {
+    overlays = [
+      outputs.overlays.unstable-packages
+    ];
+
+    config = {
+      allowUnfree = true;
+      allowUnfreePredicate = _: true;
+    };
+  };
+
   programs.adb.enable = true;
 
   home-manager.users.ymstnt = {
     programs.vscode = {
       enable = true;
-      package = nixpkgs-unstable.pkgs.vscodium;
+      package = unstable.pkgs.vscodium;
     };
 
     home.packages = with pkgs; [
@@ -23,7 +34,7 @@
       flutter
       sqlite
       dbeaver
-      nixpkgs-unstable.bun
+      unstable.bun
     ];
   };
 }

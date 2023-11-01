@@ -1,6 +1,17 @@
-{ config, pkgs, home-manager, nixpkgs-unstable, nixpkgs-develop, ... }:
+{ inputs, outputs, config, pkgs, home-manager, ... }:
 
 {
+  nixpkgs = {
+    overlays = [
+      outputs.overlays.unstable-packages
+    ];
+
+    config = {
+      allowUnfree = true;
+      allowUnfreePredicate = _: true;
+    };
+  };
+
   programs.zsh.enable = true; #necessary for zsh as default shell
   environment = { shells = [ pkgs.zsh ]; };
   users.users.ymstnt.shell = pkgs.zsh;
