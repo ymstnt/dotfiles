@@ -13,46 +13,32 @@
 
     home-manager = {
       url = "github:nix-community/home-manager/release-23.05";
-      # The `follows` keyword in inputs is used for inheritance.
-      # Here, `inputs.nixpkgs` of home-manager is kept consistent with
-      # the `inputs.nixpkgs` of the current flake,
-      # to avoid problems caused by different versions of nixpkgs.
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  # `outputs` are all the build result of the flake.
-  #
-  # A flake can have many use cases and different types of outputs.
-  # 
-  # parameters in function `outputs` are defined in `inputs` and
-  # can be referenced by their names. However, `self` is an exception,
-  # this special parameter points to the `outputs` itself(self-reference)
-  # 
-  # The `@` syntax here is used to alias the attribute set of the
-  # inputs's parameter, making it convenient to use inside the function.
-  outputs = { self, nixpkgs, home-manager, nixpkgs-unstable, nixpkgs-develop, ... }@inputs: {
-    nixosConfigurations = {
-      # By default, NixOS will try to refer the nixosConfiguration with
-      # its hostname, so the system named `nixos-test` will use this one.
-      # However, the configuration name can also be specified using:
-      #   sudo nixos-rebuild switch --flake /path/to/flakes/directory#<name>
-      #
-      # The `nixpkgs.lib.nixosSystem` function is used to build this
-      # configuration, the following attribute set is its parameter.
-      #
-      # Run the following command in the flake's directory to
-      # deploy this configuration on any NixOS system:
-      #   sudo nixos-rebuild switch --flake .#nixos-test
-      "andromeda" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./configuration.nix
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-          }
-        ];
+
+  outputs = { self, nixpkgs, home-manager, ... } @ inputs:
+    let
+      inherit (self) outputs;
+      # Supported systems for your flake packages, shell, etc.
+      system = "x86_64-linux";
+      # This is a function that generates an attribute by calling a function you
+      # pass to it, with each system as an argument
+      forAllSystems = nixpkgs.lib.genAttrs system;
+    in
+    {
+      overlays = import ./overlays { inherit inputs; };
+      nixosConfigurations = {
+        "andromeda" = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            ./configuration.nix
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+            }
+          ];
+        };
       };
     };
-  };
 }

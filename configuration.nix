@@ -5,9 +5,9 @@
     [
       ./hardware-configuration.nix
       ./host.nix
-      ./cli.nix
-      ./desktop.nix
-      ./development.nix
-      ./applications.nix
+      ./modules/shell/cli.nix
+      ./modules/DMs/gnome.nix
+      ./modules/development.nix
+      ./modules/applications.nix
     ];
 }
