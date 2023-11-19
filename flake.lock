@@ -52,6 +52,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-master": {
+      "locked": {
+        "lastModified": 1700430883,
+        "narHash": "sha256-LS67csVya57VSeJndYD3N/j6iv9UcI4vEqO/LZceIgY=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "10e860ea3be494f043adff47658a411be46fe25d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "master",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs-unstable": {
       "locked": {
         "lastModified": 1700204040,
@@ -73,6 +89,7 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
+        "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-unstable": "nixpkgs-unstable"
       }
     }

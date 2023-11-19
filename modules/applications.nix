@@ -36,7 +36,7 @@
       openshot-qt
       wineWowPackages.staging
       winetricks
-      unstable.hifile
+      master.hifile
 
       gnome.gnome-tweaks
       gnome.dconf-editor
