@@ -1,30 +1,21 @@
 { inputs, outputs, config, pkgs, home-manager, ... }:
 
 {
-  nixpkgs = {
-    overlays = [
-      outputs.overlays.unstable-packages
-    ];
-
-    config = {
-      allowUnfree = true;
-      allowUnfreePredicate = _: true;
-    };
-  };
+  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
   programs.adb.enable = true;
 
   home-manager.users.ymstnt = {
     programs.vscode = {
       enable = true;
-      package = unstable.pkgs.vscodium;
+      package = pkgs.unstable.vscodium;
     };
 
     home.packages = with pkgs; [
       gcc
       gnumake
-      rustc
-      cargo
+      unstable.rustc
+      unstable.cargo
       python3
       python311Packages.pip
       nodejs
@@ -35,6 +26,7 @@
       sqlite
       dbeaver
       unstable.bun
+      unstable.gum
     ];
   };
 }

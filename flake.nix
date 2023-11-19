@@ -17,26 +17,30 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... } @ inputs:
-    let
+  outputs =
+    { self,
+    nixpkgs,
+    home-manager,
+    ...
+    } @ inputs: let
       inherit (self) outputs;
       # Supported systems for your flake packages, shell, etc.
-      system = "x86_64-linux";
+      systems = [
+        "x86_64-linux"
+      ];
       # This is a function that generates an attribute by calling a function you
       # pass to it, with each system as an argument
-      forAllSystems = nixpkgs.lib.genAttrs system;
+      forAllSystems = nixpkgs.lib.genAttrs systems;
     in
     {
+      #packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
       overlays = import ./overlays { inherit inputs; };
       nixosConfigurations = {
         "andromeda" = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
+          specialArgs = {inherit inputs outputs;};
           modules = [
             ./configuration.nix
             home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-            }
           ];
         };
       };

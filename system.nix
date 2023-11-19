@@ -1,16 +1,7 @@
-{ inputs, outputs, config, home-manager, ... }:
+{pkgs, libs, inputs, outputs, config, home-manager, ... }:
 
 {
-  nixpkgs = {
-    overlays = [
-      outputs.overlays.unstable-packages
-    ];
-
-    config = {
-      allowUnfree = true;
-      allowUnfreePredicate = _: true;
-    };
-  };
+  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
   boot = {
     loader = {
@@ -101,8 +92,7 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  services.flatpak.enable = true;
-
+  nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"

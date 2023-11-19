@@ -5,16 +5,7 @@
     ./programs/matlab.nix
   ];
 
-  nixpkgs = {
-    overlays = [
-      outputs.overlays.unstable-packages
-    ];
-
-    config = {
-      allowUnfree = true;
-      allowUnfreePredicate = _: true;
-    };
-  };
+  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
   programs.gnupg.agent.enable = true;
 
@@ -26,25 +17,25 @@
 
     home.packages = with pkgs; [
       brave
-      unstable.thunderbird-bin
+      # Electron apps
       (unstable.discord.override { withOpenASAR = true; withVencord = true; })
       unstable.revolt-desktop
-      onlyoffice-bin
       unstable.obsidian
       unstable.anytype
+      unstable.lunatask
+      unstable.p3x-onenote
+      telegram-desktop
+      onlyoffice-bin
+      unstable.thunderbird-bin
       vlc
       syncthing
       evolution
       cryptomator
       gimp
-      telegram-desktop
       obs-studio
       openshot-qt
-      unstable.lunatask
-      unstable.p3x-onenote
       wineWowPackages.staging
       winetricks
-      nix-software-center
       unstable.hifile
 
       gnome.gnome-tweaks
@@ -55,7 +46,6 @@
       unstable.fragments
       unstable.collision
       unstable.eyedropper
-      unstable.newsflash
       unstable.pika-backup
       unstable.mission-center
       unstable.rnote

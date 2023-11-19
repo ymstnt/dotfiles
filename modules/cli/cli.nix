@@ -6,17 +6,7 @@
     ./git.nix
   ];
 
-  nixpkgs = {
-    overlays = [
-      outputs.overlays.unstable-packages
-    ];
-
-    config = {
-      allowUnfree = true;
-      allowUnfreePredicate = _: true;
-    };
-  };
-
+  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
   home-manager.users.ymstnt = {
     home.packages = with pkgs; [
@@ -39,14 +29,25 @@
       sshfs
       smartmontools
       yt-dlp
-      unstable.spotdl
+      thefuck
       unstable.bitwarden-cli
       unstable.rbw
       unstable.bws
+      unstable.gh
+      unstable.codeberg-cli
+      unstable.glab
+      unstable.skate
+      unstable.pop
+      unstable.glow
       rnix-lsp
       nixpkgs-fmt
       nix-prefetch
     ];
+
+    programs.wezterm = {
+      enable = true;
+      package = pkgs.unstable.wezterm;
+    };
 
     programs.starship = {
       enable = true;
