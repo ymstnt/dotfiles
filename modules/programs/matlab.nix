@@ -12,7 +12,7 @@
   # rebuild your system to regenerate mimeapps.list and link files with home manager
   # download the matlab launcher script: $ git clone https://gitlab.com/doronbehar/nix-matlab ~/.local/share/matlab/launch
   home-manager.users.ymstnt.home.file = {
-    ".config/matlab/nix.sh".source = ./home/.config/matlab/nix.sh;
-    ".local/share/applications/matlab.desktop".source = ./home/.local/share/applications/matlab.desktop;
+    ".config/matlab/nix.sh".source = ../../home/.config/matlab/nix.sh;
+    ".local/share/applications/matlab.desktop".source = ../../home/.local/share/applications/matlab.desktop;
   };
 }

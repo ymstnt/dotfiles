@@ -1,16 +1,7 @@
 { inputs, outputs, config, pkgs, home-manager, ... }:
 
 {
-  nixpkgs = {
-    overlays = [
-      outputs.overlays.unstable-packages
-    ];
-
-    config = {
-      allowUnfree = true;
-      allowUnfreePredicate = _: true;
-    };
-  };
+  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
   services.xserver = {
     enable = true;
@@ -165,14 +156,12 @@
 
         enabled-extensions = [
           "just-perfection-desktop@just-perfection"
-          "draw-on-your-screen2@zhrexl.github.com"
           "activities-filled-pill@verdre"
           "extensions-sync@elhan.io"
           "caffeine@patapon.info"
           "Vitals@CoreCoding.com"
           "app-hider@lynith.dev"
           "quick-touchpad-toggle@kramo.hu"
-          "alt-tab-scroll-workaround@lucasresck.github.io"
         ];
 
         favorite-apps = [
@@ -180,6 +169,7 @@
           "thunderbird.desktop"
           "discord.desktop"
           "com.raggesilver.BlackBox.desktop"
+          "HiFile.desktop"
           "org.gnome.Nautilus.desktop"
         ];
       };
@@ -221,15 +211,20 @@
       };
     };
 
+    qt = {
+      enable = true;
+      platformTheme = "gtk";
+      style.name = "breeze";
+    };
+
     home.packages = with pkgs; [
       gnomeExtensions.just-perfection
-      gnomeExtensions.draw-on-you-screen-2
       gnomeExtensions.extensions-sync
       gnomeExtensions.caffeine
       gnomeExtensions.vitals
       unstable.gnomeExtensions.app-hider
       gnomeExtensions.quick-touchpad-toggle
-      gnomeExtensions.alttab-scroll-workaround
+      adwaita-qt
     ];
   };
 }

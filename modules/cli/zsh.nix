@@ -1,16 +1,7 @@
 { inputs, outputs, config, pkgs, home-manager, ... }:
 
 {
-  nixpkgs = {
-    overlays = [
-      outputs.overlays.unstable-packages
-    ];
-
-    config = {
-      allowUnfree = true;
-      allowUnfreePredicate = _: true;
-    };
-  };
+  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
   programs.zsh.enable = true; #necessary for zsh as default shell
   environment = { shells = [ pkgs.zsh ]; };
@@ -112,13 +103,12 @@
         update () {
           if [[ "$1" == "-c" || "$1" == "--channel" || "$1" == "-a" || "$1" == "--all" ]];
           then
-            sudo nix-channel --update
+            sudo nix flake update
           fi
           if [[ -z "$1" || "$1" == "-a" || "$1" == "--all" ]];
           then
             sudo nixos-rebuild switch --flake $HOME/dotfiles/configuration.nix
           fi
-          
         }
 
         github-ssh () {
