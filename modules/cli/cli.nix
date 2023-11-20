@@ -44,9 +44,9 @@
       nix-prefetch
     ];
 
-    programs.wezterm = {
+    programs.alacritty = {
       enable = true;
-      package = pkgs.unstable.wezterm;
+      package = pkgs.unstable.alacritty;
     };
 
     programs.starship = {
