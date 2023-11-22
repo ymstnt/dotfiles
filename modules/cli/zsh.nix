@@ -111,6 +111,8 @@
           fi
         }
 
+        try() { NIXPKGS_ALLOW_UNFREE=1 nix shell --impure nixpkgs/nixos-unstable#$1 ''${@:2} }
+
         github-ssh () {
           private_key = "$HOME/.ssh/id_ed25519"
           public_key="$private_key.pub"
