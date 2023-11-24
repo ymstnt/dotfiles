@@ -19,11 +19,12 @@
   };
 
   outputs =
-    { self,
-    nixpkgs,
-    home-manager,
-    ...
-    } @ inputs: let
+    { self
+    , nixpkgs
+    , home-manager
+    , ...
+    } @ inputs:
+    let
       inherit (self) outputs;
       # Supported systems for your flake packages, shell, etc.
       systems = [
@@ -38,11 +39,20 @@
       overlays = import ./overlays { inherit inputs; };
       nixosConfigurations = {
         "andromeda" = nixpkgs.lib.nixosSystem {
-          specialArgs = {inherit inputs outputs;};
           modules = [
-            ./configuration.nix
+            ./default.nix
+            ./hosts/andromeda/default.nix
             home-manager.nixosModules.home-manager
           ];
+          specialArgs = { inherit inputs outputs; };
+        };
+        "cassiopeia" = nixpkgs.lib.nixosSystem {
+          modules = [
+            ./default.nix
+            ./hosts/cassiopeia/default.nix
+            home-manager.nixosModules.home-manager
+          ];
+          specialArgs = { inherit inputs outputs; };
         };
       };
     };

@@ -103,11 +103,11 @@
         update () {
           if [[ "$1" == "-c" || "$1" == "--channel" || "$1" == "-a" || "$1" == "--all" ]];
           then
-            sudo nix flake update
+            ( cd $HOME/dotfiles && sudo nix flake update )
           fi
           if [[ -z "$1" || "$1" == "-a" || "$1" == "--all" ]];
           then
-            sudo nixos-rebuild switch --flake $HOME/dotfiles/configuration.nix
+            sudo nixos-rebuild switch --flake $HOME/dotfiles/.#''$(hostname)
           fi
         }
 
