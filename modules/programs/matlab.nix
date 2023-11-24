@@ -8,6 +8,7 @@
   # go into a shell for matlab: $ nix run gitlab:doronbehar/nix-matlab#matlab-shell
   # (from the shell) start the GUI installer: $ ./install
   # (in the gui installer) install matlab to ~/.local/share/matlab/install
+  # install Matlab, Simulink, Simscape, Simscape Electrics
   # remove broken installer generated and modified files: $ rm ~/.local/share/applications/mimeapps.list ~/.local/share/applications/mw-*.desktop
   # rebuild your system to regenerate mimeapps.list and link files with home manager
   # download the matlab launcher script: $ git clone https://gitlab.com/doronbehar/nix-matlab ~/.local/share/matlab/launch
