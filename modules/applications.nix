@@ -1,7 +1,6 @@
 { inputs, outputs, config, pkgs, home-manager, ... }:
 {
   imports = [
-    ./games.nix
     ./programs/matlab.nix
   ];
 
