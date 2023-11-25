@@ -23,7 +23,9 @@
       unstable.anytype
       unstable.lunatask
       unstable.p3x-onenote
-      telegram-desktop
+      unstable.drawio
+      unstable.beeper
+      unstable.telegram-desktop
       onlyoffice-bin
       unstable.thunderbird-bin
       vlc

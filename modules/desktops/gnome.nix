@@ -168,6 +168,7 @@
           "brave-browser.desktop"
           "thunderbird.desktop"
           "discord.desktop"
+          "beeper.desktop"
           "com.raggesilver.BlackBox.desktop"
           "HiFile.desktop"
           "org.gnome.Nautilus.desktop"
