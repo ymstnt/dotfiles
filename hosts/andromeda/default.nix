@@ -4,7 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
-      ../../moudules/games.nix
+      ../../modules/games.nix
     ];
 
   boot = {
