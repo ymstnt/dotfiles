@@ -10,7 +10,6 @@
 
   home-manager.users.ymstnt = {
     home.packages = with pkgs; [
-      unstable.blackbox-terminal
       wget
       micro
       pfetch
@@ -21,7 +20,7 @@
       unzip
       unrar
       p7zip
-      unstable.eza
+      eza
       bat
       ripgrep
       hck
@@ -43,11 +42,6 @@
       nixpkgs-fmt
       nix-prefetch
     ];
-
-    programs.alacritty = {
-      enable = true;
-      package = pkgs.unstable.alacritty;
-    };
 
     programs.starship = {
       enable = true;

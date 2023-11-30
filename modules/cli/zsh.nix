@@ -26,7 +26,7 @@
 
       completionInit = "autoload -U compinit && compinit -C"; # add caching to save ~50ms load time
       shellAliases = {
-        ls = "${pkgs.exa}/bin/exa --color=always --group-directories-first --icons";
+        ls = "${pkgs.eza}/bin/exa --color=always --group-directories-first --icons";
         cat = "${pkgs.bat}/bin/bat --style snip --style changes --style header";
         grep = "${pkgs.ripgrep}/bin/rg -i --color=auto";
 
