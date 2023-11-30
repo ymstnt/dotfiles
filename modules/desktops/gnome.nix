@@ -44,7 +44,7 @@
     };
   };
 
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-serif
     noto-fonts-cjk-sans
@@ -59,18 +59,20 @@
   fonts.fontDir.enable = true;
 
   # GNOME debloat
-  environment.gnome.excludePackages = with pkgs.gnome; [
-    cheese # photo booth
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-connections
+    gnome-tour
+    snapshot
+  ]) ++ (with pkgs.gnome; [
     epiphany # web browser
     totem # video player
     yelp # help viewer
     geary # email client
     gnome-maps
     gnome-music
-    pkgs.gnome-photos
     pkgs.gnome-connections
     pkgs.gnome-tour
-  ];
+  ]);
 
   home-manager.users.ymstnt = {
     services.gammastep = {
@@ -156,8 +158,6 @@
 
         enabled-extensions = [
           "just-perfection-desktop@just-perfection"
-          "activities-filled-pill@verdre"
-          "extensions-sync@elhan.io"
           "caffeine@patapon.info"
           "Vitals@CoreCoding.com"
           "app-hider@lynith.dev"
@@ -169,7 +169,7 @@
           "thunderbird.desktop"
           "discord.desktop"
           "beeper.desktop"
-          "com.raggesilver.BlackBox.desktop"
+          "org.gnome.Console.desktop"
           "HiFile.desktop"
           "org.gnome.Nautilus.desktop"
         ];
