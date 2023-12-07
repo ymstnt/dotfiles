@@ -27,6 +27,7 @@
       sof-firmware
       sshfs
       smartmontools
+      exiftool
       yt-dlp
       thefuck
       unstable.bitwarden-cli
