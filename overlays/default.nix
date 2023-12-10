@@ -19,6 +19,10 @@
       system = final.system;
       config.allowUnfree = true;
       config.allowUnfreePredicate = _: true;
+      # Remove once Obsidian updates Electron
+      config.permittedInsecurePackages = [
+        "electron-25.9.0"
+      ];
     };
     master = import inputs.nixpkgs-master {
       system = final.system;
