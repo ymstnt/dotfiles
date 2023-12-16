@@ -3,6 +3,10 @@
 {
   nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
+  boot = {
+    supportedFilesystems = [ "ntfs" ];
+  };
+
   networking = {
     networkmanager.enable = true;
 
