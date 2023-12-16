@@ -9,11 +9,14 @@
 
   boot = {
     loader = {
-      systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
+      grub = {
+        useOSProber = true;
+        efiSupport = true;
+        device = "nodev";
+        timeoutStyle = "hidden";
+      };
     };
-
-    supportedFilesystems = [ "ntfs" ];
 
     initrd = {
       # Setup keyfile
