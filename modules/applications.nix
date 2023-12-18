@@ -26,8 +26,9 @@
       unstable.drawio
       unstable.beeper
       unstable.telegram-desktop
+      unstable.spacedrive
       onlyoffice-bin
-      unstable.thunderbird-bin
+      thunderbird
       vlc
       syncthing
       evolution
@@ -35,6 +36,7 @@
       gimp
       obs-studio
       openshot-qt
+      tenacity
       wineWowPackages.staging
       winetricks
       master.hifile
@@ -44,6 +46,7 @@
       pkgs.gnome-extension-manager
       celluloid
       czkawka
+      unstable.newsflash
       unstable.fragments
       unstable.collision
       unstable.eyedropper
