@@ -4,6 +4,7 @@
   imports = [
     ./zsh.nix
     ./git.nix
+    ./editor.nix
   ];
 
   nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
@@ -11,7 +12,6 @@
   home-manager.users.ymstnt = {
     home.packages = with pkgs; [
       wget
-      micro
       pfetch
       starship
       adw-gtk3
