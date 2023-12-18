@@ -1,4 +1,4 @@
-{ pkgs, libs, inputs, outputs, config, home-manager, ... }:
+{ pkgs, outputs, config, home-manager, ... }:
 
 {
   nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
