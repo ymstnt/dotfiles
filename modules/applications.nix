@@ -2,6 +2,7 @@
 {
   imports = [
     ./programs/matlab.nix
+    ./browser.nix
   ];
 
   nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
@@ -9,13 +10,7 @@
   programs.gnupg.agent.enable = true;
 
   home-manager.users.ymstnt = {
-    programs.firefox = {
-      enable = true;
-      package = pkgs.firefox-devedition;
-    };
-
     home.packages = with pkgs; [
-      brave
       # Electron apps
       (unstable.discord.override { withOpenASAR = true; withVencord = true; })
       unstable.revolt-desktop
@@ -30,7 +25,6 @@
       onlyoffice-bin
       thunderbird
       vlc
-      syncthing
       evolution
       cryptomator
       gimp
