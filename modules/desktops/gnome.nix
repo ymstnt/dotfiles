@@ -58,6 +58,9 @@
   # Enable fontDir for Flatpak
   fonts.fontDir.enable = true;
 
+  # GNOME extension support
+  services.gnome.gnome-browser-connector.enable = true;
+
   # GNOME debloat
   environment.gnome.excludePackages = (with pkgs; [
     gnome-connections
