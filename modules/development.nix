@@ -14,10 +14,14 @@
     home.packages = with pkgs; [
       gcc
       gnumake
+      cmake
+      ninja
+      appimage-run
       unstable.rustc
       unstable.cargo
       python3
       python311Packages.pip
+      ffmpeg
       nodejs
       openjdk19
       gradle

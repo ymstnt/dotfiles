@@ -7,6 +7,8 @@
     supportedFilesystems = [ "ntfs" ];
   };
 
+  hardware.opentabletdriver.enable = true;
+
   networking = {
     networkmanager.enable = true;
 
