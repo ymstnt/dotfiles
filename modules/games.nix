@@ -10,6 +10,7 @@
     home.packages = with pkgs; [
       unstable.prismlauncher
       piper
+      unstable.osu-lazer-bin
     ];
   };
 }

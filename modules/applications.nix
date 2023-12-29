@@ -42,11 +42,12 @@
       czkawka
       unstable.newsflash
       unstable.fragments
-      unstable.collision
+      collision
       unstable.eyedropper
       unstable.pika-backup
       unstable.mission-center
       unstable.rnote
+      unstable.flowtime
     ];
   };
 }
