@@ -20,10 +20,11 @@
         inherit (self) outputs;
         mkSystem = host: nixpkgs.lib.nixosSystem {
           modules = [
-            home-manager.nixosModules
+            home-manager.nixosModule
             host
             ./default.nix
           ];
+          specialArgs = { inherit inputs outputs; };
         };
       in
       {

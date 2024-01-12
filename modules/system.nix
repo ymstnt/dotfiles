@@ -1,4 +1,4 @@
-{ pkgs, outputs, config, home-manager, ... }:
+{ outputs, config, pkgs, hm, ... }:
 
 {
   nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
@@ -95,7 +95,7 @@
     driSupport32Bit = true;
   };
 
-  home-manager.users.ymstnt = {
+  hm = {
     home.stateVersion = config.system.stateVersion;
   };
 

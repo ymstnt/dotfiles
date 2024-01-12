@@ -1,11 +1,11 @@
-{ outputs, pkgs, home-manager, ... }:
+{ outputs, pkgs, hm, ... }:
 
 {
   nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
   programs.adb.enable = true;
 
-  home-manager.users.ymstnt = {
+  hm = {
     programs.vscode = {
       enable = true;
       package = pkgs.unstable.vscodium;
