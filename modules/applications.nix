@@ -1,7 +1,7 @@
 { outputs, pkgs, home-manager, ... }:
 {
   imports = [
-    ./programs/matlab.nix
+    ./matlab.nix
     ./browser.nix
   ];
 
