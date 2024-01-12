@@ -1,9 +1,9 @@
-{ outputs, pkgs, home-manager, ... }:
+{ outputs, pkgs, hm, ... }:
 
 {
   nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
-  home-manager.users.ymstnt = {
+  hm = {
     programs.firefox = {
       enable = true;
       package = pkgs.firefox-devedition;
