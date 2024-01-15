@@ -9,6 +9,7 @@
     ./cli.nix
     ./development.nix
     ./browser.nix
+    ./thunderbird.nix
     ./git.nix
     ./zsh.nix
     ./starship.nix

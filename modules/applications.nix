@@ -18,7 +18,6 @@
     unstable.telegram-desktop
     unstable.spacedrive
     onlyoffice-bin
-    thunderbird
     vlc
     evolution
     cryptomator
