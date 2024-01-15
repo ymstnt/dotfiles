@@ -14,6 +14,7 @@
         efiSupport = true;
         device = "nodev";
         timeoutStyle = "hidden";
+        configurationLimit = 10;
       };
     };
 
