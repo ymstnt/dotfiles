@@ -1,15 +1,17 @@
-{ outputs, pkgs, hm, ... }:
+{ outputs, lib, pkgs, hm, ... }:
 
+with lib; with pkgs;
 {
   nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
   programs.zsh.enable = true; #necessary for zsh as default shell
-  environment = { shells = [ pkgs.zsh ]; };
-  users.users.ymstnt.shell = pkgs.zsh;
+  environment.shells = [ zsh ];
+  users.users.ymstnt.shell = zsh;
 
   hm.programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
+    syntaxHighlighting.enable = true;
     autocd = true;
 
     history = {
@@ -25,9 +27,10 @@
 
     completionInit = "autoload -U compinit && compinit -C"; # add caching to save ~50ms load time
     shellAliases = {
-      ls = "${pkgs.eza}/bin/exa --color=always --group-directories-first --icons";
-      cat = "${pkgs.bat}/bin/bat --style snip --style changes --style header";
-      grep = "${pkgs.ripgrep}/bin/rg -i --color=auto";
+      ls = "${getExe eza} --color=always --group-directories-first --icons";
+      cat = "${getExe bat} --style snip --style changes --style header";
+      grep = "${getExe ripgrep} -i --color=auto";
+      fu = "${getExe thefuck}";
 
       ll = "ls -l";
       lf = "ls -la | grep";
@@ -41,6 +44,11 @@
       nixcd = "cd /etc/nixos";
       dotcd = "cd $HOME/dotfiles";
       cleanup = "sudo nix-collect-garbage --delete-older-than";
+    };
+
+    sessionVariables = {
+      NIXPKGS_ALLOW_UNFREE = 1;
+      ZSH_AUTOSUGGEST_MANUAL_REBIND = true; # faster prompt
     };
 
     profileExtra = ''
@@ -97,8 +105,6 @@
       zstyle :bracketed-paste-magic paste-init pasteinit
       zstyle :bracketed-paste-magic paste-finish pastefinish
 
-      source ${pkgs.zsh-fast-syntax-highlighting}/share/zsh/site-functions/fast-syntax-highlighting.plugin.zsh
-
       update () {
         if [[ "$1" == "-c" || "$1" == "--channel" || "$1" == "-a" || "$1" == "--all" ]];
         then
@@ -116,14 +122,16 @@
         private_key = "$HOME/.ssh/id_ed25519"
         public_key="$private_key.pub"
         github_link='https://github.com/settings/ssh/new'
-        echo "Generating ssh key to $key_file"
-        ${pkgs.openssh}/bin/ssh-keygen -t ed25519 -f $private_key
+        
+        ${getExe' openssh "ssh-keygen"} -t ed25519 -f $private_key
+
         echo "Add the ssh key below to github as an Authentication and a Signing key: $github_link"
         echo '----BEGIN SSH PUBLIC KEY BLOCK----'
-        ${pkgs.bat}/bin/bat --style snip $public_key
+        ${getExe bat} --style snip $public_key
         echo '-----END SSH PUBLIC KEY BLOCK-----'
-        ${pkgs.xdg-utils}/bin/xdg-open $github_link
-        cat $public_key | ${pkgs.xsel}/bin/xsel -b
+        
+        cat $public_key | ${getExe xsel} -b
+        ${getExe' xdg-utils "xdg-open"} $github_link
         echo 'Opened github in browser and copied ssh key to clipboard'
       }
 

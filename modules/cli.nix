@@ -22,7 +22,6 @@
     smartmontools
     exiftool
     yt-dlp
-    thefuck
     unstable.bitwarden-cli
     unstable.rbw
     unstable.bws
