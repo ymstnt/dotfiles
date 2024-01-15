@@ -12,11 +12,7 @@
   networking = {
     networkmanager.enable = true;
 
-    # wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-    # Configure network proxy if necessary
-    # proxy.default = "http://user:password@proxy:port/";
-    # proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+    # wireless.enable = true;  # Enables wireless support via wpa_supplicant.g
     firewall = {
       enable = true;
       allowedTCPPorts = [ 25565 8384 ];
@@ -81,6 +77,13 @@
     "nix-command"
     "flakes"
   ];
+
+  # Auto GC
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
