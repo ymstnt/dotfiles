@@ -13,6 +13,7 @@
     ./zsh.nix
     ./starship.nix
     ./zoxide.nix
+    ./frack.nix
     ./micro.nix
     ./matlab.nix
   ];
