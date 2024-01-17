@@ -30,7 +30,7 @@ with lib; with pkgs;
       ls = "${getExe eza} --color=always --group-directories-first --icons";
       cat = "${getExe bat} --style snip --style changes --style header";
       grep = "${getExe ripgrep} -i --color=auto";
-      fu = "${getExe thefuck}";
+      fu = "thefuck";
 
       ll = "ls -l";
       lf = "ls -la | grep";
