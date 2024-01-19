@@ -17,6 +17,7 @@
     unstable.beeper
     unstable.telegram-desktop
     unstable.spacedrive
+    element-desktop
     onlyoffice-bin
     vlc
     evolution
