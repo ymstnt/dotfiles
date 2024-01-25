@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-master.url = "github:NixOS/nixpkgs/master";
-    nixpkgs-develop.url = "github:ymstnt/nixpkgs";
+    nixpkgs-develop.url = "github:ymstnt/nixpkgs/init-fcast"; # TODO: revert branch to master once https://github.com/NixOS/nixpkgs/pull/283513 is merged
 
     home-manager = {
       url = "github:nix-community/home-manager/release-23.11";
