@@ -165,6 +165,7 @@
           "Vitals@CoreCoding.com"
           "app-hider@lynith.dev"
           "quick-touchpad-toggle@kramo.hu"
+          "trayIconsReloaded@selfmade.pl"
         ];
 
         favorite-apps = [
@@ -223,9 +224,9 @@
 
     home.packages = with pkgs; [
       gnomeExtensions.just-perfection
-      gnomeExtensions.extensions-sync
       gnomeExtensions.caffeine
       gnomeExtensions.vitals
+      gnomeExtensions.tray-icons-reloaded
       unstable.gnomeExtensions.app-hider
       gnomeExtensions.quick-touchpad-toggle
       adwaita-qt
