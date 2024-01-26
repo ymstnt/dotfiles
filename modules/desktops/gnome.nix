@@ -113,6 +113,7 @@
       unstable.gnomeExtensions.app-hider
       gnomeExtensions.quick-touchpad-toggle
       adwaita-qt
+      adw-gtk3
     ];
   };
 }

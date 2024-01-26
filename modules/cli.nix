@@ -6,8 +6,7 @@
   hm.home.packages = with pkgs; [
     wget
     pfetch
-    starship
-    adw-gtk3
+    zfxtop
     gnupg
     zip
     unzip
