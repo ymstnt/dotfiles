@@ -17,7 +17,7 @@
       };
 
       os = {
-        format = "[ ]($style)";
+        format = "[ ]($style)";
         style = "bg:\#2A3F6D";
         disabled = false;
       };
