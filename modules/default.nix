@@ -21,6 +21,7 @@
     ./zoxide.nix
     ./frack.nix
     ./micro.nix
+    ./helix.nix
     ./fcast.nix
     ./matlab.nix
   ];
