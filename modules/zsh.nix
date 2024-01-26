@@ -106,9 +106,9 @@ with lib; with pkgs;
       zstyle :bracketed-paste-magic paste-finish pastefinish
 
       update () {
-        if [[ "$1" == "-c" || "$1" == "--channel" || "$1" == "-a" || "$1" == "--all" ]];
+        if [[ "$1" == "-l" || "$1" == "--lockfile" || "$1" == "-a" || "$1" == "--all" ]];
         then
-          ( cd $HOME/dotfiles && sudo nix flake update )
+          ( cd $HOME/dotfiles && nix flake update --commit-lock-file)
         fi
         if [[ -z "$1" || "$1" == "-a" || "$1" == "--all" ]];
         then
