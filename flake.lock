@@ -59,7 +59,7 @@
         "narHash": "sha256-8sk1iWncuN1ID/I2CfJqOS3Dvz9LdyZNjpMjMMO7nic=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "abd098fce8717416ff37e3dfb6cc767b060758cc",
+        "rev": "6446f962a139613e71d0447f4a7229af247549f3",
         "type": "github"
       },
       "original": {
