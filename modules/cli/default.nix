@@ -3,6 +3,16 @@
 {
   nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
+  imports = [
+    ./zsh.nix
+    ./starship.nix
+    ./git.nix
+    ./micro.nix
+    ./helix.nix
+    ./zoxide.nix
+    ./frack.nix
+  ];
+
   hm.home.packages = with pkgs; [
     wget
     pfetch

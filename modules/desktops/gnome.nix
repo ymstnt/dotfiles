@@ -85,6 +85,7 @@
           "file:///home/ymstnt/.local/share .local"
           "file:///home/ymstnt/.config .config"
           "sftp://ymstnt@ymstnt.com:42727/home/ymstnt/Files Shared Drive"
+          "sftp://ymstnt@ymstnt.com:42727/var/media/ Media Files"
         ];
 
         extraConfig = {
