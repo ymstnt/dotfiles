@@ -41,7 +41,6 @@ with lib; with pkgs;
       cls = "clear";
       bm = "bashmount";
       zshreload = "source $HOME/.zshrc";
-      nixcd = "cd /etc/nixos";
       dotcd = "cd $HOME/dotfiles";
       cleanup = "sudo nix-collect-garbage --delete-older-than";
     };

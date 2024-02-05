@@ -1,6 +1,10 @@
 { ... }:
 
 {
+  imports = [
+    ./gnome.nix
+  ];
+
   services.xserver = {
     enable = true;
     layout = "hu";
@@ -14,8 +18,4 @@
       #xfce.enable = true;
     };
   };
-
-  imports = [
-    ./gnome.nix
-  ];
 }
