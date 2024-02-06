@@ -5,6 +5,7 @@
     (lib.mkAliasOptionModule [ "hm" ] [ "home-manager" "users" "ymstnt" ])
     ./desktops
     ./cli
+    ./agenix.nix
     ./system.nix
     ./sound.nix
     ./fonts.nix

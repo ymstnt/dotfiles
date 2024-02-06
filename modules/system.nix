@@ -27,6 +27,10 @@
   };
   systemd.services.NetworkManager-wait-online.enable = false;
 
+  services.openssh = {
+    enable = true;
+  };
+
   # Enable Tailscale
   services.tailscale = {
     enable = true;

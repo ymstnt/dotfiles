@@ -111,7 +111,7 @@ with lib; with pkgs;
         fi
         if [[ -z "$1" || "$1" == "-a" || "$1" == "--all" ]];
         then
-          sudo nixos-rebuild switch --flake $HOME/dotfiles/.#''$(hostname)
+          sudo nixos-rebuild switch --flake $HOME/dotfiles/.#''$(hostname) --impure
         fi
       }
 
