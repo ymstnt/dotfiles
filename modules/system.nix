@@ -1,8 +1,6 @@
-{ outputs, config, pkgs, hm, ... }:
+{ config, pkgs, hm, ... }:
 
 {
-  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
-
   boot = {
     supportedFilesystems = [ "ntfs" ];
   };
@@ -34,7 +32,7 @@
   # Enable Tailscale
   services.tailscale = {
     enable = true;
-    package = pkgs.unstable.tailscale;
+    package = pkgs.tailscale;
   };
 
   time.timeZone = "Europe/Budapest";

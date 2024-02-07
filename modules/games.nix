@@ -1,16 +1,12 @@
-{ outputs, pkgs, home-manager, ... }:
+{ pkgs, hm, ... }:
 
 {
-  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
-
   services.ratbagd.enable = true;
   programs.steam.enable = true;
 
-  home-manager.users.ymstnt = {
-    home.packages = with pkgs; [
-      unstable.prismlauncher
-      piper
-      unstable.osu-lazer-bin
-    ];
-  };
+  hm.home.packages = with pkgs; [
+    prismlauncher
+    piper
+    osu-lazer-bin
+  ];
 }

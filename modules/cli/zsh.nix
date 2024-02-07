@@ -1,9 +1,7 @@
-{ outputs, lib, pkgs, hm, ... }:
+{ lib, pkgs, hm, ... }:
 
 with lib; with pkgs;
 {
-  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
-
   programs.zsh.enable = true; #necessary for zsh as default shell
   environment.shells = [ zsh ];
   users.users.ymstnt.shell = zsh;

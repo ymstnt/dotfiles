@@ -1,8 +1,6 @@
-{ outputs, hm, ... }:
+{ hm, ... }:
 
 {
-  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
-
   hm.programs.micro = {
     enable = true;
     settings = {

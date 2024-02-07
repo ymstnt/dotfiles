@@ -1,22 +1,20 @@
-{ outputs, pkgs, hm, ... }:
+{ pkgs, hm, ... }:
 
 {
-  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
-
   programs.gnupg.agent.enable = true;
 
   hm.home.packages = with pkgs; [
     # Electron apps
-    (unstable.discord.override { withOpenASAR = true; withVencord = true; })
-    unstable.revolt-desktop
-    unstable.obsidian
-    unstable.anytype
-    unstable.lunatask
-    unstable.p3x-onenote
-    unstable.drawio
-    unstable.beeper
-    unstable.telegram-desktop
-    unstable.spacedrive
+    (discord.override { withOpenASAR = true; withVencord = true; })
+    revolt-desktop
+    obsidian
+    anytype
+    lunatask
+    p3x-onenote
+    drawio
+    beeper
+    telegram-desktop
+    spacedrive
     element-desktop
     onlyoffice-bin
     vlc
@@ -29,19 +27,21 @@
     wineWowPackages.staging
     winetricks
     master.hifile
-
-    gnome.gnome-tweaks
-    gnome.dconf-editor
-    pkgs.gnome-extension-manager
+    # GTK apps
     celluloid
     czkawka
-    unstable.newsflash
-    unstable.fragments
-    collision
-    unstable.eyedropper
-    unstable.pika-backup
-    unstable.mission-center
-    unstable.rnote
-    unstable.flowtime
+    newsflash
+    fragments
+    #collision
+    eyedropper
+    pika-backup
+    mission-center
+    rnote
+    flowtime
+  ];
+
+  # TODO: Remove once Obsidian updates Electron
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-25.9.0"
   ];
 }

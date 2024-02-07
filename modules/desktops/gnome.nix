@@ -1,8 +1,7 @@
-{ outputs, pkgs, hm, ... }:
+{ pkgs, hm, ... }:
 
 {
   nixpkgs.overlays = [
-    outputs.overlays.unstable-packages
     # TODO: Remove after GNOME 46
     (final: prev: {
       gnome = prev.gnome.overrideScope' (gnomeFinal: gnomePrev: {
@@ -26,15 +25,13 @@
     gnome-connections
     gnome-tour
     snapshot
+    epiphany
   ]) ++ (with pkgs.gnome; [
-    epiphany # web browser
-    totem # video player
-    yelp # help viewer
-    geary # email client
+    totem
+    yelp
+    geary
     gnome-maps
     gnome-music
-    pkgs.gnome-connections
-    pkgs.gnome-tour
   ]);
 
   hm = {
@@ -106,16 +103,21 @@
       style.name = "adwaita-dark";
     };
 
-    home.packages = with pkgs; [
-      gnomeExtensions.just-perfection
-      gnomeExtensions.caffeine
-      gnomeExtensions.vitals
-      gnomeExtensions.tray-icons-reloaded
-      unstable.gnomeExtensions.app-hider
-      gnomeExtensions.quick-touchpad-toggle
+    home.packages = (with pkgs; [
       adwaita-qt
       adw-gtk3
-    ];
+      gnome-extension-manager
+    ]) ++ (with pkgs.gnomeExtensions; [
+      just-perfection
+      caffeine
+      vitals
+      tray-icons-reloaded
+      app-hider
+      quick-touchpad-toggle
+    ]) ++ (with pkgs.gnome; [
+      gnome-tweaks
+      dconf-editor
+    ]);
   };
 }
 

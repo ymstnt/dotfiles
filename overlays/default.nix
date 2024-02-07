@@ -1,38 +1,15 @@
-# This file defines overlays
-{ inputs, ... }: {
-  # This one brings our custom packages from the 'pkgs' directory
-  additions = final: _prev: import ../pkgs { pkgs = final; };
+# import all nix files in the current folder,
+# and execute them with args as parameters
+# The return value is a list of all execution results, 
+# which is the list of overlays
 
-  # This one contains whatever you want to overlay
-  # You can change versions, add patches, set compilation flags, anything really.
-  # https://nixos.wiki/wiki/Overlays
-  modifications = final: prev: {
-    # example = prev.example.overrideAttrs (oldAttrs: rec {
-    # ...
-    # });
-  };
-
-  # When applied, the unstable nixpkgs set (declared in the flake inputs) will
-  # be accessible through 'pkgs.unstable'
-  unstable-packages = final: _prev: {
-    unstable = import inputs.nixpkgs-unstable {
-      system = final.system;
-      config.allowUnfree = true;
-      config.allowUnfreePredicate = _: true;
-      # Remove once Obsidian updates Electron
-      config.permittedInsecurePackages = [
-        "electron-25.9.0"
-      ];
-    };
-    master = import inputs.nixpkgs-master {
-      system = final.system;
-      config.allowUnfree = true;
-      config.allowUnfreePredicate = _: true;
-    };
-    develop = import inputs.nixpkgs-develop {
-      system = final.system;
-      config.allowUnfree = true;
-      config.allowUnfreePredicate = _: true;
-    };
-  };
-}
+args:
+# execute and import all overlay files in the current
+# directory with the given args
+builtins.map
+  # execute and import the overlay file
+  (f: (import (./. + "/${f}") args))
+  # find all overlay files in the current directory
+  (builtins.filter
+    (f: f != "default.nix")
+    (builtins.attrNames (builtins.readDir ./.)))

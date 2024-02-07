@@ -1,8 +1,8 @@
-{ config, hm, inputs, ... }:
+{ hm, agenix, ... }:
 
 {
-  imports = [ inputs.agenix.nixosModules.default ];
-  hm.home.packages = [ inputs.agenix.packages.x86_64-linux.default ];
+  imports = [ agenix.nixosModules.default ];
+  hm.home.packages = [ agenix.packages.x86_64-linux.default ];
 
   age = {
     secrets = {

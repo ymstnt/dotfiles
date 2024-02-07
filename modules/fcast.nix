@@ -1,10 +1,8 @@
-{ config, inputs, outputs, pkgs, ... }:
+{ config, nixpkgs-develop, pkgs, ... }:
 {
   imports = [
-    "${inputs.nixpkgs-develop}/nixos/modules/programs/fcast-receiver.nix" # TODO: change this to nixpkgs-master once https://github.com/NixOS/nixpkgs/pull/283513 is merged
+    "${nixpkgs-develop}/nixos/modules/programs/fcast-receiver.nix" # TODO: change this to nixpkgs-master once https://github.com/NixOS/nixpkgs/pull/283513 is merged
   ];
-
-  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
 
   programs.fcast-receiver = {
     enable = true;
