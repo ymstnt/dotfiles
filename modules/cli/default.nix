@@ -1,8 +1,6 @@
-{ outputs, pkgs, hm, ... }:
+{ pkgs, hm, ... }:
 
 {
-  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
-
   imports = [
     ./zsh.nix
     ./starship.nix
@@ -31,15 +29,15 @@
     smartmontools
     exiftool
     yt-dlp
-    unstable.bitwarden-cli
-    unstable.rbw
-    unstable.bws
-    unstable.gh
-    unstable.codeberg-cli
-    unstable.glab
-    unstable.skate
-    unstable.pop
-    unstable.glow
+    bitwarden-cli
+    rbw
+    bws
+    gh
+    codeberg-cli
+    glab
+    skate
+    pop
+    glow
     rnix-lsp
     nixpkgs-fmt
     nix-prefetch

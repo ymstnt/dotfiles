@@ -7,8 +7,10 @@
 
   services.xserver = {
     enable = true;
-    layout = "hu";
-    xkbVariant = "";
+    xkb = {
+      layout = "hu";
+      variant = "";
+    };
     displayManager = {
       #defaultSession = "xfce";
       gdm.enable = true;

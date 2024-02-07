@@ -1,14 +1,12 @@
-{ outputs, pkgs, hm, ... }:
+{ pkgs, hm, ... }:
 
 {
-  nixpkgs.overlays = [ outputs.overlays.unstable-packages ];
-
   programs.adb.enable = true;
 
   hm = {
     programs.vscode = {
       enable = true;
-      package = pkgs.unstable.vscodium;
+      package = pkgs.vscodium;
     };
 
     home.packages = with pkgs; [
@@ -17,8 +15,8 @@
       cmake
       ninja
       appimage-run
-      unstable.rustc
-      unstable.cargo
+      rustc
+      cargo
       python3
       python311Packages.pip
       ffmpeg
@@ -29,8 +27,8 @@
       flutter
       sqlite
       dbeaver
-      unstable.bun
-      unstable.gum
+      bun
+      gum
     ];
   };
 }
