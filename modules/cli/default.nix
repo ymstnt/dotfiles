@@ -14,7 +14,9 @@
   hm.home.packages = with pkgs; [
     wget
     pfetch
+    fastfetch
     zfxtop
+    btop
     gnupg
     zip
     unzip
