@@ -63,6 +63,22 @@
     },
     "nixpkgs-develop": {
       "locked": {
+        "lastModified": 1706104835,
+        "narHash": "sha256-HD8RVOubxnd29Li7yUy5f+0IUN7GxYxwDhkXcisf098=",
+        "owner": "ymstnt",
+        "repo": "nixpkgs",
+        "rev": "4359543dfdd6c70d2496876a15cf414bc8f50e4b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ymstnt",
+        "ref": "master",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-develop-fcast": {
+      "locked": {
         "lastModified": 1706105543,
         "narHash": "sha256-cPiowSnfxlcylzOMQKpRHf4UP4VWAk1rL1nHVXOu3lM=",
         "owner": "ymstnt",
@@ -99,6 +115,7 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
+        "nixpkgs-develop-fcast": "nixpkgs-develop-fcast",
         "nixpkgs-master": "nixpkgs-master"
       }
     },

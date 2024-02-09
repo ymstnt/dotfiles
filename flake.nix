@@ -3,9 +3,9 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    #nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-master.url = "github:NixOS/nixpkgs/master";
-    nixpkgs-develop.url = "github:ymstnt/nixpkgs/init-fcast"; # TODO: revert branch to master once https://github.com/NixOS/nixpkgs/pull/283513 is merged
+    nixpkgs-develop.url = "github:ymstnt/nixpkgs/master";
+    nixpkgs-develop-fcast.url = "github:ymstnt/nixpkgs/init-fcast"; # TODO: remove once https://github.com/NixOS/nixpkgs/pull/283513 is merged
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -20,13 +20,12 @@
   };
 
   outputs = { self, nixpkgs, home-manager, ... } @inputs: {
-    # overlays = import ./overlays { inherit inputs; };
     nixosConfigurations =
       let
-        inherit (self) outputs;
+        #inherit (self) outputs;
         mkSystem = host: nixpkgs.lib.nixosSystem {
           modules = [
-            (args: { nixpkgs.overlays = import ./overlays args; })
+            ./overlays
             home-manager.nixosModule
             host
             ./default.nix
