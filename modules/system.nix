@@ -61,6 +61,7 @@
   users.users.ymstnt = {
     isNormalUser = true;
     description = "YMSTNT";
+    initialHashedPassword = "$y$j9T$caTA9opspDRxwlrgdcVcK/$t1CfqQHiR3FyQ4AX0ioehTEZJNChbxMiIypiejNY4W/";
     extraGroups = [
       "networkmanager"
       "wheel"
