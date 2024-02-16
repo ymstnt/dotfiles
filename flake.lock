@@ -25,6 +25,22 @@
         "type": "github"
       }
     },
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1696426674,
+        "narHash": "sha256-kvjfFW7WAETZlt09AgDn1MrtKzP7t90Vf7vypd3OL1U=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "0f9255e01c2351cc7d116c072cb317785dd33b33",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -32,11 +48,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1707607386,
-        "narHash": "sha256-hj/RgQMTvCWQVInkZwiMMieumkfOjHXhtWhfuXHop/8=",
+        "lastModified": 1708031129,
+        "narHash": "sha256-EH20hJfNnc1/ODdDVat9B7aKm0B95L3YtkIRwKLvQG8=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "bfd0ae29a86eff4603098683b516c67e22184511",
+        "rev": "3d6791b3897b526c82920a2ab5f61d71985b3cf8",
         "type": "github"
       },
       "original": {
@@ -45,13 +61,34 @@
         "type": "github"
       }
     },
+    "nix-matlab": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1708009321,
+        "narHash": "sha256-dVeTSWXiaC6S6vYfLLpuVhUMpQavux2x8ILekQQgODM=",
+        "owner": "doronbehar",
+        "repo": "nix-matlab",
+        "rev": "e26874bccc6d3ccc758168ff2844065df64849d1",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "doronbehar",
+        "repo": "nix-matlab",
+        "type": "gitlab"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1707546158,
-        "narHash": "sha256-nYYJTpzfPMDxI8mzhQsYjIUX+grorqjKEU9Np6Xwy/0=",
+        "lastModified": 1707956935,
+        "narHash": "sha256-ZL2TrjVsiFNKOYwYQozpbvQSwvtV/3Me7Zwhmdsfyu4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d934204a0f8d9198e1e4515dd6fec76a139c87f0",
+        "rev": "a4d4fe8c5002202493e87ec8dbc91335ff55552c",
         "type": "github"
       },
       "original": {
@@ -95,11 +132,11 @@
     },
     "nixpkgs-master": {
       "locked": {
-        "lastModified": 1707664605,
-        "narHash": "sha256-ohKGykRp0itWBscGUwXcVf2Bpifoj+GN/sva5b5GSa0=",
+        "lastModified": 1708086567,
+        "narHash": "sha256-WT+OX0M1jHhjhT4vG28qGf70wjKovOFRJr4dcTTVZSM=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "70fa76eedbf9ae6dccd00ab3847a40a60fca3207",
+        "rev": "d8d0e2e1e3125c4a0b1ec3bb645fcac2f0750206",
         "type": "github"
       },
       "original": {
@@ -113,6 +150,7 @@
       "inputs": {
         "agenix": "agenix",
         "home-manager": "home-manager",
+        "nix-matlab": "nix-matlab",
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-develop-fcast": "nixpkgs-develop-fcast",
