@@ -1,4 +1,4 @@
-{ config, pkgs, hm, ... }:
+{ config, pkgs, ... }:
 
 {
   boot = {

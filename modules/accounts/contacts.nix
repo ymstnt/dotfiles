@@ -1,4 +1,4 @@
-{ hm, ... }:
+{ ... }:
 
 {
   hm.accounts.contact.accounts = {

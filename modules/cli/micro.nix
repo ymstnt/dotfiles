@@ -1,4 +1,4 @@
-{ hm, ... }:
+{ ... }:
 
 {
   hm.programs.micro = {
