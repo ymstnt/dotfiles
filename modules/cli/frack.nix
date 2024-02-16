@@ -1,4 +1,4 @@
-{ pkgs, hm, ... }:
+{ pkgs, ... }:
 
 {
   hm.programs.thefuck = {

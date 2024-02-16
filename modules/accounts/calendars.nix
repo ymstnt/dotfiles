@@ -1,4 +1,4 @@
-{ lib, hm, ... }:
+{ ... }:
 
 {
   hm.accounts.calendar.accounts = {
