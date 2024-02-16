@@ -30,14 +30,12 @@
     # GTK apps
     celluloid
     czkawka
-    newsflash
     fragments
     #collision
     eyedropper
     pika-backup
     mission-center
     rnote
-    flowtime
   ];
 
   # TODO: Remove once Obsidian updates Electron
