@@ -17,6 +17,7 @@
     ./flameshot.nix
     ./gammastep.nix
     ./fcast.nix
+    ./vmware.nix
     ./matlab.nix
   ];
 }
