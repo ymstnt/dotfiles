@@ -19,7 +19,7 @@
           defaultBranch = "main";
         };
         core = {
-          editor = "micro";
+          editor = "hx";
         };
         github = {
           user = "YMSTNT";
