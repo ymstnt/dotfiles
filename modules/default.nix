@@ -19,5 +19,6 @@
     ./fcast.nix
     ./vmware.nix
     ./matlab.nix
+    ./wireshark.nix
   ];
 }
