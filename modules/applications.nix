@@ -27,6 +27,8 @@
     wineWowPackages.staging
     winetricks
     master.hifile
+    xournalpp
+    qalculate-gtk
     # GTK apps
     celluloid
     czkawka
