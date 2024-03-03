@@ -11,6 +11,7 @@
       layout = "hu";
       variant = "";
     };
+    wacom.enable = true;
     displayManager = {
       #defaultSession = "xfce";
       gdm.enable = true;
