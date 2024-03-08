@@ -5,12 +5,11 @@
 
   hm.home.packages = with pkgs; [
     # Electron apps
-    (discord.override { withOpenASAR = true; withVencord = true; })
+    discord
     revolt-desktop
     obsidian
     anytype
     lunatask
-    p3x-onenote
     drawio
     beeper
     telegram-desktop
