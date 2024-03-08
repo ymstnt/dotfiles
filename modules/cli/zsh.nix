@@ -38,6 +38,7 @@ with lib; with pkgs;
       mexec = "sudoc chmod a+x";
       cls = "clear";
       bm = "bashmount";
+      helix = "hx";
       zshreload = "source $HOME/.zshrc";
       dotcd = "cd $HOME/dotfiles";
       cleanup = "sudo nix-collect-garbage --delete-older-than";
