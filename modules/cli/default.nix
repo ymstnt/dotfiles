@@ -40,7 +40,6 @@
     skate
     pop
     glow
-    rnix-lsp
     nixpkgs-fmt
     nix-prefetch
   ];
