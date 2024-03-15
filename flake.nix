@@ -31,7 +31,6 @@
             ./overlays
             home-manager.nixosModule
             host
-            ./default.nix
           ];
           specialArgs = inputs;
         };
@@ -40,5 +39,6 @@
         andromeda = mkSystem ./hosts/andromeda;
         cassiopeia = mkSystem ./hosts/cassiopeia;
       };
+      nixosModules = import ./modules;
   };
 }

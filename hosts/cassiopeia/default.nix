@@ -1,10 +1,11 @@
-{ pkgs, ... }:
+{ self, ... }:
 
 {
   imports =
-    [
-      ./hardware-configuration.nix
-    ];
+    [ ./hardware-configuration.nix ] ++
+      self.nixosModules.allImportsExcept [
+        "games"
+      ];
 
   boot = {
     loader = {
