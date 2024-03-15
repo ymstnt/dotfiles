@@ -1,38 +1,8 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   boot = {
     supportedFilesystems = [ "ntfs" ];
-  };
-
-  hardware.opentabletdriver.enable = true;
-
-  networking = {
-    networkmanager.enable = true;
-
-    # wireless.enable = true;  # Enables wireless support via wpa_supplicant.g
-    firewall = {
-      enable = true;
-      allowedTCPPorts = [ 25565 8384 ];
-      allowedUDPPorts = [ 25565 8384 ];
-      allowedTCPPortRanges = [
-        { from = 27005; to = 27015; }
-      ];
-      allowedUDPPortRanges = [
-        { from = 27005; to = 27015; }
-      ];
-    };
-  };
-  systemd.services.NetworkManager-wait-online.enable = false;
-
-  services.openssh = {
-    enable = true;
-  };
-
-  # Enable Tailscale
-  services.tailscale = {
-    enable = true;
-    package = pkgs.tailscale;
   };
 
   time.timeZone = "Europe/Budapest";
@@ -75,19 +45,6 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
-
-  # Auto GC
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 30d";
-  };
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -99,10 +56,6 @@
     enable = true;
     driSupport = true;
     driSupport32Bit = true;
-  };
-
-  hm = {
-    home.stateVersion = config.system.stateVersion;
   };
 
   # This value determines the NixOS release from which the default
