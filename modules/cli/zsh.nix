@@ -29,6 +29,8 @@ with lib; with pkgs;
       cat = "${getExe bat} --style snip --style changes --style header";
       grep = "${getExe ripgrep} -i --color=auto";
       fu = "thefuck";
+      bm = "bashmount";
+      helix = "hx";
 
       ll = "ls -l";
       lf = "ls -la | grep";
@@ -37,9 +39,8 @@ with lib; with pkgs;
       rmf = "sudo rm -rf";
       mexec = "sudoc chmod a+x";
       cls = "clear";
-      bm = "bashmount";
-      helix = "hx";
       zshreload = "source $HOME/.zshrc";
+      
       dotcd = "cd $HOME/dotfiles";
       cleanup = "sudo nix-collect-garbage --delete-older-than";
     };
