@@ -2,6 +2,8 @@
 This is my dotfiles repository for a standard NixOS system with Flakes enabled.
 NixOS can be [downloaded here](https://nixos.org/download#nixos-iso)
 ## Getting started
+Before using the dotfiles, you need to make some changes to the current running configuration.
+
 - Add this into `configuration.nix` and rebuild using `sudo nixos-rebuild switch`
 ```nix
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -10,6 +12,8 @@ nix.settings.experimental-features = [ "nix-command" "flakes" ];
 - Clone the repo into `~/dotfiles`
 
 ## Configuring hosts
+Continue the steps depending whether you are reinstalling an existing host or setting up a new one.
+
 ### Existing host
 - Copy `/etc/nixos/hardware-configuration.nix` to the appropriate hosts subdirectory
 - Edit `configuration.nix` in same directory if needed (e.g. if you need to change boot options)
@@ -19,15 +23,14 @@ nix.settings.experimental-features = [ "nix-command" "flakes" ];
 - Make a new subdirectory in `hosts/` and name it however you like
 - Create a new file inside called `default.nix`.
   - Edit the file accordingly
-  - You can also just copy other hosts' `default.nix` and change the configuration **(recommended)**
+  - OR copy other hosts' `default.nix` and change the configuration **(recommended)**
 - Be sure to import `./hardware-configuartion` in `default.nix`
 ```nix
-{ ... }:
+{ self, ... }:
 {
-imports =
-  [
-    ./hardware-configuration.nix
-  ];
+  imports =
+    [ ./hardware-configuration.nix ] ++ 
+      self.nixosModules.allImportsExcept [];
 ...
 }
 ```
