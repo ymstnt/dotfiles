@@ -1,4 +1,5 @@
 { pkgs, ... }:
+
 {
   hm.services.gammastep = {
     enable = false; # Change this to true to enable Redshift

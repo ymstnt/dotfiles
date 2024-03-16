@@ -1,4 +1,4 @@
-{...}:
+{ ... }:
 
 (final: prev: {
 	discord = prev.discord.override {

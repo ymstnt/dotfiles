@@ -5,37 +5,37 @@
 
   hm.home.packages = with pkgs; [
     # Electron apps
-    discord
-    revolt-desktop
-    obsidian
     anytype
-    lunatask
-    drawio
     beeper
-    telegram-desktop
-    spacedrive
+    discord
+    drawio
     element-desktop
+    lunatask
+    obsidian
     onlyoffice-bin
-    vlc
-    evolution
+    revolt-desktop
+    telegram-desktop
     cryptomator
+    evolution
     gimp
+    master.hifile
     obs-studio
     openshot-qt
-    tenacity
-    wineWowPackages.staging
-    winetricks
-    master.hifile
-    xournalpp
     qalculate-gtk
+    spacedrive
+    tenacity
+    vlc
+    winetricks
+    wineWowPackages.staging
+    xournalpp
     # GTK apps
     celluloid
-    czkawka
-    fragments
     #collision
+    czkawka
     eyedropper
-    pika-backup
+    fragments
     mission-center
+    pika-backup
     rnote
   ];
 
