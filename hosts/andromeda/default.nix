@@ -3,7 +3,9 @@
 {
   imports =
     [ ./hardware-configuration.nix ] ++
-      self.nixosModules.allImportsExcept [];
+      self.nixosModules.allImportsExcept [
+        "frack" # Remove when thefuck is fixed
+      ];
 
   boot = {
     loader = {
