@@ -1,0 +1,7 @@
+{ ... }:
+
+{
+  imports = [
+    ./ymstnt-nixfiles.nix
+  ];
+}
