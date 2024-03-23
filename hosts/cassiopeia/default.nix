@@ -5,6 +5,7 @@
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
         "games"
+        "frack" # Remove when thefuck is fixed
       ];
 
   boot = {
