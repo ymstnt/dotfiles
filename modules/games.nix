@@ -7,6 +7,5 @@
   hm.home.packages = with pkgs; [
     prismlauncher
     piper
-    osu-lazer-bin
-  ];
+ ];
 }

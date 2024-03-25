@@ -5,7 +5,6 @@
     bat
     bitwarden-cli
     btop
-    bws
     codeberg-cli
     exiftool
     eza
@@ -20,7 +19,6 @@
     p7zip
     pfetch
     pop
-    rbw
     ripgrep
     skate
     smartmontools
