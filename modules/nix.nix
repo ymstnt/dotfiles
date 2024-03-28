@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
@@ -14,8 +14,4 @@
     dates = "weekly";
     options = "--delete-older-than 30d";
   };
-
-  hm.home.packages = with pkgs; [
-    cachix
-  ];
 }
