@@ -5,7 +5,7 @@
     programs.firefox = {
       enable = true;
       package = pkgs.firefox-devedition;
-      profiles.main = {
+      profiles.dev-edition-default = {
         isDefault = true;
         search = {
           default = "DuckDuckGo";
@@ -152,7 +152,6 @@
           "toolkit.telemetry.updatePing.enabled" = false;
         };
       };
-      # nativeMessagingHosts.packages = pkgs.gnome-browser-connector;
     };
     home.packages = with pkgs; [
       brave
