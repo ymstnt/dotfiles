@@ -33,6 +33,7 @@
         ];
 
         favorite-apps = [
+          "firefox-devedition.desktop"
           "brave-browser.desktop"
           "thunderbird.desktop"
           "discord.desktop"
