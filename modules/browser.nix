@@ -150,6 +150,14 @@
           "toolkit.telemetry.unified" = false;
           "toolkit.telemetry.unifiedIsOptIn" = false;
           "toolkit.telemetry.updatePing.enabled" = false;
+          # Browser UI customization
+          "browser.download.autohideButton" = false;
+          "browser.toolbars.bookmarks.visibility" = "always";
+          "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
+          "browser.newtabpage.activity-stream.topSitesRows" = 2;
+          "browser.sessionstore.resume_session_once" = true;
+          "general.autoScroll" = false;
+          "browser.translations.automaticallyPopup" = false;
         };
       };
     };
