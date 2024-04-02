@@ -4,6 +4,7 @@
   imports =
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
+        "cosmic"
         "frack" # Remove when thefuck is fixed
       ];
 

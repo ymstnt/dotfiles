@@ -1,6 +1,11 @@
 { pkgs, ... }:
 
 {
+  services.xserver = {
+    displayManager.gdm.enable = true;
+    desktopManager.gnome.enable = true;    
+  };
+
   # GNOME extension support
   services.gnome.gnome-browser-connector.enable = true;
 

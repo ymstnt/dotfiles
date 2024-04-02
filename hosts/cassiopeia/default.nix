@@ -5,6 +5,7 @@
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
         "games"
+        "cosmic"
         "frack" # Remove when thefuck is fixed
       ];
 
