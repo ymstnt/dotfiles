@@ -32,8 +32,8 @@ with lib; with pkgs;
       bm = "bashmount";
       helix = "hx";
 
-      ll = "ls -l";
-      lf = "ls -la | grep";
+      la = "ls -la";
+      lff = "ls -la | grep";
       ff = "find | grep";
       hisf = "history | grep";
       rmf = "sudo rm -rf";
@@ -42,6 +42,8 @@ with lib; with pkgs;
       zshreload = "source $HOME/.zshrc";
       
       dotcd = "cd $HOME/dotfiles";
+      update = "( cd $HOME/dotfiles && nix flake update --commit-lock-file )";
+      rebuild = "sudo nixos-rebuild switch --flake $HOME/dotfiles --impure";
       cleanup = "sudo nix-collect-garbage --delete-older-than";
     };
 
@@ -103,18 +105,7 @@ with lib; with pkgs;
       }
       zstyle :bracketed-paste-magic paste-init pasteinit
       zstyle :bracketed-paste-magic paste-finish pastefinish
-
-      update () {
-        if [[ "$1" == "-l" || "$1" == "--lockfile" || "$1" == "-a" || "$1" == "--all" ]];
-        then
-          ( cd $HOME/dotfiles && nix flake update --commit-lock-file)
-        fi
-        if [[ -z "$1" || "$1" == "-a" || "$1" == "--all" ]];
-        then
-          sudo nixos-rebuild switch --flake $HOME/dotfiles/.#''$(hostname) --impure
-        fi
-      }
-
+      
       try() { NIXPKGS_ALLOW_UNFREE=1 nix shell --impure nixpkgs/nixos-unstable#$1 ''${@:2} }
 
       github-ssh () {
