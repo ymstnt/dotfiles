@@ -28,7 +28,6 @@
       lua-language-server
       marksman
       rust-analyzer
-      #vala-language-server # Excluded temporarily till https://github.com/NixOS/nixpkgs/issues/301380 is fixed
       yaml-language-server
       ansible-language-server
     ]) ++ (with pkgs.nodePackages; [
