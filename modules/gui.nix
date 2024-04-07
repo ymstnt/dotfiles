@@ -16,6 +16,8 @@
     revolt-desktop
     telegram-desktop
     cryptomator
+    lifeograph
+    anki
     evolution
     gimp
     master.hifile
