@@ -4,6 +4,7 @@
   hm.programs.starship = {
     enable = true;
     settings = {
+      command_timeout = 1000;
       format = "[](\#2A3F6D)\$os\$username\[](bg:\#395694 fg:\#2A3F6D)\$directory\[](bg:\#466AB6 fg:\#395694)\$git_branch\$git_status\[ ](fg:\#466AB6)";
 
       username = {
