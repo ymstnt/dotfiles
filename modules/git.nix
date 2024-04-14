@@ -15,15 +15,11 @@
         lg = "!git log --pretty=format:\'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\' --abbrev-commit -30";
       };
       extraConfig = {
-        init = {
-          defaultBranch = "main";
-        };
-        core = {
-          editor = "hx";
-        };
-        github = {
-          user = "YMSTNT";
-        };
+        init.defaultBranch = "main";
+        core.editor = "hx";
+        push.autoSetupRemote = true;
+        pull.rebase = true;
+        github.user = "YMSTNT";
       };
     };
     gitui = {
