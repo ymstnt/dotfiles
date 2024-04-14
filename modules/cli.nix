@@ -30,5 +30,7 @@
     yt-dlp
     zfxtop
     zip
+    xsel
+    wl-clipboard
   ];
 }
