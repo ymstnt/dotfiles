@@ -4,11 +4,6 @@
   programs.adb.enable = true;
 
   hm = {
-    programs.vscode = {
-      enable = true;
-      package = pkgs.vscodium;
-    };
-
     home.packages = with pkgs; [
       gcc
       gnumake
