@@ -8,6 +8,7 @@
       profiles.dev-edition-default = {
         isDefault = true;
         search = {
+          force = true;
           default = "DuckDuckGo";
           privateDefault = "DuckDuckGo";
           engines = {
