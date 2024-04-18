@@ -1,12 +1,54 @@
-# NixOS
-- Run these commands before doing anything
-```sh
-sudo nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
-sudo nix-channel --add https://channels.nixos.org/nixos-unstable nixos-unstable
-sudo nix-channel --update
+# NixOS with Flakes
+This is my dotfiles repository for a standard NixOS system with Flakes enabled.
+NixOS can be [downloaded here](https://nixos.org/download#nixos-iso)
+## Getting started
+Before using the dotfiles, you need to make some changes to the current running configuration.
+
+- Add this into `configuration.nix` and rebuild using `sudo nixos-rebuild switch`
+```nix
+nix.settings.experimental-features = [ "nix-command" "flakes" ];
 ```
-- Extract the boot options from `configuration.nix` and put them into `boot.nix`
-- Copy the `.nix` files to `/etc/nixos`
-- Set the appropriate driver and configs for your device in `graphics.nix`
-- Run `sudo nixos-rebuild switch` to apply the config
-- Reboot your device
+- Install git temporarily using `nix-shell -p git`
+- Clone the repo into `~/dotfiles`
+
+## Configuring hosts
+Continue the steps depending whether you are reinstalling an existing host or setting up a new one.
+
+### Existing host
+- Copy `/etc/nixos/hardware-configuration.nix` to the appropriate hosts subdirectory
+- Edit `configuration.nix` in same directory if needed (e.g. if you need to change boot options)
+- Rebuild with `sudo nixos-rebuild switch --flake $HOME/dotfiles/.#hostname --impure` where `hostname` is the existing host's configuration name
+
+### New host
+- Make a new subdirectory in `hosts/` and name it however you like
+- Create a new file inside called `default.nix`.
+  - Edit the file accordingly
+  - OR copy other hosts' `default.nix` and change the configuration **(recommended)**
+- Be sure to import `./hardware-configuartion` in `default.nix`
+```nix
+{ self, ... }:
+{
+  imports =
+    [ ./hardware-configuration.nix ] ++ 
+      self.nixosModules.allImportsExcept [];
+...
+}
+```
+- Copy `/etc/nixos/hardware-configuration.nix` to the new host's subdirectory
+- Edit `flake.nix` and find this part:
+```nix
+...
+in
+{
+  ... = mkSystem ./hosts/...;
+  .... = mkSystem ./hosts/....;
+};
+```
+- Add the host there by adding the line `hostname = mkSystem ./hosts/hostname;` where `hostname` is the new host's previously chosen name
+- Rebuild with `sudo nixos-rebuild switch --flake $HOME/dotfiles/.#hostname --impure` where `hostname` is the new host's previously chosen name
+- Reboot the system
+- Be sure to commit your changes
+
+## Changing the default password
+- After rebooting, log into your user. The initial password is the same as the username.
+- After logging in, `passwd` to **change your user's password**
