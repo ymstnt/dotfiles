@@ -40,4 +40,7 @@
 
   # Tell Xorg to use the modesetting driver
   services.xserver.videoDrivers = [ "modesetting" ];
+
+  # Firefox scaling fix
+ hm.programs.firefox.profiles.dev-edition-default.settings."layout.css.devPixelsPerPx" = 1.15;  
 }
