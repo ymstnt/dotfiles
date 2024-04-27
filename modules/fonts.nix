@@ -8,8 +8,9 @@
     noto-fonts-emoji
     mplus-outline-fonts.githubRelease
     proggyfonts
+    jetbrains-mono
     corefonts
-    (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
+    (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" "NerdFontsSymbolsOnly" ]; })
   ];
   # Enable fontDir for Flatpak
   fonts.fontDir.enable = true;
