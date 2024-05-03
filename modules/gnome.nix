@@ -38,8 +38,7 @@
         ];
 
         favorite-apps = [
-          "firefox-devedition.desktop"
-          "brave-browser.desktop"
+          "vivaldi-stable.desktop"
           "thunderbird.desktop"
           "discord.desktop"
           "beeper.desktop"

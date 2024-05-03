@@ -163,7 +163,8 @@
       };
     };
     home.packages = with pkgs; [
-      brave
+      vivaldi
+      vivaldi-ffmpeg-codecs
     ];
   };
 }
