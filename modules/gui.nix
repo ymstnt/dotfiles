@@ -10,7 +10,7 @@
     discord
     drawio
     element-desktop
-    lunatask
+    lunatask.lunatask
     obsidian
     onlyoffice-bin
     revolt-desktop
