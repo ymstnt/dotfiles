@@ -17,7 +17,7 @@
     telegram-desktop
     cryptomator
     lifeograph
-    anki
+    #anki
     evolution
     gimp
     master.hifile
