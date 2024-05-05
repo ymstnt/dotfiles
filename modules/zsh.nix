@@ -44,6 +44,7 @@ with lib; with pkgs;
       dotcd = "cd $HOME/dotfiles";
       update = "( cd $HOME/dotfiles && nix flake update --commit-lock-file )";
       rebuild = "sudo nixos-rebuild switch --flake $HOME/dotfiles --impure";
+      rebuild-boot = "sudo nixos-rebuild boot --flake $HOME/dotfiles --impure";
       cleanup = "sudo nix-collect-garbage --delete-older-than";
     };
 
