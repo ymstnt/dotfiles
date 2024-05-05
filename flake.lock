@@ -77,22 +77,6 @@
         "type": "github"
       }
     },
-    "lunatask-update": {
-      "locked": {
-        "lastModified": 1714728159,
-        "narHash": "sha256-jO772+F5IdOGUByoACmm2xBwuQqK7Y72Jq8WlKRqWoI=",
-        "owner": "ymstnt",
-        "repo": "nixpkgs",
-        "rev": "a412a484c08c5216832451b2147aafb9c2c2b0b8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ymstnt",
-        "ref": "update-lunatask",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nix-matlab": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -187,7 +171,6 @@
       "inputs": {
         "agenix": "agenix",
         "home-manager": "home-manager",
-        "lunatask-update": "lunatask-update",
         "nix-matlab": "nix-matlab",
         "nixos-cosmic": "nixos-cosmic",
         "nixpkgs": "nixpkgs",
