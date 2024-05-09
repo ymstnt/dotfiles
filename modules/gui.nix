@@ -40,6 +40,8 @@
     mission-center
     pika-backup
     rnote
+    planify
+    hieroglyphic
   ];
 
   # TODO: Remove once Obsidian updates Electron
