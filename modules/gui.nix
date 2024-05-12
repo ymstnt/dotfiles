@@ -42,6 +42,7 @@
     rnote
     planify
     hieroglyphic
+    ptyxis
   ];
 
   # TODO: Remove once Obsidian updates Electron
