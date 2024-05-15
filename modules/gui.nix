@@ -18,7 +18,6 @@
     cryptomator
     lifeograph
     #anki
-    evolution
     gimp
     master.hifile
     obs-studio
