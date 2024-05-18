@@ -11,7 +11,7 @@
   time.hardwareClockInLocalTime = true;
 
   # Configure console keymap
-  console.keyMap = "hu101";
+  console.useXkbConfig = true;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
