@@ -24,6 +24,7 @@
       dbeaver
       bun
       gum
+      zola
     ];
   };
 }
