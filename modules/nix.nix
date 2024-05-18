@@ -3,11 +3,17 @@
 {
   nixpkgs.config.allowUnfree = true;
 
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-    "repl-flake"
-  ];
+  nix.settings = {
+    experimental-features = [
+      "nix-command"
+      "flakes"
+      "repl-flake"
+    ];
+    max-jobs = 1;
+    trusted-users = [ "ymstnt" ];
+    substituters = [ "https://cosmic.cachix.org/" ];
+    trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
+  };
 
   nix.gc = {
     automatic = true;
