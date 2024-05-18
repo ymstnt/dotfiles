@@ -6,6 +6,7 @@
       self.nixosModules.allImportsExcept [
         "cosmic"
         "frack" # Remove when thefuck is fixed
+        "vmware" # Remove when vmware is fixed
       ];
 
   boot = {
