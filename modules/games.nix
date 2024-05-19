@@ -6,6 +6,7 @@
 
   hm.home.packages = with pkgs; [
     prismlauncher
+    master.modrinth-app
     piper
  ];
 }
