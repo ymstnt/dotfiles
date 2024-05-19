@@ -43,8 +43,10 @@ with lib; with pkgs;
       
       dotcd = "cd $HOME/dotfiles";
       update = "( cd $HOME/dotfiles && nix flake update --commit-lock-file )";
-      rebuild = "sudo nixos-rebuild switch --flake $HOME/dotfiles --impure";
-      rebuild-boot = "sudo nixos-rebuild boot --flake $HOME/dotfiles --impure";
+      rebuild = "nh os switch ~/dotfiles -- --impure";
+      rebuild-boot = "nh os boot ~/dotfiles -- --impure";
+      nrebuild = "sudo nixos-rebuild switch --flake $HOME/dotfiles --impure";
+      nrebuild-boot = "sudo nixos-rebuild boot --flake $HOME/dotfiles --impure";
       cleanup = "sudo nix-collect-garbage --delete-older-than";
     };
 
