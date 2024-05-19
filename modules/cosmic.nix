@@ -1,4 +1,4 @@
-{ lib, nixos-cosmic, ... }:
+{ lib, pkgs, nixos-cosmic, ... }:
 
 {
   imports = [ nixos-cosmic.nixosModules.default ];
@@ -12,5 +12,8 @@
       desktopManager.cosmic.enable = true;
       displayManager.cosmic-greeter.enable = true;
     };
+    fonts.packages = with pkgs; [
+      cantarell-fonts
+    ];
   };
 }
