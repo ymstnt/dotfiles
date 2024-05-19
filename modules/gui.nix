@@ -24,7 +24,6 @@
     openshot-qt
     qalculate-gtk
     spacedrive
-    super-productivity
     tenacity
     vlc
     winetricks
