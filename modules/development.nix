@@ -21,7 +21,7 @@
       dotnet-sdk
       flutter
       sqlite
-      dbeaver
+      dbeaver-bin
       bun
       gum
       zola
