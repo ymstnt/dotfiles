@@ -17,6 +17,7 @@
         device = "nodev";
         timeoutStyle = "hidden";
         configurationLimit = 10;
+        splashImage = null;
       };
     };
 
