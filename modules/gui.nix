@@ -31,7 +31,7 @@
     xournalpp
     # GTK apps
     celluloid
-    #collision
+    collision
     czkawka
     eyedropper
     fragments
@@ -41,10 +41,5 @@
     planify
     hieroglyphic
     ptyxis
-  ];
-
-  # TODO: Remove once Obsidian updates Electron
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-25.9.0"
   ];
 }
