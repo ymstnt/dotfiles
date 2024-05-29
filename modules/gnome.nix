@@ -96,6 +96,9 @@
       adwaita-qt
       adw-gtk3
       gnome-extension-manager
+    ]) ++ (with pkgs.gnome; [
+      gnome-tweaks
+      dconf-editor
     ]) ++ (with pkgs.gnomeExtensions; [
       just-perfection
       caffeine
@@ -103,9 +106,7 @@
       tray-icons-reloaded
       app-hider
       quick-touchpad-toggle
-    ]) ++ (with pkgs.gnome; [
-      gnome-tweaks
-      dconf-editor
+      alttab-scroll-workaround
     ]);
   };
 }
