@@ -42,4 +42,8 @@
     hieroglyphic
     ptyxis
   ];
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "openjdk-19-ga"
+  ];
 }
