@@ -5,25 +5,26 @@
 
   hm.home.packages = with pkgs; [
     # Electron apps
+    anki
     anytype
     beeper
+    cryptomator
     discord
     drawio
     element-desktop
-    lunatask
-    obsidian
-    onlyoffice-bin
-    revolt-desktop
-    telegram-desktop
-    cryptomator
-    lifeograph
-    anki
     gimp
+    lifeograph
+    lunatask
     master.hifile
+    obsidian
     obs-studio
+    onlyoffice-bin
     openshot-qt
     qalculate-gtk
+    revolt-desktop
+    rquickshare
     spacedrive
+    telegram-desktop
     tenacity
     vlc
     winetricks
@@ -35,12 +36,12 @@
     czkawka
     eyedropper
     fragments
+    hieroglyphic
     mission-center
     pika-backup
-    rnote
     planify
-    hieroglyphic
     ptyxis
+    rnote
   ];
 
   nixpkgs.config.permittedInsecurePackages = [

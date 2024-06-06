@@ -27,10 +27,10 @@
     unrar
     unzip
     wget
+    wl-clipboard
+    xsel
     yt-dlp
     zfxtop
     zip
-    xsel
-    wl-clipboard
   ];
 }

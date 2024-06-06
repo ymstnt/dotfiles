@@ -11,16 +11,16 @@
 
   # GNOME debloat
   environment.gnome.excludePackages = (with pkgs; [
+    epiphany
     gnome-connections
     gnome-tour
     snapshot
-    epiphany
   ]) ++ (with pkgs.gnome; [
-    totem
-    yelp
     geary
     gnome-maps
     gnome-music
+    totem
+    yelp
   ]);
 
   hm = {
@@ -29,12 +29,12 @@
         disable-user-extensions = false;
 
         enabled-extensions = [
-          "just-perfection-desktop@just-perfection"
-          "caffeine@patapon.info"
-          "Vitals@CoreCoding.com"
           "app-hider@lynith.dev"
+          "caffeine@patapon.info"
+          "just-perfection-desktop@just-perfection"
           "quick-touchpad-toggle@kramo.hu"
           "trayIconsReloaded@selfmade.pl"
+          "Vitals@CoreCoding.com"
         ];
 
         favorite-apps = [
@@ -97,16 +97,16 @@
       adw-gtk3
       gnome-extension-manager
     ]) ++ (with pkgs.gnome; [
-      gnome-tweaks
       dconf-editor
+      gnome-tweaks
     ]) ++ (with pkgs.gnomeExtensions; [
-      just-perfection
-      caffeine
-      vitals
-      tray-icons-reloaded
-      app-hider
-      quick-touchpad-toggle
       alttab-scroll-workaround
+      app-hider
+      caffeine
+just-perfection
+      quick-touchpad-toggle
+      tray-icons-reloaded
+      vitals
     ]);
   };
 }
