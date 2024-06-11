@@ -21,9 +21,7 @@
     onlyoffice-bin
     openshot-qt
     qalculate-gtk
-    revolt-desktop
     rquickshare
-    spacedrive
     telegram-desktop
     tenacity
     vlc
