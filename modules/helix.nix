@@ -7,6 +7,12 @@
       theme = "dark_plus";
       editor = {
         lsp.display-messages = true;
+        bufferline = "always";
+        auto-format = true;
+        cursor-shape = {
+          insert = "bar";
+          select = "underline";
+        };
       };
       keys.normal = {
         space.space = "file_picker";
