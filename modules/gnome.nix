@@ -41,6 +41,7 @@
           "vivaldi-stable.desktop"
           "thunderbird.desktop"
           "discord.desktop"
+          "element-desktop.desktop"
           "beeper.desktop"
           "org.gnome.Console.desktop"
           "HiFile.desktop"
