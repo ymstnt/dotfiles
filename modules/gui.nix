@@ -5,7 +5,7 @@
 
   hm.home.packages = with pkgs; [
     # Electron apps
-    anki
+    anki-bin
     anytype
     beeper
     cryptomator
