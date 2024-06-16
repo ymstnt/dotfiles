@@ -20,24 +20,24 @@
       };
     };
     extraPackages = (with pkgs; [
-      omnisharp-roslyn
-      netcoredbg
+      ansible-language-server
+      bash-language-server
       cmake-language-server
-      nil
-      nixpkgs-fmt
-      gopls
-      efm-langserver
-      vscode-langservers-extracted
       dockerfile-language-server-nodejs
+      efm-langserver
+      gopls
       kotlin-language-server
-      texlab
       lua-language-server
       marksman
+      netcoredbg
+      nil
+      nixpkgs-fmt
       rust-analyzer
+      texlab
+      vscode-langservers-extracted
       yaml-language-server
-      ansible-language-server
+      omnisharp-roslyn
     ]) ++ (with pkgs.nodePackages; [
-      bash-language-server
       typescript-language-server
     ]) ++ (with pkgs.python311Packages; [
       python-lsp-server
