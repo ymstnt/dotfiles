@@ -8,7 +8,5 @@ let
   ];
 in
 {
-  "calcardav-url.age".publicKeys = keys;
-  "calcardav-username.age".publicKeys = keys;
-  "calcardav-password.age".publicKeys = keys;
+  
 }
