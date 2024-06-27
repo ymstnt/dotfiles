@@ -15,5 +15,15 @@
     fonts.packages = with pkgs; [
       cantarell-fonts
     ];
+    hm = {
+      dconf.settings = {
+        "org/gnome/desktop/wm/preferences" = {
+          button-layout = lib.mkForce "appmenu:minimize,maximize,close";
+        };
+      };
+      home.packages = (with pkgs; [
+        gnome-console
+      ]);
+    };
   };
 }

@@ -52,6 +52,9 @@
         color-scheme = "prefer-dark";
         gtk-theme = "adw-gtk3-dark";
       };
+      "org/gnome/desktop/wm/preferences" = {
+        button-layout = "appmenu:close";
+      };
     };
 
     gtk = {
@@ -104,7 +107,7 @@
       alttab-scroll-workaround
       app-hider
       caffeine
-just-perfection
+      just-perfection
       quick-touchpad-toggle
       tray-icons-reloaded
       vitals
