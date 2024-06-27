@@ -51,10 +51,10 @@
   services.pcscd.enable = true;
 
   # GPU
-  # Make sure opengl is enabled
-  hardware.opengl = {
+  # Make sure hardware acceleration is enabled
+  hardware.graphics = {
     enable = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
   };
 
   # This value determines the NixOS release from which the default
