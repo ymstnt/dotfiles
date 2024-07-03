@@ -10,6 +10,10 @@
     proggyfonts
     jetbrains-mono
     corefonts
+    cantarell-fonts
+    dejavu_fonts
+    source-code-pro
+    source-sans
     (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" "NerdFontsSymbolsOnly" ]; })
   ];
   # Enable fontDir for Flatpak
