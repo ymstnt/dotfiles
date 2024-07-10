@@ -15,12 +15,12 @@
     gnome-connections
     gnome-tour
     snapshot
-  ]) ++ (with pkgs.gnome; [
     geary
-    gnome-maps
-    gnome-music
     totem
     yelp
+  ]) ++ (with pkgs.gnome; [
+    gnome-maps
+    gnome-music
   ]);
 
   hm = {
@@ -100,7 +100,6 @@
       adwaita-qt
       adw-gtk3
       gnome-extension-manager
-    ]) ++ (with pkgs.gnome; [
       dconf-editor
       gnome-tweaks
     ]) ++ (with pkgs.gnomeExtensions; [
