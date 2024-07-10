@@ -19,7 +19,7 @@
     obsidian
     obs-studio
     onlyoffice-bin
-    openshot-qt
+    #openshot-qt
     qalculate-gtk
     rquickshare
     telegram-desktop
@@ -44,5 +44,6 @@
 
   nixpkgs.config.permittedInsecurePackages = [
     "openjdk-19-ga"
+    "temurin-bin-19.0.2"
   ];
 }
