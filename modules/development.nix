@@ -24,6 +24,7 @@
       dbeaver-bin
       bun
       gum
+      zed-editor
       zola
     ];
   };
