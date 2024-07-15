@@ -25,6 +25,10 @@
       alg
       algxpar
       algorithm2e
+      preview
+      standalone
+      varwidth
+      scontents
     ]))
     #texlive.combined.scheme-full
   ];
