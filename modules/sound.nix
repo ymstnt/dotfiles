@@ -9,5 +9,23 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    wireplumber.extraConfig = {
+      "disable-monitor-sounds" = {
+        "monitor.alsa.rules" = [
+          {
+            matches = [
+              {
+                device.profile.name = "hdmi-stereo";
+              }
+            ];
+            actions = {
+              update-props = {
+                device.disabled = true;
+              };
+            };
+          }
+        ];
+      };
+    };
   };
 }
