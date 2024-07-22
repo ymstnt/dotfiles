@@ -38,7 +38,7 @@
         ];
 
         favorite-apps = [
-          "vivaldi-stable.desktop"
+          "firefox-devedition.desktop"
           "thunderbird.desktop"
           "discord.desktop"
           "element-desktop.desktop"
