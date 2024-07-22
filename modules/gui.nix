@@ -20,6 +20,7 @@
     obs-studio
     onlyoffice-bin
     openshot-qt
+    protonvpn-gui
     qalculate-gtk
     rquickshare
     telegram-desktop
