@@ -4,7 +4,7 @@
   programs.adb.enable = true;
 
   hm = {
-    home.packages = with pkgs; [
+    home.packages = (with pkgs; [
       gcc
       gnumake
       cmake
@@ -13,7 +13,6 @@
       rustc
       cargo
       python3
-      python311Packages.pip
       ffmpeg
       nodejs
       openjdk19
@@ -26,6 +25,9 @@
       gum
       zed-editor
       zola
-    ];
+    ]) ++ (with pkgs.python311Packages; [
+      pikepdf
+      pip
+    ]);
   };
 }
