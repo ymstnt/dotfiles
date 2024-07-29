@@ -42,6 +42,9 @@
     ];
   };
 
+  environment.variables = {
+    WEBKIT_DISABLE_DMABUF_RENDERER = 1; # Needed by modrinth-app
+  };
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
