@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   # Enable sound with pipewire.
   hardware.enableAllFirmware = true;
@@ -28,4 +28,7 @@
       };
     };
   };
+  hm.home.packages = with pkgs; [
+    pavucontrol
+  ];
 }
