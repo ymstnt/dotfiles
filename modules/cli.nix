@@ -24,6 +24,8 @@
     smartmontools
     sof-firmware
     sshfs
+    superfile
+    termscp
     unrar
     unzip
     wget
