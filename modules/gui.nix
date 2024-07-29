@@ -3,23 +3,16 @@
 {
   programs.gnupg.agent.enable = true;
 
-  hm.home.packages = with pkgs; [
-    # Electron apps
+  hm.home.packages = (with pkgs; [
     anki-bin
-    anytype
-    beeper
     cryptomator
-    discord
-    drawio
-    element-desktop
     gimp
     lifeograph
-    lunatask
     master.hifile
-    obsidian
     obs-studio
     onlyoffice-bin
     openshot-qt
+    plex-media-player
     protonvpn-gui
     qalculate-gtk
     rquickshare
@@ -29,6 +22,16 @@
     winetricks
     wineWowPackages.staging
     xournalpp
+  ]) ++ (with pkgs; [
+    # Electron apps
+    anytype
+    beeper
+    discord
+    drawio
+    element-desktop
+    lunatask
+    obsidian
+  ]) ++ (with pkgs; [
     # GTK apps
     celluloid
     collision
@@ -41,7 +44,7 @@
     planify
     ptyxis
     rnote
-  ];
+  ]);
 
   nixpkgs.config.permittedInsecurePackages = [
     "openjdk-19-ga"
