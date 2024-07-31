@@ -4,8 +4,9 @@
   services.ratbagd.enable = true;
   
   hm.home.packages = with pkgs; [
-    prismlauncher
     modrinth-app
+    osu-lazer-bin
     piper
- ];
+    prismlauncher
+  ];
 }
