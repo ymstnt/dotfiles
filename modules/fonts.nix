@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   fonts.packages = with pkgs; [
+    inter
     noto-fonts
     noto-fonts-cjk-serif
     noto-fonts-cjk-sans
