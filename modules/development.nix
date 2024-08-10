@@ -15,7 +15,6 @@
       python3
       ffmpeg
       nodejs
-      openjdk19
       gradle
       dotnet-sdk
       flutter

@@ -47,7 +47,6 @@
   ]);
 
   nixpkgs.config.permittedInsecurePackages = [
-    "openjdk-19-ga"
     "temurin-bin-19.0.2"
   ];
 }
