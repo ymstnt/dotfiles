@@ -5,23 +5,25 @@
 
   hm = {
     home.packages = (with pkgs; [
+      appimage-run
+      bun
+      cargo
+      cmake
+      dbeaver-bin
+      dotnet-sdk
+      ffmpeg
+      flutter
       gcc
       gnumake
-      cmake
-      ninja
-      appimage-run
-      rustc
-      cargo
-      python3
-      ffmpeg
-      nodejs
       gradle
-      dotnet-sdk
-      flutter
-      sqlite
-      dbeaver-bin
-      bun
       gum
+      minicom
+      ninja
+      nodejs
+      python3
+      rustc
+      sqlite
+      thonny
       zed-editor
       zola
     ]) ++ (with pkgs.python311Packages; [
