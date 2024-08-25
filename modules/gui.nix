@@ -7,6 +7,7 @@
     anki-bin
     cryptomator
     gimp
+    inkscape-with-extensions
     lifeograph
     master.hifile
     obs-studio
