@@ -13,6 +13,17 @@
           insert = "bar";
           select = "underline";
         };
+        whitespace = {
+          render = "all";
+          characters = {
+            space = "·";
+            nbsp = "⍽";
+            nnbsp = "␣";
+            tab = "→";
+            newline = "󰌑";
+            tabpad = "·";
+          };
+        };
       };
       keys.normal = {
         space.space = "file_picker";
