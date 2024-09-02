@@ -18,9 +18,6 @@
     geary
     totem
     yelp
-  ]) ++ (with pkgs.gnome; [
-    gnome-maps
-    gnome-music
   ]);
 
   hm = {
