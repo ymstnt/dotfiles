@@ -26,5 +26,6 @@
     nix-output-monitor
     nvd
     nix-inspect
+    nix-weather
   ];
 }
