@@ -30,6 +30,15 @@
         space.q = ":q";
       };
     };
+    languages.language = [
+      {
+        name = "c-sharp";
+        indent = {
+          tab-width = 2;
+          unit = "  ";
+        };
+      }
+    ];
     extraPackages = (with pkgs; [
       ansible-language-server
       bash-language-server
