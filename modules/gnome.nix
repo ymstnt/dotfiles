@@ -12,7 +12,10 @@
   # GNOME debloat
   environment.gnome.excludePackages = (with pkgs; [
     epiphany
+    gnome-clocks
     gnome-connections
+    gnome-maps
+    gnome-music
     gnome-tour
     snapshot
     geary
