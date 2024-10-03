@@ -32,6 +32,7 @@
     element-desktop
     lunatask
     obsidian
+    vesktop
   ]) ++ (with pkgs; [
     # GTK apps
     celluloid
