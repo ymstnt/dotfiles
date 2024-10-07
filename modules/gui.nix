@@ -17,6 +17,7 @@
     protonvpn-gui
     qalculate-gtk
     rquickshare
+    rustdesk-flutter
     telegram-desktop
     tenacity
     vlc
