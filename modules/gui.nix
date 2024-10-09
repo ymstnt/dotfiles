@@ -31,7 +31,6 @@
     discord
     drawio
     element-desktop
-    lunatask
     obsidian
     vesktop
   ]) ++ (with pkgs; [
