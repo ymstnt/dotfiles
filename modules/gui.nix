@@ -7,6 +7,7 @@
     anki-bin
     cryptomator
     gimp
+    gparted
     inkscape-with-extensions
     lifeograph
     master.hifile
