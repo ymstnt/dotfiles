@@ -5,6 +5,7 @@
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
         "games"
+        "steam"
         "vmware" # Remove when https://github.com/NixOS/nixpkgs/issues/310121 is fixed
       ];
 
