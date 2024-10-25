@@ -1,4 +1,4 @@
-{ nixos-cosmic, ... }:
+{ nixos-cosmic, pkgs, ... }:
 
 {
   imports = [ nixos-cosmic.nixosModules.default ];
@@ -7,4 +7,8 @@
     desktopManager.cosmic.enable = true;
     displayManager.cosmic-greeter.enable = true;
   };
+
+  hm.home.packages = (with pkgs; [
+    forecast
+  ]);
 }
