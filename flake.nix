@@ -40,7 +40,7 @@
         mkSystem = host: nixpkgs.lib.nixosSystem {
           modules = [
             ./overlays
-            lix-module.nixosModules.default
+            lix-module.nixosModules.lixFromNixpkgs
             home-manager.nixosModule
             host
           ];
