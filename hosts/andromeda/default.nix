@@ -5,7 +5,6 @@
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
         "cosmic"
-        "vmware" # Remove when vmware is fixed
       ];
 
   boot = {
