@@ -6,6 +6,7 @@
     bitwarden-cli
     btop
     codeberg-cli
+    exercism
     exiftool
     eza
     fastfetch
