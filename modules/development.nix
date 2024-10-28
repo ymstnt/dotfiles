@@ -15,6 +15,8 @@
       flutter
       gcc
       gnumake
+      go
+      gox
       gradle
       gum
       minicom
