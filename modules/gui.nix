@@ -41,11 +41,8 @@
     czkawka
     eyedropper
     fragments
-    hieroglyphic
     mission-center
     pika-backup
-    planify
-    ptyxis
     rnote
   ]);
 
