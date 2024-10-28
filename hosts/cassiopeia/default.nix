@@ -6,6 +6,7 @@
       self.nixosModules.allImportsExcept [
         "games"
         "steam"
+        "winapps"
       ];
 
   boot = {
