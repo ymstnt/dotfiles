@@ -33,6 +33,7 @@
     drawio
     element-desktop
     obsidian
+    teams-for-linux
     vesktop
   ]) ++ (with pkgs; [
     # GTK apps
