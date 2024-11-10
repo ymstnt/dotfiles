@@ -31,10 +31,6 @@
       url = "github:winapps-org/winapps/feat-nix-packaging";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # TODO: remove after nvidia perfomance improved
-    nixpkgs-nvidia = {
-      url = "github:NixOS/nixpkgs/c374d94f1536013ca8e92341b540eba4c22f9c62";
-    };
   };
 
   outputs = { self, nixpkgs, lix-module, home-manager, winapps, ... } @inputs: {
