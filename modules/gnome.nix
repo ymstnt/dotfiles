@@ -55,6 +55,12 @@
       "org/gnome/desktop/wm/preferences" = {
         button-layout = "appmenu:close";
       };
+      "org/gnome/shell/keybindings" = {
+        show-screenshot-ui = [
+          "Print"
+          "<Super><Shift>S"
+        ];
+      };
     };
 
     gtk = {
