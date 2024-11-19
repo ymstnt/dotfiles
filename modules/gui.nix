@@ -42,7 +42,7 @@
     czkawka
     eyedropper
     fragments
-    mission-center
+    stable.mission-center
     pika-backup
     rnote
   ]);
