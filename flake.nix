@@ -6,7 +6,7 @@
     nixpkgs-master.url = "github:NixOS/nixpkgs/master";
     nixpkgs-develop.url = "github:ymstnt/nixpkgs/master";
     lix-module = {
-      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.0.tar.gz";
+      url = "https://git.lix.systems/lix-project/nixos-module/archive/stable.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {
