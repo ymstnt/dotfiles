@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
  services.xserver = {
@@ -7,6 +7,9 @@
       layout = "hu";
       variant = "";
     };
+    excludePackages = with pkgs; [
+      xterm
+    ];
     wacom.enable = true;
   };
 }
