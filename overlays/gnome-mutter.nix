@@ -1,14 +1,11 @@
 { pkgs, ... }:
 
 (final: prev: {
-  gnome = prev.gnome.overrideScope' (gnomeFinal: gnomePrev: {
-    mutter = gnomePrev.mutter.overrideAttrs (old: {
-      src = pkgs.fetchgit {
-        url = "https://gitlab.gnome.org/vanvugt/mutter.git";
+    mutter = prev.mutter.overrideAttrs (old: {
+      pathes = old.patches ++ [(pkgs.fetchpatch2 {
+        url = "https://gitlab.gnome.org/GNOME/mutter/-/merge_requests/1441.diff";
         # GNOME 46: triple-buffering-v4-46
-        rev = "663f19bc02c1b4e3d1a67b4ad72d644f9b9d6970";
-        sha256 = "sha256-I1s4yz5JEWJY65g+dgprchwZuPGP9djgYXrMMxDQGrs=";
-      };
+        hash = "sha256-en/4hui0zW8m8ZM2buZhr1FVMW3b9H1ZWKAB2018wmI=";
+      })];
     });
-  });
 })
