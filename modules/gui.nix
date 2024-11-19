@@ -5,7 +5,7 @@
 
   hm.home.packages = (with pkgs; [
     anki-bin
-    cryptomator
+    stable.cryptomator
     gimp
     gparted
     inkscape-with-extensions
