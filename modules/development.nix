@@ -10,7 +10,7 @@
       cargo
       cmake
       dbeaver-bin
-      dotnet-sdk
+      dotnet-sdk_8
       ffmpeg
       flutter
       gcc
