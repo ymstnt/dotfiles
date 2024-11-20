@@ -8,6 +8,8 @@
     displayManager.cosmic-greeter.enable = true;
   };
 
+  programs.seahorse.enable = true;
+
   hm.home.packages = (with pkgs; [
     forecast
   ]);
