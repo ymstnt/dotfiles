@@ -11,7 +11,9 @@
 
   # GNOME debloat
   environment.gnome.excludePackages = (with pkgs; [
+    baobab
     epiphany
+    evince
     gnome-clocks
     gnome-connections
     gnome-maps
@@ -105,9 +107,10 @@
     home.packages = (with pkgs; [
       adwaita-qt
       adw-gtk3
-      gnome-extension-manager
       dconf-editor
+      gnome-extension-manager
       gnome-tweaks
+      papers
     ]) ++ (with pkgs.gnomeExtensions; [
       alttab-scroll-workaround
       app-hider
