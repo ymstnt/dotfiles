@@ -12,5 +12,13 @@
 
   hm.home.packages = (with pkgs; [
     forecast
+  ]) ++ (with pkgs; [
+    # GNOME apps
+    file-roller
+    gnome-font-viewer
+    loupe
+    nautilus
+    papers
+    simple-scan
   ]);
 }
