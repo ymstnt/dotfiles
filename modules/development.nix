@@ -31,6 +31,8 @@
     ]) ++ (with pkgs.python311Packages; [
       pikepdf
       pip
+    ]) ++ (with pkgs.jetbrains; [
+      rider
     ]);
   };
 }
