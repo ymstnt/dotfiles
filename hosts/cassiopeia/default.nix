@@ -7,6 +7,7 @@
         "games"
         "steam"
         "winapps"
+        "gnome"
       ];
 
   boot = {
