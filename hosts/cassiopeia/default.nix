@@ -8,6 +8,7 @@
         "steam"
         "winapps"
         "gnome"
+        "pantheon"
       ];
 
   boot = {
