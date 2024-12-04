@@ -5,6 +5,7 @@
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
         "cosmic"
+        "gnome"
       ];
 
   boot = {
