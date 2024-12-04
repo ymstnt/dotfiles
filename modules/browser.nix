@@ -171,5 +171,33 @@
       vivaldi
       vivaldi-ffmpeg-codecs
     ];
+    xdg.desktopEntries.firefox-devedition = {
+      name = "Firefox Developer Edition";
+      genericName = "Web Browser";
+      exec = "firefox-devedition --name firefox-devedition %U";
+      terminal = false;
+      icon = "firefox-devedition";
+      categories = [ "Network" "WebBrowser" ];
+      actions = {
+        "new-private-window" = {
+          exec = "firefox-devedition --private-window %U";
+          name = "New Private Window";
+        };
+        "new-window" = {
+          exec = "firefox-devedition --new-window %U";
+          name = "New Window";
+        };
+        "profile-manager-window" = {
+          exec = "firefox-devedition --ProfileManager";
+          name = "Profile Manager";
+        };
+      };
+      mimeType = [ "text/html" "text/xml" "application/xhtml+xml" "application/vnd.mozilla.xul+xml" "x-scheme-handler/http" "x-scheme-handler/https" ];
+      startupNotify = true;
+      type = "Application";
+      settings = {
+        StartupWMClass = "Navigator";
+      };
+    };
   };
 }
