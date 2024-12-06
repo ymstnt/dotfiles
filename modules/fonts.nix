@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  fonts.packages = with pkgs; [
+  fonts.packages = (with pkgs; [
     cantarell-fonts
     corefonts
     dejavu_fonts
@@ -15,8 +15,11 @@
     source-code-pro
     source-sans
     twemoji-color-font
-    (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" "NerdFontsSymbolsOnly" ]; })
-  ];
+  ]) ++ (with pkgs.nerd-fonts; [
+    fira-code
+    jetbrains-mono
+    symbols-only
+  ]);
   # Enable fontDir for Flatpak
   fonts.fontDir.enable = true;
 }
