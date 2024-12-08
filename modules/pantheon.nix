@@ -36,6 +36,7 @@
       pantheon-tweaks
       dconf-editor
       papers
+      simple-scan
     ]);
   };
 }
