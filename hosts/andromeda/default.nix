@@ -5,7 +5,7 @@
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
         "cosmic"
-        "gnome"
+        "pantheon"
       ];
 
   boot = {
