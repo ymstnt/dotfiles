@@ -5,8 +5,8 @@
     programs = {
       git = {
         enable = true;
-        userName = "YMSTNT";
-        userEmail = "21342713+YMSTNT@users.noreply.github.com";
+        userName = "ymstnt";
+        userEmail = "21342713+ymstnt@users.noreply.github.com";
         aliases = {
           s = "status -uno";
           d = "diff";
