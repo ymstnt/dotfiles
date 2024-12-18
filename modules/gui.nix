@@ -10,6 +10,7 @@
     gparted
     inkscape-with-extensions
     lifeograph
+    mpv
     master.hifile
     obs-studio
     onlyoffice-bin
