@@ -15,6 +15,7 @@
     glow
     gnupg
     hck
+    mpv
     nixpkgs-fmt
     nix-prefetch
     p7zip
