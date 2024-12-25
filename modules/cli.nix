@@ -19,6 +19,7 @@
     nix-prefetch
     p7zip
     pfetch
+    pom
     pop
     ripgrep
     skate
