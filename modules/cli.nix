@@ -22,6 +22,7 @@
     pom
     pop
     ripgrep
+    scrcpy
     skate
     smartmontools
     sof-firmware
