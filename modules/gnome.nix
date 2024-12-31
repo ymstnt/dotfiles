@@ -109,7 +109,7 @@
       adwaita-qt
       adw-gtk3
       dconf-editor
-      gnome-extension-manager
+      #gnome-extension-manager
       gnome-tweaks
       papers
     ]) ++ (with pkgs.gnomeExtensions; [
