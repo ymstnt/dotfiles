@@ -33,6 +33,7 @@
     discord
     drawio
     element-desktop
+    notesnook
     obsidian
     teams-for-linux
     vesktop
