@@ -31,6 +31,7 @@
     anytype
     beeper
     discord
+    dorion
     drawio
     element-desktop
     notesnook
