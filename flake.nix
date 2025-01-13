@@ -2,8 +2,6 @@
   description = "ymstnt's NixOS configuration";
 
   inputs = {
-    # Revert once https://github.com/NixOS/nixpkgs/pull/312449 is merged
-    #nixpkgs.url = "github:ymstnt/nixpkgs/pantheon-8-on-unstable";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.05";
     nixpkgs-master.url = "github:NixOS/nixpkgs/master";
