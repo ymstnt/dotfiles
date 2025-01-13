@@ -164,6 +164,8 @@
           # Vertical tabs
           "siderbar.revamp" = true;
           "sidebar.verticalTabs" = true;
+          # Tab grouping
+          "browser.tabs.groups.enabled" = true;
         };
       };
     };
