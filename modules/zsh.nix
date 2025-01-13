@@ -25,7 +25,7 @@ with lib; with pkgs;
 
     completionInit = "autoload -U compinit && compinit -C"; # add caching to save ~50ms load time
     shellAliases = {
-      ls = "${getExe eza} --color=always --group-directories-first --icons";
+      ls = "${getExe eza} --color=always --icons=auto --group-directories-first";
       cat = "${getExe bat} --style snip --style changes --style header";
       grep = "${getExe ripgrep} -i --color=auto";
       fu = "thefuck";
@@ -55,9 +55,10 @@ with lib; with pkgs;
       ZSH_AUTOSUGGEST_MANUAL_REBIND = true; # faster prompt
     };
 
-    profileExtra = ''
-      export QT_QPA_PLATFORMTHEME=gtk2 # for Qt 5 and 6 apps
-    '';
+    # Breaks PacketTracer theme
+    # profileExtra = ''
+    #   export QT_QPA_PLATFORMTHEME=gtk2 # for Qt 5 and 6 apps
+    # '';
 
     initExtra = ''
       bindkey "^[[H" beginning-of-line

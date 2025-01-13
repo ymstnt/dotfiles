@@ -100,8 +100,8 @@
     };
 
     qt = {
-      enable = true;
-      platformTheme.name = "gtk";
+      enable = false;
+      platformTheme.name = "gtk"; # Breaks PacketTracer theme :(
       style.name = "adwaita-dark";
     };
 
