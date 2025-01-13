@@ -34,6 +34,7 @@
     dorion
     drawio
     element-desktop
+    itch
     notesnook
     obsidian
     teams-for-linux
