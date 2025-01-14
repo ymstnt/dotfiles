@@ -31,13 +31,12 @@
     anytype
     beeper
     discord
-    dorion
     drawio
     element-desktop
     itch
+    legcord
     obsidian
     teams-for-linux
-    vesktop
   ]) ++ (with pkgs; [
     # GTK apps
     celluloid
