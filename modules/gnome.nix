@@ -42,6 +42,7 @@
 
         favorite-apps = [
           "firefox-devedition.desktop"
+          "brave-browser.desktop"
           "thunderbird.desktop"
           "discord.desktop"
           "element-desktop.desktop"
@@ -93,7 +94,6 @@
       };
       gtk4 = {
         extraConfig = {
-          gtk-hint-font-metrics = true;
           gtk-application-prefer-dark-theme = 1;
         };
       };
