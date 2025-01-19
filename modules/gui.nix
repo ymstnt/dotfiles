@@ -21,6 +21,7 @@
     rquickshare
     stable.rustdesk-flutter
     telegram-desktop
+    teamspeak5_client
     tenacity
     vlc
     winetricks
