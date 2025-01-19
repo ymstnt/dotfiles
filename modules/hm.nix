@@ -8,7 +8,7 @@
 
   home-manager = {
     useGlobalPkgs = true;
-    backupFileExtension = "backup-<timestamp>";
+    backupFileExtension = ".bak";
   };
   
   home-manager.users.ymstnt = {
