@@ -176,10 +176,6 @@
       };
     };
 
-    home.packages = with pkgs; [
-      vivaldi
-      vivaldi-ffmpeg-codecs
-    ];
     xdg.desktopEntries.firefox-devedition = {
       name = "Firefox Developer Edition";
       genericName = "Web Browser";
