@@ -45,6 +45,7 @@
           "brave-browser.desktop"
           "thunderbird.desktop"
           "discord.desktop"
+          "TeamSpeak.desktop"
           "element-desktop.desktop"
           "beeper.desktop"
           "org.gnome.Console.desktop"
