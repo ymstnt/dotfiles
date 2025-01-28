@@ -28,13 +28,18 @@
       url = "github:lilyinstarlight/nixos-cosmic";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    cosmic-manager = {
+      url = "github:HeitorAugustoLN/cosmic-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
     winapps = {
       url = "github:winapps-org/winapps/feat-nix-packaging";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, lix-module, home-manager, winapps, ... } @inputs: {
+  outputs = { self, nixpkgs, lix-module, home-manager, cosmic-manager, winapps, ... } @inputs: {
     nixosConfigurations =
       let
         #inherit (self) outputs;

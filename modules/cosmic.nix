@@ -1,7 +1,11 @@
-{ nixos-cosmic, pkgs, ... }:
+{ nixos-cosmic, cosmic-manager, pkgs, ... }:
 
 {
   imports = [ nixos-cosmic.nixosModules.default ];
+
+  hm.imports = [
+    cosmic-manager.homeManagerModules.cosmic-manager
+  ];
 
   services = {
     desktopManager.cosmic.enable = true;
