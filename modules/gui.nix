@@ -24,6 +24,7 @@
     teamspeak5_client
     tenacity
     vlc
+    waveterm
     winetricks
     wineWowPackages.staging
     xournalpp
