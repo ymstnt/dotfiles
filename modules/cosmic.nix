@@ -14,15 +14,23 @@
 
   programs.seahorse.enable = true;
 
-  hm.home.packages = (with pkgs; [
-    forecast
-  ]) ++ (with pkgs; [
-    # GNOME apps
-    file-roller
-    gnome-font-viewer
-    loupe
-    nautilus
-    papers
-    simple-scan
-  ]);
+  hm = {
+    gtk = {
+      enable = true;
+      gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
+      gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
+    };
+    home.packages = (with pkgs; [
+        forecast
+    ]) ++ (with pkgs; [
+        adw-gtk3
+        # GNOME apps
+        file-roller
+        gnome-font-viewer
+        loupe
+        nautilus
+        papers
+        simple-scan
+    ]);
+  };
 }
