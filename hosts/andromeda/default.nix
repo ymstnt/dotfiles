@@ -22,9 +22,13 @@ in
         splashImage = null;
       };
     };
-};
+  };
 
   networking.hostName = "andromeda";
+
+  environment.sessionVariables = {
+    XCURSOR_SIZE = 28;
+  };
 
   # GPU
 
