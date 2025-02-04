@@ -35,13 +35,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    winapps = {
-      url = "github:winapps-org/winapps/feat-nix-packaging";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, lix-module, home-manager, cosmic-manager, winapps, ... } @inputs: {
+  outputs = { self, nixpkgs, lix-module, home-manager, cosmic-manager, ... } @inputs: {
     nixosConfigurations =
       let
         #inherit (self) outputs;
