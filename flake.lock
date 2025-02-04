@@ -313,6 +313,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-nvidia": {
+      "locked": {
+        "lastModified": 1729682259,
+        "narHash": "sha256-IQwoprF98IJVWJaCv7OelfFiQg2lPLlTBcFR18/nLnQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "00c33287da82dd1b443941a6d6b0b749b97a8a24",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "00c33287da82dd1b443941a6d6b0b749b97a8a24",
+        "type": "github"
+      }
+    },
     "nixpkgs-stable": {
       "locked": {
         "lastModified": 1738277201,
@@ -356,6 +372,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
+        "nixpkgs-nvidia": "nixpkgs-nvidia",
         "nixpkgs-stable": "nixpkgs-stable_2",
         "winapps": "winapps"
       }
