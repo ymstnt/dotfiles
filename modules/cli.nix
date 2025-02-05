@@ -23,6 +23,7 @@
     pop
     ripgrep
     scrcpy
+    seashells
     skate
     smartmontools
     sof-firmware
