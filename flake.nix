@@ -6,8 +6,6 @@
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.05";
     nixpkgs-master.url = "github:NixOS/nixpkgs/master";
     nixpkgs-develop.url = "github:ymstnt/nixpkgs/master";
-    nixpkgs-nvidia.url = "github:NixOS/nixpkgs/00c33287da82dd1b443941a6d6b0b749b97a8a24";
-    
     lix-module = {
       url = "https://git.lix.systems/lix-project/nixos-module/archive/stable.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
