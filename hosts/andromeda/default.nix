@@ -7,7 +7,7 @@ in
   imports =
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
-        "gnome"
+        "cosmic"
         "pantheon"
       ];
 
