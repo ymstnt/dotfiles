@@ -33,7 +33,6 @@
         enabled-extensions = [
           "app-hider@lynith.dev"
           "caffeine@patapon.info"
-          "cronomix@zagortenay333"
           "just-perfection-desktop@just-perfection"
           "quick-touchpad-toggle@kramo.hu"
           "trayIconsReloaded@selfmade.pl"
@@ -116,7 +115,6 @@
       alttab-scroll-workaround
       app-hider
       caffeine
-      cronomix
       just-perfection
       quick-touchpad-toggle
       tray-icons-reloaded
