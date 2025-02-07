@@ -21,7 +21,7 @@
     rquickshare
     stable.rustdesk-flutter
     telegram-desktop
-    teamspeak5_client
+    teamspeak6-client
     tenacity
     vlc
     waveterm
