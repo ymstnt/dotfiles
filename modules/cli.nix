@@ -3,7 +3,6 @@
 {
   hm.home.packages = with pkgs; [
     bat
-    bitwarden-cli
     btop
     codeberg-cli
     exercism
