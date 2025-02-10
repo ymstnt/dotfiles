@@ -1,0 +1,3 @@
+{ nur, ... }:
+
+nur.overlays.default

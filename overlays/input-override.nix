@@ -17,9 +17,4 @@
     config.allowUnfree = true;
     config.allowUnfreePredicate = _: true;
   };
-  nur = import nur {
-    system = final.system;
-    config.allowUnfree = true;
-    config.allowUnfreePredicate = _: true;
-  };
 })
