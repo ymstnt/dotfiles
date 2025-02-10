@@ -31,7 +31,7 @@
   ]) ++ (with pkgs; [
     # Electron apps
     anytype
-    beeper
+    nur.repos.ymstnt.beeper
     discord
     drawio
     element-desktop

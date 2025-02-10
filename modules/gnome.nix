@@ -45,7 +45,7 @@
           "discord.desktop"
           "TeamSpeak.desktop"
           "element-desktop.desktop"
-          "beeper.desktop"
+          "beepertexts.desktop"
           "org.gnome.Console.desktop"
           "HiFile.desktop"
           "org.gnome.Nautilus.desktop"
