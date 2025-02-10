@@ -14,6 +14,9 @@
           insert = "bar";
           select = "underline";
         };
+        file-picker = {
+          hidden = false;
+        };
         whitespace = {
           render = "all";
           characters = {
