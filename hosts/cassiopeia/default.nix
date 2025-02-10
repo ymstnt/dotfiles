@@ -6,7 +6,6 @@
       self.nixosModules.allImportsExcept [
         "games"
         "steam"
-        "winapps"
         "gnome"
         "pantheon"
       ];
