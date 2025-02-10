@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   fonts.packages = (with pkgs; [
+    adwaita-fonts
     cantarell-fonts
     corefonts
     dejavu_fonts
