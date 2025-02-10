@@ -8,6 +8,7 @@
         "steam"
         "gnome"
         "pantheon"
+        "packettracer"
       ];
 
   boot = {

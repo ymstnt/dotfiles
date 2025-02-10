@@ -6,6 +6,7 @@
       self.nixosModules.allImportsExcept [
         "cosmic"
         "pantheon"
+        "packettracer"
       ];
 
   boot = {
