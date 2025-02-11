@@ -42,7 +42,7 @@ with lib; with pkgs;
       zshreload = "source $HOME/.zshrc";
       
       dotcd = "cd $HOME/dotfiles";
-      update = "( cd $HOME/dotfiles && nix flake update --commit-lock-file )";
+      update = "update-inputs";
       rebuild = "nh os switch ~/dotfiles -- --impure";
       rebuild-boot = "nh os boot ~/dotfiles -- --impure";
       nrebuild = "sudo nixos-rebuild switch --flake $HOME/dotfiles --impure";
@@ -102,6 +102,14 @@ with lib; with pkgs;
       pasteinit () {
         OLD_SELF_INSERT = ''${''${(s.:.) widgets [self-insert ]}[ 2,3 ]}
         zle - N self-insert url-quote-magic
+      }
+
+      update-inputs() {
+        if [[ -n "$1" ]]; then
+          (cd ~/dotfiles && nix flake update $1 --commit-lock-file)
+        else
+          (cd ~/dotfiles && nix flake update --commit-lock-file)
+        fi
       }
 
       pastefinish() {
