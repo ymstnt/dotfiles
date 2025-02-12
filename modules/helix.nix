@@ -63,7 +63,7 @@
       omnisharp-roslyn
     ]) ++ (with pkgs.nodePackages; [
       typescript-language-server
-    ]) ++ (with pkgs.python311Packages; [
+    ]) ++ (with pkgs.python3Packages; [
       python-lsp-server
     ]);
   };
