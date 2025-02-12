@@ -10,6 +10,7 @@
       cargo
       cmake
       dbeaver-bin
+      deno
       dotnet-sdk_8
       ffmpeg
       flutter
@@ -28,7 +29,7 @@
       thonny
       zed-editor
       zola
-    ]) ++ (with pkgs.python311Packages; [
+    ]) ++ (with pkgs.python3Packages; [
       pikepdf
       pip
     ]) ++ (with pkgs.jetbrains; [
