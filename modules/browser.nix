@@ -176,6 +176,10 @@
       };
     };
 
+    home.packages = with pkgs; [
+      nur.repos.ymstnt.surf
+    ];
+
     xdg.desktopEntries.firefox-devedition = {
       name = "Firefox Developer Edition";
       genericName = "Web Browser";
