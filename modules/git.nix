@@ -20,7 +20,7 @@
           core.editor = "hx";
           push.autoSetupRemote = true;
           pull.rebase = true;
-          github.user = "YMSTNT";
+          github.user = "ymstnt";
         };
       };
       gitui = {
