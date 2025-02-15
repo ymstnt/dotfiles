@@ -11,14 +11,16 @@
 
   boot = {
     loader = {
+      timeout = 3;
       efi.canTouchEfiVariables = true;
-      grub = {
-        useOSProber = true;
-        efiSupport = true;
-        device = "nodev";
-        timeoutStyle = "hidden";
-        splashImage = null;
+      systemd-boot = {
+        enable = true;
+        windows.windows = {
+          title = "Windows 11";
+          efiDeviceHandle = "HD1b65535a1";
+        };
       };
+      grub.enable = false;
     };
   };
 
