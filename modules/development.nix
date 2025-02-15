@@ -27,7 +27,6 @@
       rustc
       sqlite
       thonny
-      zed-editor
       zola
     ]) ++ (with pkgs.python3Packages; [
       pikepdf
