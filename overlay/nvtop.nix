@@ -1,7 +1,7 @@
 { ... }:
 
 (final: prev: {
-  nvtop = prev.nvtopPackages.nvidia.override {
+  nvtopPackages.full = prev.nvtopPackages.nvidia.override {
     intel = true;
   };
 })

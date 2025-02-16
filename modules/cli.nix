@@ -16,7 +16,7 @@
     hck
     nixpkgs-fmt
     nix-prefetch
-    nvtop
+    nvtopPackages.full
     p7zip
     pfetch
     pom
