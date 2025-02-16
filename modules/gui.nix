@@ -39,6 +39,7 @@
     itch
     legcord
     obsidian
+    spotify
     teams-for-linux
   ]) ++ (with pkgs; [
     # GTK apps
