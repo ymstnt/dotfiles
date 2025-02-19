@@ -7,7 +7,6 @@
     experimental-features = [
       "nix-command"
       "flakes"
-      "repl-flake"
     ];
     max-jobs = 1;
     trusted-users = [ "ymstnt" ];
