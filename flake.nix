@@ -28,18 +28,9 @@
       url = "gitlab:doronbehar/nix-matlab";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixos-cosmic = {
-      url = "github:lilyinstarlight/nixos-cosmic";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    cosmic-manager = {
-      url = "github:HeitorAugustoLN/cosmic-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
-    };
   };
 
-  outputs = { self, nixpkgs, lix-module, home-manager, cosmic-manager, ... } @inputs: {
+  outputs = { self, nixpkgs, lix-module, home-manager, ... } @inputs: {
     nixosConfigurations =
       let
         #inherit (self) outputs;

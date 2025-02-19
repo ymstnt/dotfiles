@@ -4,9 +4,9 @@
   imports =
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
+        "cosmic"
         "games"
         "steam"
-        "gnome"
         "pantheon"
         "packettracer"
       ];
