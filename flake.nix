@@ -38,7 +38,7 @@
           modules = [
             ./overlays
             lix-module.nixosModules.lixFromNixpkgs
-            home-manager.nixosModule
+            home-manager.nixosModules.default
             host
           ];
           specialArgs = inputs;
