@@ -13,14 +13,10 @@
 
   boot = {
     loader = {
+      timeout = 3;
       efi.canTouchEfiVariables = true;
-      grub = {
-        useOSProber = true;
-        efiSupport = true;
-        device = "nodev";
-        timeoutStyle = "hidden";
-        configurationLimit = 10;
-        splashImage = null;
+      systemd-boot = {
+        enable = true;
       };
     };
 
