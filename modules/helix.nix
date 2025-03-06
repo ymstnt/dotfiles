@@ -50,17 +50,23 @@
       dockerfile-language-server-nodejs
       efm-langserver
       gopls
+      intelephense
       kotlin-language-server
       lua-language-server
       marksman
       netcoredbg
       nil
       nixpkgs-fmt
-      rust-analyzer
-      texlab
-      vscode-langservers-extracted
-      yaml-language-server
       omnisharp-roslyn
+      ruff
+      rust-analyzer
+      superhtml
+      svelte-language-server
+      texlab
+      tinymist
+      vscode-langservers-extracted
+      vue-language-server
+      yaml-language-server
     ]) ++ (with pkgs.nodePackages; [
       typescript-language-server
     ]) ++ (with pkgs.python3Packages; [
