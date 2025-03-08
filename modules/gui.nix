@@ -39,6 +39,7 @@
     itch
     legcord
     obsidian
+    signal-desktop
     spotify
     teams-for-linux
   ]) ++ (with pkgs; [
