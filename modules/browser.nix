@@ -5,7 +5,7 @@
     programs = {
       firefox = {
         enable = true;
-        package = pkgs.firefox-devedition;
+        package = pkgs.firefox-devedition-bin;
         profiles.dev-edition-default = {
           isDefault = true;
           search = {
@@ -180,12 +180,12 @@
       nur.repos.ymstnt.surf
     ];
 
-    xdg.desktopEntries.firefox-devedition = {
+    xdg.desktopEntries.firefox-developer-edition = {
       name = "Firefox Developer Edition";
       genericName = "Web Browser";
-      exec = "firefox-devedition --name firefox-devedition %U";
+      exec = "firefox-developer-edition --name firefox-devedition %U";
       terminal = false;
-      icon = "firefox-devedition";
+      icon = "firefox-developer-edition";
       categories = [ "Network" "WebBrowser" ];
       actions = {
         "new-private-window" = {
