@@ -14,6 +14,7 @@
     glow
     gnupg
     hck
+    ncdu
     nixpkgs-fmt
     nix-prefetch
     nvtopPackages.full
