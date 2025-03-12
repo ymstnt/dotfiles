@@ -46,7 +46,7 @@
         "[javascript]"."editor.defaultFormatter" = "esbenp.prettier-vscode";
         "editor.renderWhitespace" = "all";
       };
-      extensions = (with pkgs.vscode-extensions; [
+      extensions = with pkgs.vscode-extensions; [
         astro-build.astro-vscode
         dart-code.dart-code
         dart-code.flutter
@@ -59,12 +59,11 @@
         mechatroner.rainbow-csv
         tomoki1207.pdf
         ms-python.isort
+        ms-python.python
         ms-dotnettools.csharp
         # Themes
         piousdeer.adwaita-theme
-      ]) ++ (with pkgs.master.vscode-extensions; [
-        ms-python.python # Unpin from master once https://github.com/NixOS/nixpkgs/pull/387839 lands in unstable
-      ]);
+      ];
     };
   };
 }
