@@ -46,8 +46,7 @@
         "[javascript]"."editor.defaultFormatter" = "esbenp.prettier-vscode";
         "editor.renderWhitespace" = "all";
       };
-      extensions = with pkgs.vscode-extensions; [
-        astro-build.astro-vscode
+      extensions = (with pkgs.vscode-extensions; [
         dart-code.dart-code
         dart-code.flutter
         mikestead.dotenv
@@ -63,7 +62,9 @@
         ms-dotnettools.csharp
         # Themes
         piousdeer.adwaita-theme
-      ];
+      ]) ++ (with pkgs.stable.vscode-extensions; [
+        astro-build.astro-vscode
+      ]);
     };
   };
 }
