@@ -37,6 +37,7 @@
     discord
     drawio
     element-desktop
+    filen-desktop
     itch
     legcord
     obsidian
