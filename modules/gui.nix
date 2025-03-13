@@ -20,7 +20,7 @@
     protonvpn-gui
     qalculate-gtk
     rquickshare
-    rustdesk-flutter
+    stable.rustdesk-flutter
     telegram-desktop
     teamspeak6-client
     tenacity
