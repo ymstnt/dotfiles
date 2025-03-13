@@ -183,21 +183,21 @@
     xdg.desktopEntries.firefox-developer-edition = {
       name = "Firefox Developer Edition";
       genericName = "Web Browser";
-      exec = "firefox-developer-edition --name firefox-devedition %U";
+      exec = "firefox-developer-edition --name firefox-developer-edition %U";
       terminal = false;
       icon = "firefox-developer-edition";
       categories = [ "Network" "WebBrowser" ];
       actions = {
         "new-private-window" = {
-          exec = "firefox-devedition --private-window %U";
+          exec = "firefox-developer-edition --private-window %U";
           name = "New Private Window";
         };
         "new-window" = {
-          exec = "firefox-devedition --new-window %U";
+          exec = "firefox-developer-edition --new-window %U";
           name = "New Window";
         };
         "profile-manager-window" = {
-          exec = "firefox-devedition --ProfileManager";
+          exec = "firefox-developer-edition --ProfileManager";
           name = "Profile Manager";
         };
       };
