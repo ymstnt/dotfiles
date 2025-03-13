@@ -16,6 +16,7 @@
     onlyoffice-bin
     openshot-qt
     plex-media-player
+    plexamp
     protonvpn-gui
     qalculate-gtk
     rquickshare
