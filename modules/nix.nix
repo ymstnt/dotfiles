@@ -21,6 +21,7 @@
   };
 
   hm.home.packages = with pkgs; [
+    cachix
     nh
     nix-output-monitor
     nvd
