@@ -41,6 +41,7 @@
     itch
     legcord
     obsidian
+    publii
     signal-desktop
     spotify
     teams-for-linux
