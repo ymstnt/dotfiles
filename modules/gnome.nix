@@ -44,7 +44,6 @@
           "thunderbird.desktop"
           "discord.desktop"
           "TeamSpeak.desktop"
-          "element-desktop.desktop"
           "beepertexts.desktop"
           "org.gnome.Console.desktop"
           "HiFile.desktop"
