@@ -22,6 +22,7 @@
     pfetch
     pom
     pop
+    rclone
     ripgrep
     scrcpy
     seashells
