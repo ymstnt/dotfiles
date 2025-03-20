@@ -9,6 +9,7 @@
     exiftool
     eza
     fastfetch
+    filen-cli
     gh
     glab
     glow
