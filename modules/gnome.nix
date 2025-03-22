@@ -35,7 +35,7 @@
           "caffeine@patapon.info"
           "just-perfection-desktop@just-perfection"
           "quick-touchpad-toggle@kramo.hu"
-          "trayIconsReloaded@selfmade.pl"
+          "status-icons@gnome-shell-extensions.gcampax.github.com"
           "Vitals@CoreCoding.com"
         ];
 
@@ -117,7 +117,6 @@
       caffeine
       just-perfection
       quick-touchpad-toggle
-      tray-icons-reloaded
       vitals
     ]);
   };
