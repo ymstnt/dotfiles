@@ -41,6 +41,7 @@
     itch
     legcord
     obsidian
+    remnote
     signal-desktop
     spotify
     teams-for-linux
