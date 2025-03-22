@@ -36,7 +36,7 @@
           "just-perfection-desktop@just-perfection"
           "quick-touchpad-toggle@kramo.hu"
           "status-icons@gnome-shell-extensions.gcampax.github.com"
-          "Vitals@CoreCoding.com"
+          "system-monitor@gnome-shell-extensions.gcampax.github.com"
         ];
 
         favorite-apps = [
@@ -117,7 +117,6 @@
       caffeine
       just-perfection
       quick-touchpad-toggle
-      vitals
     ]);
   };
 }
