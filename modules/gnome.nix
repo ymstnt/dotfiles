@@ -31,6 +31,7 @@
         disable-user-extensions = false;
 
         enabled-extensions = [
+          "alt-tab-scroll-workaround@lucasresck.github.io"
           "app-hider@lynith.dev"
           "caffeine@patapon.info"
           "just-perfection-desktop@just-perfection"
