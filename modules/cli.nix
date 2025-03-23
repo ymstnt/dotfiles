@@ -5,6 +5,7 @@
     bat
     btop
     codeberg-cli
+    coreutils
     exercism
     exiftool
     eza
