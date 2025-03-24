@@ -16,6 +16,7 @@
     glow
     gnupg
     hck
+    jq
     ncdu
     nixpkgs-fmt
     nix-prefetch
