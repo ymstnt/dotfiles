@@ -11,7 +11,7 @@
     inkscape-with-extensions
     lifeograph
     mpv
-    master.hifile
+    hifile-fix.hifile
     obs-studio
     onlyoffice-bin
     openshot-qt
