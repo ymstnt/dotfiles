@@ -95,6 +95,22 @@
         "type": "github"
       }
     },
+    "hifile-fix": {
+      "locked": {
+        "lastModified": 1742829780,
+        "narHash": "sha256-8TstvvQCehmAOj1NdViFvbzZnN7Ld8l7G1Jg6vcgVl8=",
+        "owner": "ymstnt",
+        "repo": "nixpkgs",
+        "rev": "856352f4ff400e864da935b24f6b5168aaa9ea97",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ymstnt",
+        "ref": "update-hifile",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -260,6 +276,7 @@
     "root": {
       "inputs": {
         "agenix": "agenix",
+        "hifile-fix": "hifile-fix",
         "home-manager": "home-manager",
         "lix-module": "lix-module",
         "nix-matlab": "nix-matlab",
