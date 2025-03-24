@@ -10,8 +10,8 @@
           isDefault = true;
           search = {
             force = true;
-            default = "DuckDuckGo";
-            privateDefault = "DuckDuckGo";
+            default = "ddg";
+            privateDefault = "ddg";
             engines = {
               "Startpage" = {
                 urls = [{
@@ -35,16 +35,16 @@
               };
               "NixOS Wiki" = {
                 urls = [{ template = "https://wiki.nixos.org/index.php?search={searchTerms}"; }];
-                iconUpdateURL = "https://wiki.nixos.org/favicon.ico";
+                icon = "https://wiki.nixos.org/favicon.ico";
                 updateInterval = 24 * 60 * 60 * 1000; # every day
                 definedAliases = [ "@nw" ];
               };
-              "Bing".metaData.hidden = true;
-              "Google".metaData.hidden = true;
+              "bing".metaData.hidden = true;
+              "google".metaData.hidden = true;
               "Amazon".metaData.hidden = true;
             };
             order = [
-              "DuckDuckGo"
+              "ddg"
               "Startpage"
               "Nix Packages"
               "NixOS Wiki"
