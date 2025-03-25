@@ -33,7 +33,6 @@
         enabled-extensions = [
           "alt-tab-scroll-workaround@lucasresck.github.io"
           "app-hider@lynith.dev"
-          "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
           "caffeine@patapon.info"
           "just-perfection-desktop@just-perfection"
           "quick-touchpad-toggle@kramo.hu"
