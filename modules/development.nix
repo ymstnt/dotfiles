@@ -27,6 +27,7 @@
       rustc
       sqlite
       thonny
+      xpipe
       zola
     ]) ++ (with pkgs.python3Packages; [
       pikepdf
