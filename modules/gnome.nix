@@ -49,6 +49,7 @@
           "org.gnome.Console.desktop"
           "HiFile.desktop"
           "org.gnome.Nautilus.desktop"
+          "spotify.desktop"
         ];
       };
       "org/gnome/desktop/interface" = {
