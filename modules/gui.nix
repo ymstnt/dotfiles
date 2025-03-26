@@ -4,7 +4,6 @@
   programs.gnupg.agent.enable = true;
 
   hm.home.packages = (with pkgs; [
-    anki-bin
     cryptomator
     gimp
     gparted
