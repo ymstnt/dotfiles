@@ -45,21 +45,23 @@
         "security.workspace.trust.untrustedFiles" = "open";
         "[javascript]"."editor.defaultFormatter" = "esbenp.prettier-vscode";
         "editor.renderWhitespace" = "all";
+        "[html]"."editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
       extensions = (with pkgs.vscode-extensions; [
         dart-code.dart-code
         dart-code.flutter
-        mikestead.dotenv
+        dbaeumer.vscode-eslint
         donjayamanne.githistory
-        ritwickdey.liveserver
-        yzhang.markdown-all-in-one
-        jnoortheen.nix-ide
         esbenp.prettier-vscode
+        jnoortheen.nix-ide
         mechatroner.rainbow-csv
-        tomoki1207.pdf
+        mikestead.dotenv
+        ms-dotnettools.csharp
         ms-python.isort
         ms-python.python
-        ms-dotnettools.csharp
+        ritwickdey.liveserver
+        tomoki1207.pdf
+        yzhang.markdown-all-in-one
         # Themes
         piousdeer.adwaita-theme
       ]) ++ (with pkgs.stable.vscode-extensions; [
