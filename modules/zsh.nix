@@ -47,7 +47,7 @@ with lib; with pkgs;
       rebuild-boot = "nh os boot ~/dotfiles -- --impure";
       nrebuild = "sudo nixos-rebuild switch --flake $HOME/dotfiles --impure";
       nrebuild-boot = "sudo nixos-rebuild boot --flake $HOME/dotfiles --impure";
-      cleanup = "sudo nix-collect-garbage --delete-older-than";
+      cleanup = "nh clean all --ask --keep-since";
     };
 
     sessionVariables = {
