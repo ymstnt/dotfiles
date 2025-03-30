@@ -42,6 +42,7 @@
     obsidian
     remnote
     signal-desktop
+    spotify
     teams-for-linux
   ]) ++ (with pkgs; [
     # GTK apps
