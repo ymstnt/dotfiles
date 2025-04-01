@@ -37,6 +37,7 @@
     drawio
     element-desktop
     filen-desktop
+    grayjay
     itch
     legcord
     obsidian

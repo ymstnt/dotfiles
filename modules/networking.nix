@@ -6,7 +6,8 @@
     # wireless.enable = true;  # Enables wireless support via wpa_supplicant.g
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 25565 8384 ];
+      # 12315 required for grayjay
+      allowedTCPPorts = [ 25565 8384 12315 ];
       allowedUDPPorts = [ 25565 8384 24642 ];
       allowedTCPPortRanges = [
         { from = 27005; to = 27015; }

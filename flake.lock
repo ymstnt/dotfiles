@@ -95,6 +95,22 @@
         "type": "github"
       }
     },
+    "grayjay": {
+      "locked": {
+        "lastModified": 1743198124,
+        "narHash": "sha256-86jioVDmnOjfclG6EyxLcW5VyCxJ1jHAvjiqsxmbs/o=",
+        "owner": "samfundev",
+        "repo": "nixpkgs",
+        "rev": "1b9c11f15fc96a3138247d38f4141d6ab126bd63",
+        "type": "github"
+      },
+      "original": {
+        "owner": "samfundev",
+        "ref": "grayjay",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "hifile-fix": {
       "locked": {
         "lastModified": 1742829780,
@@ -276,6 +292,7 @@
     "root": {
       "inputs": {
         "agenix": "agenix",
+        "grayjay": "grayjay",
         "hifile-fix": "hifile-fix",
         "home-manager": "home-manager",
         "lix-module": "lix-module",
