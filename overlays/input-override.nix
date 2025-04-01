@@ -1,4 +1,4 @@
-{ nixpkgs-stable, nixpkgs-master, nixpkgs-develop, nur, hifile-fix, ... }:
+{ nixpkgs-stable, nixpkgs-master, nixpkgs-develop, nur, hifile-fix, grayjay, ... }:
 # When applied, the master nixpkgs set (declared in the flake inputs) will
 # be accessible through 'pkgs.master'
 (final: _prev: {
@@ -18,6 +18,11 @@
     config.allowUnfreePredicate = _: true;
   };
   hifile-fix = import hifile-fix {
+    system = final.system;
+    config.allowUnfree = true;
+    config.allowUnfreePredicate = _: true;
+  };
+  grayjay = import grayjay {
     system = final.system;
     config.allowUnfree = true;
     config.allowUnfreePredicate = _: true;

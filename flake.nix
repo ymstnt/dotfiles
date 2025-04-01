@@ -7,6 +7,7 @@
     nixpkgs-master.url = "github:NixOS/nixpkgs/master";
     nixpkgs-develop.url = "github:ymstnt/nixpkgs/master";
     hifile-fix.url = "github:ymstnt/nixpkgs/update-hifile";
+    grayjay.url = "github:samfundev/nixpkgs/grayjay";
     lix-module = {
       url = "https://git.lix.systems/lix-project/nixos-module/archive/stable.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
