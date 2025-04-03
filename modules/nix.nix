@@ -29,9 +29,9 @@
   hm.home.packages = with pkgs; [
     cachix
     nh
-    nix-output-monitor
-    nvd
     nix-inspect
-    nix-weather
+    nix-output-monitor
+    nixpkgs-review
+    nvd
   ];
 }
