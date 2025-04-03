@@ -1,14 +1,15 @@
-{ nixos-cosmic, cosmic-manager, pkgs, ... }:
+{ cosmic-manager, pkgs, ... }:
 
 {
-  imports = [ nixos-cosmic.nixosModules.default ];
-
   hm.imports = [
     cosmic-manager.homeManagerModules.cosmic-manager
   ];
 
   services = {
-    desktopManager.cosmic.enable = true;
+    desktopManager.cosmic = {
+      enable = true;
+      xwayland.enable = true;
+    };
     displayManager.cosmic-greeter.enable = true;
   };
 
@@ -16,7 +17,22 @@
 
   hm = {
     wayland.desktopManager.cosmic = {
-      enable = false;
+      enable = true;
+      applets = {
+        app-list.settings = {
+          favorites = [
+            "firefox-developer-edition"
+            "thunderbird"
+            "discord"
+            "TeamSpeak"
+            "beepertexts"
+            "com.system76.CosmicTerm"
+            "HiFile"
+            "com.system76.CosmicFiles"
+            "spotify"
+          ];
+        };
+      };
     };
     gtk = {
       enable = true;
@@ -31,7 +47,6 @@
         file-roller
         gnome-font-viewer
         loupe
-        nautilus
         papers
         simple-scan
     ]);
