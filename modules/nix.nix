@@ -28,6 +28,7 @@
 
   hm.home.packages = with pkgs; [
     cachix
+    hydra-check
     nh
     nix-inspect
     nix-output-monitor
