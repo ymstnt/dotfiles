@@ -25,8 +25,6 @@
     tenacity
     vlc
     waveterm
-    winetricks
-    wineWowPackages.staging
     xournalpp
   ]) ++ (with pkgs; [
     # Electron apps
