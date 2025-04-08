@@ -7,21 +7,22 @@
     cryptomator
     gimp
     gparted
+    hifile-fix.hifile
     inkscape-with-extensions
     lifeograph
     mpv
-    hifile-fix.hifile
     obs-studio
     onlyoffice-bin
     openshot-qt
-    plex-media-player
     plexamp
+    plex-media-player
     protonvpn-gui
     qalculate-gtk
     rquickshare
+    soulseekqt
     stable.rustdesk-flutter
-    telegram-desktop
     teamspeak6-client
+    telegram-desktop
     tenacity
     vlc
     waveterm
