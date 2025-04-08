@@ -7,10 +7,10 @@
     cryptomator
     gimp
     gparted
-    hifile-fix.hifile
     inkscape-with-extensions
     lifeograph
     mpv
+    master.hifile
     obs-studio
     onlyoffice-bin
     openshot-qt
