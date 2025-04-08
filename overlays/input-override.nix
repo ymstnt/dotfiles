@@ -1,4 +1,4 @@
-{ nixpkgs-stable, nixpkgs-master, nixpkgs-develop, nur, grayjay, ... }:
+{ nixpkgs-stable, nixpkgs-master, nixpkgs-develop, grayjay, ... }:
 # When applied, the master nixpkgs set (declared in the flake inputs) will
 # be accessible through 'pkgs.master'
 (final: _prev: {
