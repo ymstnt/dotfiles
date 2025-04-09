@@ -4,11 +4,11 @@
   imports =
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
-        "cosmic"
         "games"
-        "steam"
-        "pantheon"
+        "gnome"
         "packettracer"
+        "pantheon"
+        "steam"
       ];
 
   boot = {

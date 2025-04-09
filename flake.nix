@@ -15,6 +15,13 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    cosmic-manager = {
+      url = "github:HeitorAugustoLN/cosmic-manager";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
+    };
     nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -31,7 +38,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, lix-module, home-manager, ... } @inputs: {
+  outputs = { self, nixpkgs, lix-module, home-manager, cosmic-manager, ... } @inputs: {
     nixosConfigurations =
       let
         #inherit (self) outputs;
