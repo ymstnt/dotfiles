@@ -1,5 +1,8 @@
-{ cosmic-manager, pkgs, ... }:
+{ config, pkgs, cosmic-manager, ... }:
 
+let
+  cosmicLib = config.hm.lib;
+in
 {
   hm.imports = [
     cosmic-manager.homeManagerModules.cosmic-manager
@@ -32,6 +35,51 @@
             "spotify"
           ];
         };
+      };
+    };
+    programs.cosmic-files = {
+      enable = true;
+      settings = {
+        favorites = [
+          (cosmicLib.cosmic.mkRON "enum" "Home")
+          (cosmicLib.cosmic.mkRON "enum" "Documents")
+          (cosmicLib.cosmic.mkRON "enum" "Downloads")
+          (cosmicLib.cosmic.mkRON "enum" "Music")
+          (cosmicLib.cosmic.mkRON "enum" "Pictures")
+          (cosmicLib.cosmic.mkRON "enum" "Videos")
+          (cosmicLib.cosmic.mkRON "enum" {
+            value = [ "/home/ymstnt/Documents/PROJEKTEK" ];
+            variant = "Path";
+          })
+          (cosmicLib.cosmic.mkRON "enum" {
+            value = [ "/home/ymstnt/Documents/Egyetem" ];
+            variant = "Path";
+          })
+          # (cosmicLib.cosmic.mkRON "enum" {
+          #   value = [ "/home/ymstnt/Documents/Iskola" ];
+          #   variant = "Path";
+          # })
+          (cosmicLib.cosmic.mkRON "enum" {
+            value = [ "/home/ymstnt/Documents/Munka" ];
+            variant = "Path";
+          })
+          (cosmicLib.cosmic.mkRON "enum" {
+            value = [ "/home/ymstnt/dotfiles" ];
+            variant = "Path";
+          })
+          (cosmicLib.cosmic.mkRON "enum" {
+            value = [ "/etc/nixos" ];
+            variant = "Path";
+          })
+          (cosmicLib.cosmic.mkRON "enum" {
+            value = [ "/home/ymstnt/local/share" ];
+            variant = "Path";
+          })
+          (cosmicLib.cosmic.mkRON "enum" {
+            value = [ "/home/ymstnt/.config" ];
+            variant = "Path";
+          })
+        ];
       };
     };
     gtk = {
