@@ -43,7 +43,7 @@
     obsidian
     protonmail-desktop
     remnote
-    signal-desktop
+    signal-desktop-bin
     spotify
     teams-for-linux
   ]) ++ (with pkgs; [
