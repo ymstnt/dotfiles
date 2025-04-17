@@ -41,6 +41,7 @@
     legcord
     lunatask
     obsidian
+    protonmail-desktop
     remnote
     signal-desktop
     spotify
