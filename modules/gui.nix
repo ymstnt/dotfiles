@@ -39,6 +39,7 @@
     grayjay.grayjay
     itch
     legcord
+    lunatask
     obsidian
     remnote
     signal-desktop
