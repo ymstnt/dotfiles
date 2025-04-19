@@ -34,21 +34,39 @@
         space.q = ":q";
       };
     };
-    languages.language = [
-      {
-        name = "c-sharp";
-        indent = {
-          tab-width = 2;
-          unit = "  ";
+    languages = {
+      language-server = {
+        emmet-lsp = with pkgs; {
+          command = "${emmet-language-server}/bin/emmet-language-server";
+          args = [ "--stdio" ];
         };
-      }
-    ];
+      };
+      language = [
+        {
+          name = "c-sharp";
+          indent = {
+            tab-width = 2;
+            unit = "  ";
+          };
+        }
+        {
+          name = "html";
+          # roots = [ ".git" ];
+          formatter = {
+            command = "prettier";
+            args = [ "--parser" "html" ];
+          };
+          language-servers = [ "vscode-html-language-server" "emmet-lsp" ];
+        }
+      ];
+    };
     extraPackages = (with pkgs; [
       ansible-language-server
       bash-language-server
       cmake-language-server
       dockerfile-language-server-nodejs
       efm-langserver
+      emmet-language-server
       gopls
       intelephense
       kotlin-language-server
