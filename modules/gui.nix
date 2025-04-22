@@ -36,7 +36,7 @@
     drawio
     element-desktop
     filen-desktop
-    grayjay.grayjay
+    grayjay
     itch
     legcord
     lunatask
