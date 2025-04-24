@@ -12,7 +12,7 @@
     mpv
     master.hifile
     obs-studio
-    onlyoffice-bin
+    onlyoffice-desktopeditors
     openshot-qt
     plexamp
     plex-media-player
