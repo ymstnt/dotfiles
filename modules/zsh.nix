@@ -60,7 +60,7 @@ with lib; with pkgs;
     #   export QT_QPA_PLATFORMTHEME=gtk2 # for Qt 5 and 6 apps
     # '';
 
-    initExtra = ''
+    initContent = ''
       bindkey "^[[H" beginning-of-line
       bindkey "^[[F" end-of-line
       bindkey "^[[3~" delete-char
