@@ -16,7 +16,6 @@
     openshot-qt
     plexamp
     plex-media-player
-    protonvpn-gui
     qalculate-gtk
     rquickshare
     soulseekqt
