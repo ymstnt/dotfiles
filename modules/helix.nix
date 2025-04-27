@@ -64,6 +64,7 @@
       ansible-language-server
       bash-language-server
       cmake-language-server
+      docker-compose-language-service
       dockerfile-language-server-nodejs
       efm-langserver
       emmet-language-server
