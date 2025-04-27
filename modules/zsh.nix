@@ -120,6 +120,12 @@ with lib; with pkgs;
       
       try() { NIXPKGS_ALLOW_UNFREE=1 nix shell --impure nixpkgs/nixos-unstable#$1 ''${@:2} }
 
+      nix-add-to-store() {
+        GCROOTS_DIR=$HOME/.local/state/nix-gcroots
+        mkdir -p $GCROOTS_DIR
+        nix-store --add-root $GCROOTS_DIR/$1 --indirect --realise $(nix-store --add-fixed sha256 $1)
+      }
+      
       github-ssh () {
         private_key = "$HOME/.ssh/id_ed25519"
         public_key="$private_key.pub"
