@@ -59,6 +59,7 @@
         ms-dotnettools.csharp
         ms-python.isort
         ms-python.python
+        myriad-dreamin.tinymist
         ritwickdey.liveserver
         tomoki1207.pdf
         yzhang.markdown-all-in-one
