@@ -81,6 +81,7 @@
       rust-analyzer
       superhtml
       svelte-language-server
+      taplo
       texlab
       tinymist
       vscode-langservers-extracted
