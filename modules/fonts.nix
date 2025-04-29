@@ -5,6 +5,7 @@
     cantarell-fonts
     corefonts
     dejavu_fonts
+    font-awesome
     inter
     jetbrains-mono
     mplus-outline-fonts.githubRelease
@@ -13,6 +14,7 @@
     noto-fonts-cjk-serif
     noto-fonts-emoji
     proggyfonts
+    roboto
     source-code-pro
     source-sans
     twemoji-color-font
