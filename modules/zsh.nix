@@ -43,10 +43,10 @@ with lib; with pkgs;
       
       dotcd = "cd $HOME/dotfiles";
       update = "update-inputs";
-      rebuild = "nh os switch ~/dotfiles -- --impure";
-      srebuild = "sudo nh os switch ~/dotfles -R -- --impure";
-      rebuild-boot = "nh os boot ~/dotfiles -- --impure";
-      srebuild-boot = "sudo nh os boot ~/dotfiles -R -- --impure";
+      rebuild = "nh os switch -- --impure";
+      srebuild = "sudo nh os switch -R -- --impure";
+      rebuild-boot = "nh os boot -- --impure";
+      srebuild-boot = "sudo nh os boot -R -- --impure";
       nrebuild = "sudo nixos-rebuild switch --flake $HOME/dotfiles --impure";
       nrebuild-boot = "sudo nixos-rebuild boot --flake $HOME/dotfiles --impure";
       cleanup = "nh clean all --ask --keep-since";
