@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
@@ -27,10 +27,14 @@
     options = "--delete-older-than 30d";
   };
 
+  programs.nh = {
+    enable = true;
+    flake = "${config.hm.home.homeDirectory}/dotfiles";
+  };
+
   hm.home.packages = with pkgs; [
     cachix
     hydra-check
-    nh
     nix-inspect
     nix-output-monitor
     nixpkgs-review
