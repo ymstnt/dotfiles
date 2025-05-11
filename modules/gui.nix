@@ -25,6 +25,7 @@
     tenacity
     vlc
     waveterm
+    xclicker
     xournalpp
   ]) ++ (with pkgs; [
     # Electron apps
