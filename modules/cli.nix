@@ -25,6 +25,7 @@
     pfetch
     pom
     pop
+    progress
     rclone
     ripgrep
     scrcpy
