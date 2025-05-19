@@ -119,6 +119,8 @@
       caffeine
       just-perfection
       quick-touchpad-toggle
+      status-icons
+      system-monitor
     ]);
   };
 }
