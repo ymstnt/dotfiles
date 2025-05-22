@@ -84,8 +84,8 @@
           "file:///etc/nixos nixos"
           "file:///home/ymstnt/.local/share .local"
           "file:///home/ymstnt/.config .config"
-          "sftp://ymstnt@ymstnt.com:42727/home/ymstnt/Files Shared Drive"
-          "sftp://ymstnt@ymstnt.com:42727/var/media/ Media Files"
+          "sftp://ymstnt@raspi.tchfoo.com:42727/home/ymstnt/Files Shared Drive"
+          "sftp://ymstnt@raspi.tchfoo.com:42727/hdd/ Storage"
         ];
 
         extraConfig = {
