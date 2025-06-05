@@ -15,7 +15,7 @@
     onlyoffice-desktopeditors
     openshot-qt
     plexamp
-    plex-media-player
+    plex-desktop
     qalculate-gtk
     rquickshare
     soulseekqt
