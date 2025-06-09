@@ -6,6 +6,7 @@
   nix.settings = {
     experimental-features = [
       "nix-command"
+      "repl-flake"
       "flakes"
     ];
     max-jobs = 1;
