@@ -10,6 +10,7 @@
     exiftool
     eza
     fastfetch
+    ffmpegthumbnailer
     filen-cli
     gh
     glab
