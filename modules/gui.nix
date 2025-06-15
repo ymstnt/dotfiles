@@ -55,6 +55,8 @@
     stable.mission-center
     pika-backup
     rnote
+  ]) ++ (with pkgs.kdePackages; [
+    kdenlive
   ]);
 
   nixpkgs.config.permittedInsecurePackages = [
