@@ -10,9 +10,17 @@
           isDefault = true;
           search = {
             force = true;
-            default = "ddg";
-            privateDefault = "ddg";
+            default = "Kagi";
+            privateDefault = "Kagi";
             engines = {
+              "Kagi" = {
+                urls = [{
+                  template = "https://kagi.com/search?q={searchTerms}";
+                }];
+                icon = "https://help.kagi.com/favicon-16x16.png";
+                updateInterval = 24 * 60 * 60 * 1000; # every day
+                definedAliases = [ "@kg" ];
+              };
               "Startpage" = {
                 urls = [{
                   template = "https://www.startpage.com/sp/search?q=%s";
