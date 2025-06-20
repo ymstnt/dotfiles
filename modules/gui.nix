@@ -18,7 +18,6 @@
     plex-desktop
     qalculate-gtk
     rquickshare
-    soulseekqt
     stable.rustdesk-flutter
     teamspeak6-client
     telegram-desktop
