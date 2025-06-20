@@ -52,9 +52,10 @@
     czkawka
     eyedropper
     fragments
-    stable.mission-center
+    packet
     pika-backup
     rnote
+    stable.mission-center
   ]) ++ (with pkgs.kdePackages; [
     kdenlive
   ]);
