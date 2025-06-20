@@ -5,7 +5,7 @@
     programs = {
       firefox = {
         enable = true;
-        package = pkgs.firefox-devedition-bin;
+        package = pkgs.firefox-devedition;
         profiles.dev-edition-default = {
           isDefault = true;
           search = {
