@@ -41,7 +41,7 @@
         ];
 
         favorite-apps = [
-          "firefox-developer-edition.desktop"
+          "firefox-devedition.desktop"
           "thunderbird.desktop"
           "discord.desktop"
           "TeamSpeak.desktop"
