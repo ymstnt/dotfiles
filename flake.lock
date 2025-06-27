@@ -264,18 +264,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-plex-desktop-fix-build": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-RJLzM6IfVUNUDDgkf072/aUBubvEJohTzwMUBhsOHnk=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/418546.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/418546.diff"
-      }
-    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1750881771,
@@ -339,7 +327,6 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
-        "nixpkgs-patch-plex-desktop-fix-build": "nixpkgs-patch-plex-desktop-fix-build",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
