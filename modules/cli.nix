@@ -18,6 +18,7 @@
     gnupg
     hck
     jq
+    msedit
     ncdu
     nixpkgs-fmt
     nix-prefetch
