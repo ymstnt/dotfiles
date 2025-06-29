@@ -31,6 +31,7 @@ with lib; with pkgs;
       fu = "thefuck";
       bm = "bashmount";
       helix = "hx";
+      mse = "edit";
 
       la = "ls -la";
       lff = "ls -la | grep";
