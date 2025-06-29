@@ -24,7 +24,7 @@ in
       applets = {
         app-list.settings = {
           favorites = [
-            "firefox-developer-edition"
+            "firefox-devedition"
             "thunderbird"
             "discord"
             "TeamSpeak"
