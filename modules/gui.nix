@@ -38,7 +38,7 @@
     grayjay
     itch
     legcord
-    lunatask
+    nur.repos.ymstnt.lunatask
     obsidian
     remnote
     signal-desktop-bin
