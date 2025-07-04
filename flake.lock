@@ -147,11 +147,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1750973805,
-        "narHash": "sha256-BZXgag7I0rnL/HMHAsBz3tQrfKAibpY2vovexl2lS+Y=",
+        "lastModified": 1751589297,
+        "narHash": "sha256-3q35cq6BPuwIRL3IoVKYPc72r3OleeuRyf4YAPjEqzA=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "080e8b48b0318b38143d5865de9334f46d51fce3",
+        "rev": "83f978812c37511ef2ffaf75ffa72160483f738a",
         "type": "github"
       },
       "original": {
@@ -203,11 +203,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1750950123,
-        "narHash": "sha256-6szY9qylkKoK/bDkapBGOQubN0OWGFtwnwQwXImv704=",
+        "lastModified": 1751554976,
+        "narHash": "sha256-tMgCUH0Y1t8YrtneswX8Jy4jVfJK4mGJuPBFummDAN4=",
         "owner": "doronbehar",
         "repo": "nix-matlab",
-        "rev": "7d8d184a4a556a0f024c362455dae1bbe8082eb2",
+        "rev": "9775074ab14ae62da9d98ce9efdbc4a76ac5853e",
         "type": "gitlab"
       },
       "original": {
@@ -218,11 +218,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1750776420,
-        "narHash": "sha256-/CG+w0o0oJ5itVklOoLbdn2dGB0wbZVOoDm4np6w09A=",
+        "lastModified": 1751271578,
+        "narHash": "sha256-P/SQmKDu06x8yv7i0s8bvnnuJYkxVGBWLWHaU+tt4YY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "30a61f056ac492e3b7cdcb69c1e6abdcf00e39cf",
+        "rev": "3016b4b15d13f3089db8a41ef937b13a9e33a8df",
         "type": "github"
       },
       "original": {
@@ -250,11 +250,11 @@
     },
     "nixpkgs-master": {
       "locked": {
-        "lastModified": 1751015534,
-        "narHash": "sha256-jvdHYygrQ5GcT/Vr3FCLwoyAnbkX0mxBdVxNu3pX/+I=",
+        "lastModified": 1751624244,
+        "narHash": "sha256-q+VHeLzIihD8hDEe4lZ4d6UavRHQodSuMIMgexl7+v0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "5ec15ff9dadf1506f987305d90742eddd4f837b0",
+        "rev": "9bfd85c98c4531f21814121b6dcd86d34a441d79",
         "type": "github"
       },
       "original": {
@@ -276,6 +276,18 @@
         "url": "https://github.com/nixos/nixpkgs/pull/409075.diff"
       }
     },
+    "nixpkgs-patch-vencord": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-zW4zkNBRxOYqBj2dwjVjOGKKni6EOD8VSC3AcRu3E6o=",
+        "type": "file",
+        "url": "https://github.com/nixos/nixpkgs/pull/422168.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/nixos/nixpkgs/pull/422168.diff"
+      }
+    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1750881771,
@@ -293,11 +305,11 @@
     },
     "nixpkgs-stable": {
       "locked": {
-        "lastModified": 1750646418,
-        "narHash": "sha256-4UAN+W0Lp4xnUiHYXUXAPX18t+bn6c4Btry2RqM9JHY=",
+        "lastModified": 1751274312,
+        "narHash": "sha256-/bVBlRpECLVzjV19t5KMdMFWSwKLtb5RyXdjz3LJT+g=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "1f426f65ac4e6bf808923eb6f8b8c2bfba3d18c5",
+        "rev": "50ab793786d9de88ee30ec4e4c24fb4236fc2674",
         "type": "github"
       },
       "original": {
@@ -316,11 +328,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1751184084,
-        "narHash": "sha256-6oE72eYZqZ3Zad9Pv2RTU0zfLNPsbn/h/8N/qGG96eE=",
+        "lastModified": 1751619100,
+        "narHash": "sha256-iqw+V/DKIge0SrXLR6XPkMdHRFdamN4EOUJiSGPl7QY=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "697388af59feb4e7bba82a122954d93a6e4dd324",
+        "rev": "7f7cef81cce49ed8fbc2d82a3e4160648e928c8e",
         "type": "github"
       },
       "original": {
@@ -340,6 +352,7 @@
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-patch-msedit": "nixpkgs-patch-msedit",
+        "nixpkgs-patch-vencord": "nixpkgs-patch-vencord",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
