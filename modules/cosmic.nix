@@ -29,9 +29,11 @@ in
             "discord"
             "TeamSpeak"
             "beepertexts"
+            "signal"
             "com.system76.CosmicTerm"
             "HiFile"
             "com.system76.CosmicFiles"
+            "lunatask"
             "spotify"
           ];
         };
