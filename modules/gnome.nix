@@ -46,9 +46,11 @@
           "discord.desktop"
           "TeamSpeak.desktop"
           "beepertexts.desktop"
+          "signal.desktop"
           "org.gnome.Console.desktop"
           "HiFile.desktop"
           "org.gnome.Nautilus.desktop"
+          "lunatask.desktop"
           "spotify.desktop"
         ];
       };
