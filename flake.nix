@@ -36,10 +36,6 @@
       url = "gitlab:doronbehar/nix-matlab";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixpkgs-patch-msedit = {
-      url = "https://github.com/nixos/nixpkgs/pull/409075.diff";
-      flake = false;
-    };
     nixpkgs-patch-vencord = {
       url = "https://github.com/nixos/nixpkgs/pull/422168.diff";
       flake = false;
