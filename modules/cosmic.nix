@@ -101,4 +101,6 @@ in
         simple-scan
     ]);
   };
+
+  services.gnome.gcr-ssh-agent.enable = !config.programs.ssh.startAgent;
 }
