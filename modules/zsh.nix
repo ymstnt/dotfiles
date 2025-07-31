@@ -1,4 +1,4 @@
-{ lib, pkgs, ... }:
+{ lib, config, pkgs, ... }:
 
 with lib; with pkgs;
 {
@@ -13,7 +13,7 @@ with lib; with pkgs;
     autocd = true;
 
     history = {
-      path = "$HOME/.zsh_history";
+      path = "${config.hm.home.homeDirectory}/.zsh_history";
       size = 9999999;
       extended = true;
       expireDuplicatesFirst = true;
