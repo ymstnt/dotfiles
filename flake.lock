@@ -264,6 +264,18 @@
         "type": "github"
       }
     },
+    "nixpkgs-patch-equicord-1": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-+iTBmqqQqozl4ctIWW5zSOw0F2r9CAQO0uprNn0pAoI=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/430391.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/430391.diff"
+      }
+    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1750881771,
@@ -281,16 +293,16 @@
     },
     "nixpkgs-stable": {
       "locked": {
-        "lastModified": 1751274312,
-        "narHash": "sha256-/bVBlRpECLVzjV19t5KMdMFWSwKLtb5RyXdjz3LJT+g=",
+        "lastModified": 1754028485,
+        "narHash": "sha256-IiiXB3BDTi6UqzAZcf2S797hWEPCRZOwyNThJIYhUfk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "50ab793786d9de88ee30ec4e4c24fb4236fc2674",
+        "rev": "59e69648d345d6e8fef86158c555730fa12af9de",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-24.11",
+        "ref": "nixos-25.05",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -326,6 +338,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
+        "nixpkgs-patch-equicord-1": "nixpkgs-patch-equicord-1",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"

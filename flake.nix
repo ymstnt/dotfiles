@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.05";
     nixpkgs-master.url = "github:NixOS/nixpkgs/master";
     nixpkgs-develop.url = "github:ymstnt/nixpkgs/master";
     nixpkgs-patcher.url = "github:gepbird/nixpkgs-patcher";
@@ -35,6 +35,10 @@
     nix-matlab = {
       url = "gitlab:doronbehar/nix-matlab";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nixpkgs-patch-equicord-1 = {
+      url = "https://github.com/NixOS/nixpkgs/pull/430391.diff";
+      flake = false;
     };
   };
 
