@@ -28,6 +28,7 @@ with lib; with pkgs;
       ls = "${getExe eza} --color=always --icons=auto --group-directories-first";
       cat = "${getExe bat} --style snip --style changes --style header";
       grep = "${getExe ripgrep} -i --color=auto";
+
       fu = "thefuck";
       bm = "bashmount";
       helix = "hx";
@@ -129,23 +130,6 @@ with lib; with pkgs;
         nix-store --add-root $GCROOTS_DIR/$1 --indirect --realise $(nix-store --add-fixed sha256 $1)
       }
       
-      github-ssh () {
-        private_key = "$HOME/.ssh/id_ed25519"
-        public_key="$private_key.pub"
-        github_link='https://github.com/settings/ssh/new'
-        
-        ${getExe' openssh "ssh-keygen"} -t ed25519 -f $private_key
-
-        echo "Add the ssh key below to github as an Authentication and a Signing key: $github_link"
-        echo '----BEGIN SSH PUBLIC KEY BLOCK----'
-        ${getExe bat} --style snip $public_key
-        echo '-----END SSH PUBLIC KEY BLOCK-----'
-        
-        cat $public_key | ${getExe xsel} -b
-        ${getExe' xdg-utils "xdg-open"} $github_link
-        echo 'Opened github in browser and copied ssh key to clipboard'
-      }
-
       # chown stuff
       function chtnt () {
         sudo chown -R $USER $argv[1]
