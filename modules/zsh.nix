@@ -94,7 +94,7 @@ with lib; with pkgs;
       # Built in autocomplete
       zstyle ': completion:*' menu select
       # Auto complete with case insenstivity
-      zstyle ': completion:*' matcher-list "" 'm: { a-zA-Z }={A-Za-z}' 'r: |[ ._- ]=* r:|=*' 'l:|=* r:|=*'
+      zstyle ':completion:*' matcher-list "" 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
       # Autocomplete
       ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
