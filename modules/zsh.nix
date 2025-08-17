@@ -129,6 +129,16 @@ with lib; with pkgs;
         mkdir -p $GCROOTS_DIR
         nix-store --add-root $GCROOTS_DIR/$1 --indirect --realise $(nix-store --add-fixed sha256 $1)
       }
+
+      ta() {
+        sessions=$(tmux ls 2>/dev/null)
+        if [[ -z "$sessions" ]]; then
+          tmux
+        else
+          selected_session=$(echo "$sessions" | ${getExe fzf} --select-1 | ${getExe hck} -f1)
+          tmux a -t "$selected_session"
+        fi
+      }
       
       # chown stuff
       function chtnt () {
