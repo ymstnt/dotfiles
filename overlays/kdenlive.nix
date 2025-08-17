@@ -3,16 +3,16 @@
 (final: prev: {
   kdePackages = prev.kdePackages.overrideScope (
     kdeFinal: kdePrev: {
-      kdenlive = kdePrev.kdenlive.overrideAttrs (
-        prevAttrs: with prev; {
-          nativeBuildInputs = (prevAttrs.nativeBuildInputs or [ ]) ++ [ makeBinaryWrapper ];
-          postInstall =
-            (prevAttrs.postInstall or "")
-            + ''
-              wrapProgram $out/bin/kdenlive --prefix LADSPA_PATH : ${rnnoise-plugin}/lib/ladspa
-            '';
-        }
-      );
+      kdenlive = prev.symlinkJoin {
+        name = "kdenlive-with-plugins-${kdePrev.kdenlive.version}";
+        paths = [ kdePrev.kdenlive ];
+        nativeBuildInputs = [
+          prev.makeBinaryWrapper
+        ];
+        postBuild = ''
+          wrapProgram $out/bin/kdenlive --prefix LADSPA_PATH : ${prev.rnnoise-plugin}/lib/ladspa
+        '';
+      };
     }
   );
 })
