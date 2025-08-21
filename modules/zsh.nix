@@ -98,7 +98,7 @@ with lib; with pkgs;
       zstyle ':completion:*' matcher-list "" 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
       # Autocomplete
-      ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
+      ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#709080"
       ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
       # This speeds up pasting w/ autosuggest
