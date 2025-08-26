@@ -29,6 +29,8 @@ with lib; with pkgs;
       cat = "${getExe bat} --style snip --style changes --style header";
       grep = "${getExe ripgrep} -i --color=auto";
 
+      nvd = "dix";
+
       fu = "thefuck";
       bm = "bashmount";
       helix = "hx";
