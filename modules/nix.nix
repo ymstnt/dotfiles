@@ -34,10 +34,11 @@
 
   hm.home.packages = with pkgs; [
     cachix
+    dix
     hydra-check
     nix-inspect
     nix-output-monitor
     nixpkgs-review
-    nvd
+    nix-update
   ];
 }
