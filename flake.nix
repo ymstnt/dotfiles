@@ -40,6 +40,10 @@
       url = "https://github.com/NixOS/nixpkgs/pull/430391.diff";
       flake = false;
     };
+    nixpkgs-patch-gitui = {
+      url = "https://github.com/NixOS/nixpkgs/pull/437049.diff";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-patcher, lix-module, home-manager, cosmic-manager, ... } @inputs: {
