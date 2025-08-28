@@ -291,7 +291,7 @@
     "nixpkgs-patch-lsprotocol": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-Eiru3AEx/BUj+PbiFG7tk2t+dDCA2j41P35rdxCGx9M=",
+        "narHash": "sha256-vwJKHKw1O5JGN96LRt+RH+oFOOLdH2HzUufF1HwkIUY=",
         "type": "file",
         "url": "https://github.com/NixOS/nixpkgs/pull/437306.diff"
       },
