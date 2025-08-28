@@ -94,6 +94,8 @@ with lib; with pkgs;
       setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history file.
       setopt INC_APPEND_HISTORY
 
+      set -o ignoreeof # disable ctrl+d to exit, useful when scrolling with it in tmux
+      
       # Built in autocomplete
       zstyle ': completion:*' menu select
       # Auto complete with case insenstivity
