@@ -13,7 +13,6 @@
     master.hifile
     obs-studio
     onlyoffice-desktopeditors
-    openshot-qt
     nur.repos.gepbird.orb-forge-gui
     plexamp
     plex-desktop
