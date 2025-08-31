@@ -36,18 +36,6 @@
       url = "gitlab:doronbehar/nix-matlab";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixpkgs-patch-lsprotocol = {
-      url = "https://github.com/NixOS/nixpkgs/pull/437306.diff";
-      flake = false;
-    };
-    nixpkgs-patch-equicord-1 = {
-      url = "https://github.com/NixOS/nixpkgs/pull/430391.diff";
-      flake = false;
-    };
-    nixpkgs-patch-gitui = {
-      url = "https://github.com/NixOS/nixpkgs/pull/437049.diff";
-      flake = false;
-    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-patcher, lix-module, home-manager, cosmic-manager, ... } @inputs: {

@@ -264,42 +264,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-equicord-1": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-19OSBQFCNh34xcLEecK3Aj9NL33PKMvAcfzYIHNO1w4=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/430391.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/430391.diff"
-      }
-    },
-    "nixpkgs-patch-gitui": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-YO1Z65baPd0eZz12gPtlMPO/scEeNGle9seBuf1uZdA=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/437049.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/437049.diff"
-      }
-    },
-    "nixpkgs-patch-lsprotocol": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-vwJKHKw1O5JGN96LRt+RH+oFOOLdH2HzUufF1HwkIUY=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/437306.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/437306.diff"
-      }
-    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1756482624,
@@ -362,9 +326,6 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
-        "nixpkgs-patch-equicord-1": "nixpkgs-patch-equicord-1",
-        "nixpkgs-patch-gitui": "nixpkgs-patch-gitui",
-        "nixpkgs-patch-lsprotocol": "nixpkgs-patch-lsprotocol",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
