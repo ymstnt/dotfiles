@@ -4,6 +4,7 @@
   imports =
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
+        "borgbackup"
         "fprintd"
         "games"
         "gnome"
