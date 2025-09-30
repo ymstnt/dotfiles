@@ -69,7 +69,6 @@
       ];
     };
     extraPackages = (with pkgs; [
-      ansible-language-server
       bash-language-server
       cmake-language-server
       docker-compose-language-service
