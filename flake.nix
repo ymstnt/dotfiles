@@ -36,6 +36,10 @@
       url = "gitlab:doronbehar/nix-matlab";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixpkgs-patch-avahi-debug = {
+      url = "https://github.com/NixOS/nixpkgs/pull/448254.diff";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-patcher, lix-module, home-manager, cosmic-manager, ... } @inputs: {
