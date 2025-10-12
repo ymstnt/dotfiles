@@ -4,7 +4,6 @@
   hm.programs.wezterm = {
     enable = true;
     enableBashIntegration = true;
-    enableZshIntegration = true;
     extraConfig = ''
       return {
         font = wezterm.font("JetBrainsMonoNL Nerd Font"),
