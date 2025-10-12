@@ -72,7 +72,7 @@
       bash-language-server
       cmake-language-server
       docker-compose-language-service
-      dockerfile-language-server-nodejs
+      dockerfile-language-server
       efm-langserver
       emmet-language-server
       gopls
