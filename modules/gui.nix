@@ -5,6 +5,7 @@
 
   hm.home.packages = (with pkgs; [
     cryptomator
+    deskflow
     gimp3
     gparted
     inkscape-with-extensions
