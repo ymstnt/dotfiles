@@ -276,18 +276,6 @@
         "url": "https://github.com/NixOS/nixpkgs/pull/448254.diff"
       }
     },
-    "nixpkgs-patch-mcpelauncher-ui-qt-fix-build": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-T6sLt0s3Y7Ge/zq9ZXaansA6eqKMxKe3nUdOJMo/B0g=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/450779.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/450779.diff"
-      }
-    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1759655918,
@@ -351,7 +339,6 @@
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-patch-avahi-debug": "nixpkgs-patch-avahi-debug",
-        "nixpkgs-patch-mcpelauncher-ui-qt-fix-build": "nixpkgs-patch-mcpelauncher-ui-qt-fix-build",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
