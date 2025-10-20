@@ -37,7 +37,6 @@
     filen-desktop
     grayjay
     itch
-    legcord
     nur.repos.ymstnt.lunatask
     obsidian
     remnote
