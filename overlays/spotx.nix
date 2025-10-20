@@ -3,8 +3,8 @@
 (final: prev:
 let
   spotx = prev.fetchurl {
-    url = "https://raw.githubusercontent.com/SpotX-Official/SpotX-Bash/284fc5a17179b6a86cd354d0095b52609323ef42/spotx.sh";
-    hash = "sha256-amOYz5Hf/p4a5Gq2669pJelCX2PrynN7Y/dEX0Ib/PE=";
+    url = "https://raw.githubusercontent.com/SpotX-Official/SpotX-Bash/12cfe5dcec1d82cb613d8aa8dd60f4cd181dfb06/spotx.sh";
+    hash = "sha256-ruptTkIhcnlRkvpGnyfx9tmjVZoUWCv0vzXDvVLemp8=";
   };
 in
   {
