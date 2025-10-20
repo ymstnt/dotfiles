@@ -33,7 +33,6 @@
     nur.repos.ymstnt.deepdwn
     discord
     drawio
-    element-desktop
     filen-desktop
     grayjay
     itch
