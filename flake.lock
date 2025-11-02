@@ -264,16 +264,16 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-avahi-debug": {
+    "nixpkgs-patch-fix-nvtop": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-uw6fH832r3L4MaWhkPabE07EZUmdgNdn2wOg/W96/DQ=",
+        "narHash": "sha256-D5SMlW7RiS2CcWN0HIG31RuqggbuXiaxIVg85JB+N84=",
         "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/448254.diff"
+        "url": "https://github.com/NixOS/nixpkgs/pull/457220.diff"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/448254.diff"
+        "url": "https://github.com/NixOS/nixpkgs/pull/457220.diff"
       }
     },
     "nixpkgs-patcher": {
@@ -338,7 +338,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
-        "nixpkgs-patch-avahi-debug": "nixpkgs-patch-avahi-debug",
+        "nixpkgs-patch-fix-nvtop": "nixpkgs-patch-fix-nvtop",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
