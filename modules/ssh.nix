@@ -24,7 +24,21 @@
   hm.programs.ssh = {
     enable = true;
     enableDefaultConfig = false;
-    matchBlocks."*".extraOptions.StrictHostKeyChecking = "no";
+    matchBlocks = {
+      "*" = {
+        extraOptions.StrictHostKeyChecking = "no";
+      };
+      "raspi.tchfoo.com" = {
+        port = 42727;
+        forwardX11 = true;
+        forwardX11Trusted = true;
+      };
+      "raspi5.tchfoo.com" = {
+        port = 42728;
+        forwardX11 = true;
+        forwardX11Trusted = true;
+      };
+    };
   };
 
   hm.services.ssh-agent = {
