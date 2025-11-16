@@ -264,6 +264,18 @@
         "type": "github"
       }
     },
+    "nixpkgs-patch-tenacity-fix-build": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-qLSZuLGRK7biKYdOmJuVJAbJooH9cooI5joiEyQxlYE=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/461636.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/461636.diff"
+      }
+    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1762257953,
@@ -326,6 +338,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
+        "nixpkgs-patch-tenacity-fix-build": "nixpkgs-patch-tenacity-fix-build",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
