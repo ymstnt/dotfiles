@@ -40,10 +40,6 @@
       url = "https://github.com/NixOS/nixpkgs/pull/461636.diff";
       flake = false;
     };
-    nixpkgs-patch-python-proton-core-fix-build = {
-      url = "https://github.com/NixOS/nixpkgs/pull/461528.diff";
-      flake = false;
-    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-patcher, lix-module, home-manager, cosmic-manager, ... } @inputs: {

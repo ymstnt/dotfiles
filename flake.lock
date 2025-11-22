@@ -264,18 +264,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-python-proton-core-fix-build": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-ewWQlvHjGlkaqItotepPJ1T3iKPUmU1w761aQEU+zK0=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/461528.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/461528.diff"
-      }
-    },
     "nixpkgs-patch-tenacity-fix-build": {
       "flake": false,
       "locked": {
@@ -350,7 +338,6 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
-        "nixpkgs-patch-python-proton-core-fix-build": "nixpkgs-patch-python-proton-core-fix-build",
         "nixpkgs-patch-tenacity-fix-build": "nixpkgs-patch-tenacity-fix-build",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
