@@ -36,6 +36,10 @@
       url = "gitlab:doronbehar/nix-matlab";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixpkgs-patch-rquickshare = {
+      url = "https://github.com/NixOS/nixpkgs/pull/468481.diff";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-patcher, lix-module, home-manager, cosmic-manager, ... } @inputs: {
