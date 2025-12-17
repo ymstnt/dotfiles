@@ -264,18 +264,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-cosmic-stable": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-4m74QBFcOf81R783gNuCPhEe4cUQeSzZhUV5E1mxVCY=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/469745.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/469745.diff"
-      }
-    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1765447685,
@@ -338,7 +326,6 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
-        "nixpkgs-patch-cosmic-stable": "nixpkgs-patch-cosmic-stable",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
