@@ -108,7 +108,6 @@
             "dom.battery.enabled" = false;
             "dom.security.https_only_mode" = true;
             "dom.security.https_only_mode_ever_enabled" = true;
-            "dom.webaudio.enabled" = false;
             "dom.private-attribution.submission.enabled" = false;
             "experiments.activeExperiment" = false;
             "experiments.enabled" = false;
@@ -130,14 +129,11 @@
             "network.cookie.cookieBehavior" = 1;
             "network.dns.disablePrefetch" = true;
             "network.dns.disablePrefetchFromHTTPS" = true;
-            "network.http.referer.spoofSource" = true;
             "network.http.speculative-parallel-limit" = 0;
             "network.predictor.enable-prefetch" = false;
             "network.predictor.enabled" = false;
             "network.prefetch-next" = false;
             "network.trr.mode" = 5;
-            "privacy.donottrackheader.enabled" = true;
-            "privacy.donottrackheader.value" = 1;
             "privacy.query_stripping" = true;
             "privacy.trackingprotection.cryptomining.enabled" = true;
             "privacy.trackingprotection.enabled" = true;
