@@ -38,6 +38,9 @@
         forwardX11 = true;
         forwardX11Trusted = true;
       };
+      "git.tchfoo.com" = {
+        port = 42728;
+      };
     };
   };
 
