@@ -1,4 +1,4 @@
-{ config, lib, home-manager, ...}:
+{ config, lib, pkgs, home-manager, ...}:
 
 {
   imports = [
@@ -9,6 +9,7 @@
   home-manager = {
     useGlobalPkgs = true;
     backupFileExtension = ".bak";
+    backupCommand = lib.getExe pkgs.trash-cli;
   };
   
   home-manager.users.ymstnt = {
