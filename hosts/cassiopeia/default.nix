@@ -11,6 +11,7 @@
         "packettracer"
         "pantheon"
         "steam"
+        "via"
       ];
 
   boot = {
