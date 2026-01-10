@@ -1,10 +1,9 @@
 { pkgs, ... }:
 
 {
-  programs.adb.enable = true;
-
   hm = {
     home.packages = (with pkgs; [
+      android-tools
       appimage-run
       bruno
       bun
