@@ -3,6 +3,7 @@
 {
   hm.home.packages = with pkgs; [
      via
+     vial
      qmk
   ];
 
