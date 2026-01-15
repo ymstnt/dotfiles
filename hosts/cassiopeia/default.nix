@@ -5,6 +5,7 @@
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
         "borgbackup"
+        "flatpak"
         "fprintd"
         "games"
         "gnome"
