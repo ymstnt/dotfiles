@@ -8,6 +8,7 @@
         "fprintd"
         "pantheon"
         "packettracer"
+        "gnome"
       ];
 
   boot = {
