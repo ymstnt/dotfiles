@@ -71,6 +71,7 @@
         animation = [
           "windows, 1, 2, default, slide"
           "fade, 1, 2, default"
+          "workspaces, 1, 2, default"
         ];
         general = {
           gaps_in = 2;
