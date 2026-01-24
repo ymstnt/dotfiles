@@ -9,6 +9,7 @@
         "fprintd"
         "games"
         "gnome"
+        "hyprland"
         "packettracer"
         "pantheon"
         "steam"
