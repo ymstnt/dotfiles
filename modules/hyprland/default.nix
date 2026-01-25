@@ -9,8 +9,8 @@
     ./hyprpaper.nix
     ./hyprshot.nix
     ./hyprsunset.nix
-    ./portals.nix
     ./swaync.nix
     ./tofi.nix
+    ./xdg.nix
   ];
 }
