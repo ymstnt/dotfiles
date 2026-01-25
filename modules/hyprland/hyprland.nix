@@ -13,9 +13,12 @@
     xwayland.enable = true;
   };
 
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
-  environment.sessionVariables.LIBVA_DRIVER_NAME = "nvidia";
-  environment.sessionVariables.__GLX_VENDOR_LIBRARY_NAME = "nvidia";
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+    LIBVA_DRIVER_NAME = "nvidia";
+    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+    QT_QPA_PLATFORMTHEME = "qt6ct";
+  };
 
   hm = {
     wayland.windowManager.hyprland = {
@@ -110,19 +113,17 @@
         color-scheme = "prefer-dark";
       };
     };
+
     gtk = {
       enable = true;
-
       theme = {
         package = pkgs.flat-remix-gtk;
         name = "Flat-Remix-GTK-Grey-Darkest";
       };
-
       iconTheme = {
         package = pkgs.adwaita-icon-theme;
         name = "Adwaita";
       };
-
       font = {
         name = "Inter Regular";
         size = 11;
