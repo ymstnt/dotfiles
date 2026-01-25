@@ -112,6 +112,7 @@
         hyprpwcenter
         hyprsysteminfo
         swaybg
+        wayland-logout
       ];
     };
 

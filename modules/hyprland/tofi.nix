@@ -29,7 +29,7 @@
             Suspend)  exec systemctl suspend ;;
             Reboot)   exec systemctl reboot ;;
             Lock)   exec hyprlock & ;;
-            Logout)   exec loginctl kill-user "$(whoami)" ;;
+            Logout)   exec wayland-logout ;;
           esac
         ''
       )

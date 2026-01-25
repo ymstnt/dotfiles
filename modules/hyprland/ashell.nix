@@ -32,6 +32,7 @@
       };
       settings = {
         lock_cmd = "hyprlock &";
+        logout_cmd = "wayland-logout";
       };
     };
   };
