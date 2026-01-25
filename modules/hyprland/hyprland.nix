@@ -32,22 +32,26 @@
           "$mod, mouse:273, resizeactive"
         ];
         bind = [
+          # Workspace keybinds
           "ALT, Tab, cyclenext"
           "ALT Shift, Tab, cyclenext, prev"
-          ", Print, exec, hyprshot -m region -o $HOME/Pictures/Screenshots"
-          "ALT, Print, exec, hyprshot -m window -m active -o $HOME/Pictures/Screenshots"
-          "CTRL_L, Print, exec, hyprshot -m output -o $HOME/Pictures/Screenshots"
           "$mod, right, workspace, r+1"
           "$mod, left, workspace, r-1"
           "$mod SHIFT, right, movetoworkspace, r+1"
           "$mod SHIFT, left, movetoworkspace, r-1"
-          "$mod, C, killactive"
-          "$mod, F, togglefloating"
-          "$mod, M, fullscreen, 1, toggle"
+          # Print screen keybind
+          ", Print, exec, hyprshot -m region -o $HOME/Pictures/Screenshots"
+          "ALT, Print, exec, hyprshot -m window -m active -o $HOME/Pictures/Screenshots"
+          "CTRL_L, Print, exec, hyprshot -m output -o $HOME/Pictures/Screenshots"
+          # App launching
           "$mod, L, exec, hyprlock &"
           "$mod, X, exec, tofipowermenu"
           "$mod, T, exec, kitty"
           "$mod, Return, exec, tofi-drun | xargs uwsm app --"
+          # Misc keybinds
+          "$mod, C, killactive"
+          "$mod, F, togglefloating"
+          "$mod, M, fullscreen, 1, toggle"
         ]
         ++ (builtins.concatLists (
           builtins.genList (
