@@ -12,6 +12,7 @@
     fastfetch
     ffmpegthumbnailer
     filen-cli
+    libinput
     gh
     glab
     glow
@@ -41,6 +42,7 @@
     termscp
     unrar
     unzip
+    wev
     wget
     wl-clipboard
     xsel

@@ -104,7 +104,6 @@
       };
 
       packages = with pkgs; [
-        libinput
         hyprlauncher
         hyprpwcenter
         hyprsysteminfo
