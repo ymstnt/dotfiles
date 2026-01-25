@@ -52,6 +52,10 @@
           "$mod, C, killactive"
           "$mod, F, togglefloating"
           "$mod, M, fullscreen, 1, toggle"
+          # Discord keybinds (passthrough)
+          ", mouse:202, pass, class:^(discord)$"
+          ", mouse:276, pass, class:^(discord)$"
+          "L_CTRL L_SHIFT, code:21, pass, class:^(discord)$"
         ]
         ++ (builtins.concatLists (
           builtins.genList (
