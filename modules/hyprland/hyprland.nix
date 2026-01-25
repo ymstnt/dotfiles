@@ -89,7 +89,7 @@
           gaps_out = 5;
         };
         exec-once = [
-          "swaybg"
+          "swaybg -i $HOME/Pictures/Wallpapers/paul-volkmer-qVotvbsuM_c-unsplash.jpg -m fill"
         ];
       };
     };
