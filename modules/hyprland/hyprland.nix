@@ -77,6 +77,9 @@
           gaps_in = 2;
           gaps_out = 5;
         };
+        exec-once = [
+          "swaybg"
+        ];
       };
     };
 
@@ -93,6 +96,7 @@
         hyprlauncher
         hyprpwcenter
         hyprsysteminfo
+        swaybg
       ];
     };
 
