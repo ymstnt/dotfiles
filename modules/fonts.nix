@@ -22,6 +22,7 @@
   ]) ++ (with pkgs.nerd-fonts; [
     fira-code
     jetbrains-mono
+    roboto-mono
     symbols-only
   ]);
   # Enable fontDir for Flatpak
