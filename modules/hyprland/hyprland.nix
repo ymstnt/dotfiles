@@ -40,9 +40,9 @@
           "$mod SHIFT, right, movetoworkspace, r+1"
           "$mod SHIFT, left, movetoworkspace, r-1"
           # Print screen keybind
-          ", Print, exec, hyprshot -m region -o $HOME/Pictures/Screenshots"
-          "ALT, Print, exec, hyprshot -m window -m active -o $HOME/Pictures/Screenshots"
-          "CTRL_L, Print, exec, hyprshot -m output -o $HOME/Pictures/Screenshots"
+          ", Print, exec, hyprshot -m region -z -o $HOME/Pictures/Screenshots"
+          "ALT, Print, exec, hyprshot -m window -m active -z -o $HOME/Pictures/Screenshots"
+          "CTRL_L, Print, exec, hyprshot -m output -z -o $HOME/Pictures/Screenshots"
           # App launching
           "$mod, L, exec, hyprlock &"
           "$mod, X, exec, tofipowermenu"
