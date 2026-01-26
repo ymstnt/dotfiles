@@ -108,7 +108,6 @@
       };
 
       packages = with pkgs; [
-        hyprlauncher
         hyprpwcenter
         hyprsysteminfo
         swaybg
