@@ -11,6 +11,7 @@
     ./hyprsunset.nix
     ./swaync.nix
     ./tofi.nix
+    ./waybar.nix
     ./xdg.nix
   ];
 }
