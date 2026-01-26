@@ -83,6 +83,17 @@
           "DP-3, 2560x1080@75, 1280x0, 1"
           "HDMI-A-1, 1920x1080, 1600x1080, 1"
         ];
+        workspace = [
+          "1, monitor:DP-3, default:true, persistent:true"
+          "2, monitor:DP-3, persistent:true"
+          "3, monitor:DP-3, persistent:true"
+          "4, monitor:DP-3, persistent:true"
+          "5, monitor:DP-3, persistent:true"
+          "6, monitor:HDMI-A-1, default:true, persistent:true"
+          "7, monitor:HDMI-A-1, persistent:true"
+          "8, monitor:HDMI-A-1, persistent:true"
+          "9, monitor:HDMI-A-1, persistent:true"
+        ];
         animation = [
           "windows, 1, 2, default, slide"
           "fade, 1, 2, default"
