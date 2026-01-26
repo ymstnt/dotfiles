@@ -2,7 +2,7 @@
 
 {
   hm.programs.ashell = {
-    enable = true;
+    enable = false;
     systemd.enable = true;
     settings = {
       modules = {
