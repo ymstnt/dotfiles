@@ -7,6 +7,7 @@
     dejavu_fonts
     font-awesome
     inter
+    inter-nerdfont
     jetbrains-mono
     mplus-outline-fonts.githubRelease
     noto-fonts
