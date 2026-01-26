@@ -110,6 +110,7 @@
       packages = with pkgs; [
         hyprpwcenter
         hyprsysteminfo
+        nautilus
         swaybg
         wayland-logout
       ];
