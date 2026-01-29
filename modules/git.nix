@@ -30,7 +30,6 @@
       };
     };
     home.packages = with pkgs; [
-      gitu
       ungit
       git-extras
     ];
