@@ -7,6 +7,7 @@
 
   programs.seahorse.enable = true;
 
+  services.udisks2.enable = true;
   programs.hyprland = {
     enable = true;
     withUWSM = true;
@@ -105,6 +106,7 @@
         };
         exec-once = [
           "swaybg -i $HOME/Pictures/Wallpapers/paul-volkmer-qVotvbsuM_c-unsplash.jpg -m fill"
+          "udiskie"
         ];
       };
     };
@@ -122,6 +124,7 @@
         hyprpwcenter
         hyprsysteminfo
         nautilus
+        udiskie
         swaybg
         wayland-logout
       ];
