@@ -23,7 +23,6 @@
     telegram-desktop
     tenacity
     vlc
-    waveterm
     xclicker
     xournalpp
   ]) ++ (with pkgs; [
