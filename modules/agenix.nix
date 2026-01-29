@@ -24,7 +24,7 @@ let
 in
 {
   imports = [ agenix.nixosModules.default ];
-  environment.systemPackages = [ agenix.packages.${pkgs.system}.default ];
+  environment.systemPackages = [ agenix.packages.${pkgs.stdenv.hostPlatform.system}.default ];
 
   age.secrets = secrets;
 }
