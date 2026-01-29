@@ -49,7 +49,7 @@
           "$mod, T, exec, kitty"
           "$mod, Return, exec, tofi-drun | xargs uwsm app --"
           # Misc keybinds
-          "$mod, C, killactive"
+          "$mod, Q, killactive"
           "$mod, F, togglefloating"
           "$mod, M, fullscreen, 1, toggle"
           # Discord keybinds (passthrough)
