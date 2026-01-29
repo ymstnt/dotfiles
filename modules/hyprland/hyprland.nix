@@ -8,6 +8,7 @@
   programs.seahorse.enable = true;
 
   services.udisks2.enable = true;
+
   programs.hyprland = {
     enable = true;
     withUWSM = true;
@@ -104,6 +105,10 @@
           gaps_in = 2;
           gaps_out = 5;
         };
+        windowrule = [
+          "match:initial_title ^Cryptomator$, float on"
+          "match:initial_class ^firefox-devedition$, match:initial_title ^Extension: \(heylogin – Password Manager\) - heylogin — Firefox Developer Edition$, float on, suppress_event maximize, suppress_event fullscreen"
+        ];
         exec-once = [
           "swaybg -i $HOME/Pictures/Wallpapers/paul-volkmer-qVotvbsuM_c-unsplash.jpg -m fill"
           "udiskie"
