@@ -61,6 +61,10 @@
           spacing = 10;
         };
 
+        "privacy" = {
+          icon-size = 15;
+        };
+
         "wireplumber" = {
           format = "{icon} {volume}%";
           format-muted = "󰝟";
