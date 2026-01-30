@@ -46,6 +46,20 @@
           Version = "1.5";
         };
       };
+      lunatask = {
+        name = "Lunatask";
+        exec = "lunatask";
+        icon = "lunatask";
+        type = "Application";
+        categories = [
+          "Office"
+        ];
+        mimeType = [ "x-scheme-handler/lunatask" ];
+        settings = {
+          StartupWMClass = "Lunatask";
+          Comment = "Encrypted to-do list, habit and mood tracker, journaling and notes app";
+        };
+      };
     };
   };
 }
