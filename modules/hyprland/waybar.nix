@@ -78,7 +78,7 @@
 
         "custom/power" = {
           format = "⏻";
-          tooltip = "Power menu";
+          tooltip-format = "Power menu";
           on-click = "tofipowermenu";
         };
       };
