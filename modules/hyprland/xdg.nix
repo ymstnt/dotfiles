@@ -30,22 +30,6 @@
       };
     };
     desktopEntries = {
-      discord = {
-        name = "Discord";
-        genericName = "All-in-one·cross-platform·voice·and·text·chat·for·gamers";
-        exec = "env -u WAYLAND_DISPLAY Discord";
-        icon = "discord";
-        type = "Application";
-        categories = [
-          "Network"
-          "InstantMessaging"
-        ];
-        mimeType = [ "x-scheme-handler/discord" ];
-        settings = {
-          StartupWMClass = "discord";
-          Version = "1.5";
-        };
-      };
       lunatask = {
         name = "Lunatask";
         exec = "lunatask";
