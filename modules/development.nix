@@ -24,6 +24,7 @@
       ninja
       nodejs
       python3
+      ruby
       rustc
       sqlite
       thonny
