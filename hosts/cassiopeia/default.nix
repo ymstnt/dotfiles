@@ -10,6 +10,7 @@
         "games"
         "gnome"
         "hyprland"
+        "kitty"
         "packettracer"
         "pantheon"
         "steam"
