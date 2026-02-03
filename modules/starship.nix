@@ -73,8 +73,8 @@
 
       directory.substitutions = {
         "Documents" = "󰈙 ";
-        "Downloads" = " ";
-        "Music" = " ";
+        "Downloads" = "󰇚 ";
+        "Music" = "󰝚 ";
         "Pictures" = " ";
       };
 
