@@ -15,7 +15,6 @@
     obs-studio
     onlyoffice-desktopeditors
     plexamp
-    plex-desktop
     qalculate-gtk
     rquickshare
     stable.rustdesk-flutter
