@@ -126,6 +126,7 @@
       };
 
       packages = with pkgs; [
+        hyprpolkitagent
         hyprpwcenter
         hyprshutdown
         hyprsysteminfo
