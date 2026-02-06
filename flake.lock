@@ -212,18 +212,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-fix-pika-backup": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-ASfihdrcBKwPLmPvQhmGeFgkFx305w/sLE+to/Fy234=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/484174.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/484174.diff"
-      }
-    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1769207991,
@@ -286,7 +274,6 @@
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-kdenlive": "nixpkgs-kdenlive",
         "nixpkgs-master": "nixpkgs-master",
-        "nixpkgs-patch-fix-pika-backup": "nixpkgs-patch-fix-pika-backup",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"

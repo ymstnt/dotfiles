@@ -34,10 +34,6 @@
     };
     # TODO: remove after https://github.com/NixOS/nixpkgs/issues/483540
     nixpkgs-kdenlive.url = "github:NixOS/nixpkgs/9d3f216d67d8a33c7171c72e030f0ffb14cf886c";
-    nixpkgs-patch-fix-pika-backup = {
-      url = "https://github.com/NixOS/nixpkgs/pull/484174.diff";
-      flake = false;
-    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-patcher, home-manager, cosmic-manager, ... } @inputs: {
