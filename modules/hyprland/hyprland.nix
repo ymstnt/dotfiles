@@ -127,10 +127,11 @@
 
       packages = with pkgs; [
         hyprpwcenter
+        hyprshutdown
         hyprsysteminfo
         nautilus
-        udiskie
         swaybg
+        udiskie
         wayland-logout
       ];
     };
