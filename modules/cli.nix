@@ -12,17 +12,18 @@
     fastfetch
     ffmpegthumbnailer
     filen-cli
-    libinput
     gh
     glab
     glow
     gnupg
     hck
     jq
+    libinput
     msedit
     ncdu
     nixpkgs-fmt
     nix-prefetch
+    nur.repos.ymstnt.trmnl-preview
     nvtopPackages.full
     p7zip
     pfetch
