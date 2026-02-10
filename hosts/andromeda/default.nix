@@ -9,6 +9,8 @@
         "pantheon"
         "packettracer"
         "gnome"
+        "hyprland"
+        "kitty"
       ];
 
   boot = {
