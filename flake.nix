@@ -32,27 +32,42 @@
       url = "gitlab:doronbehar/nix-matlab";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixpkgs-patch-hytale-launcher = {
+      url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
+      flake = false;
+    };
     # TODO: remove after https://github.com/NixOS/nixpkgs/issues/483540
     nixpkgs-kdenlive.url = "github:NixOS/nixpkgs/9d3f216d67d8a33c7171c72e030f0ffb14cf886c";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-patcher, home-manager, cosmic-manager, ... } @inputs: {
-    nixosConfigurations =
-      let
-        #inherit (self) outputs;
-        mkSystem = host: nixpkgs-patcher.lib.nixosSystem {
-          modules = [
-            ./overlays
-            home-manager.nixosModules.default
-            host
-          ];
-          specialArgs = inputs;
+  outputs =
+    {
+      self,
+      nixpkgs,
+      nixpkgs-patcher,
+      home-manager,
+      cosmic-manager,
+      ...
+    }@inputs:
+    {
+      nixosConfigurations =
+        let
+          #inherit (self) outputs;
+          mkSystem =
+            host:
+            nixpkgs-patcher.lib.nixosSystem {
+              modules = [
+                ./overlays
+                home-manager.nixosModules.default
+                host
+              ];
+              specialArgs = inputs;
+            };
+        in
+        {
+          andromeda = mkSystem ./hosts/andromeda;
+          cassiopeia = mkSystem ./hosts/cassiopeia;
         };
-      in
-      {
-        andromeda = mkSystem ./hosts/andromeda;
-        cassiopeia = mkSystem ./hosts/cassiopeia;
-      };
       nixosModules = import ./modules;
-  };
+    };
 }

@@ -212,6 +212,18 @@
         "type": "github"
       }
     },
+    "nixpkgs-patch-hytale-launcher": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-IBNPhnlDYNEJTnFakaMPL0QvQVaFXkzQ/Ck/dH0kJ1g=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
+      }
+    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1769207991,
@@ -274,6 +286,7 @@
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-kdenlive": "nixpkgs-kdenlive",
         "nixpkgs-master": "nixpkgs-master",
+        "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
