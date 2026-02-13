@@ -13,4 +13,13 @@
     khelpcenter
     krdp
   ];
+
+  hm = {
+    home.packages = (
+      with pkgs;
+      [
+        simple-scan
+      ]
+    );
+  };
 }
