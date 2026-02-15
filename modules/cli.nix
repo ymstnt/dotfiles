@@ -23,7 +23,6 @@
     ncdu
     nixpkgs-fmt
     nix-prefetch
-    nur.repos.ymstnt.trmnl-preview
     nvtopPackages.full
     p7zip
     pfetch
