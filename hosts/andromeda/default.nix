@@ -9,9 +9,9 @@
         "fprintd"
         "pantheon"
         "packettracer"
-        "gnome"
         "hyprland"
         "kitty"
+        "plasma"
       ];
 
   boot = {
