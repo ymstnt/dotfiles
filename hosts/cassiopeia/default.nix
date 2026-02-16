@@ -13,6 +13,7 @@
         "kitty"
         "packettracer"
         "pantheon"
+        "plasma"
         "steam"
         "via"
       ];
