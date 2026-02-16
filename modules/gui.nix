@@ -31,6 +31,7 @@
     nur.repos.ymstnt.deepdwn
     discord
     drawio
+    equibop
     filen-desktop
     grayjay
     itch
