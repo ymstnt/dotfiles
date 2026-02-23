@@ -47,7 +47,6 @@
     collision
     czkawka
     eyedropper
-    fragments
     packet
     pika-backup
     rnote
