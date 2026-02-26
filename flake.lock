@@ -175,6 +175,18 @@
         "type": "github"
       }
     },
+    "nixpkgs-patch-anki-fix-build": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-kAJIr+dtSoHjDura3SbsnjaCgd38iFx9odsOkqVe0VU=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/493604.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/493604.diff"
+      }
+    },
     "nixpkgs-patch-hytale-launcher": {
       "flake": false,
       "locked": {
@@ -260,6 +272,7 @@
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-kdenlive": "nixpkgs-kdenlive",
         "nixpkgs-master": "nixpkgs-master",
+        "nixpkgs-patch-anki-fix-build": "nixpkgs-patch-anki-fix-build",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
         "nixpkgs-patch-picosvg-fix-build": "nixpkgs-patch-picosvg-fix-build",
         "nixpkgs-patcher": "nixpkgs-patcher",
