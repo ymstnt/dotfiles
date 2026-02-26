@@ -187,6 +187,18 @@
         "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
       }
     },
+    "nixpkgs-patch-picosvg-fix-build": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-bZQTXhKZfivu5cGtyC4hsgprhqRChHo+s6JAjH+jEBc=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/493376.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/493376.diff"
+      }
+    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1769207991,
@@ -249,6 +261,7 @@
         "nixpkgs-kdenlive": "nixpkgs-kdenlive",
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
+        "nixpkgs-patch-picosvg-fix-build": "nixpkgs-patch-picosvg-fix-build",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
