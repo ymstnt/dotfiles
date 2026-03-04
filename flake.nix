@@ -32,16 +32,6 @@
       url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
       flake = false;
     };
-    nixpkgs-patch-picosvg-fix-build = {
-      url = "https://github.com/NixOS/nixpkgs/pull/493376.diff";
-      flake = false;
-    };
-    nixpkgs-patch-anki-fix-build = {
-      url = "https://github.com/NixOS/nixpkgs/pull/493604.diff";
-      flake = false;
-    };
-    # TODO: remove after https://github.com/NixOS/nixpkgs/issues/483540
-    nixpkgs-kdenlive.url = "github:NixOS/nixpkgs/9d3f216d67d8a33c7171c72e030f0ffb14cf886c";
   };
 
   outputs =

@@ -143,22 +143,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-kdenlive": {
-      "locked": {
-        "lastModified": 1768813120,
-        "narHash": "sha256-dZLEsNU3xVDE18nhGckVmlb9oUd5xDEMaAn/s8FRKR4=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "9d3f216d67d8a33c7171c72e030f0ffb14cf886c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "9d3f216d67d8a33c7171c72e030f0ffb14cf886c",
-        "type": "github"
-      }
-    },
     "nixpkgs-master": {
       "locked": {
         "lastModified": 1772646937,
@@ -175,40 +159,16 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-anki-fix-build": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-kAJIr+dtSoHjDura3SbsnjaCgd38iFx9odsOkqVe0VU=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/493604.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/493604.diff"
-      }
-    },
     "nixpkgs-patch-hytale-launcher": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-7tmj6Xu/s9SznRHaLOFe1MYfshfiRfYMK8aPIN/T0CI=",
+        "narHash": "sha256-kohGSELQEzdUmI+dH+rMR26Xle47wPxbmv94+RyBezE=",
         "type": "file",
         "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
       },
       "original": {
         "type": "file",
         "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
-      }
-    },
-    "nixpkgs-patch-picosvg-fix-build": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-bZQTXhKZfivu5cGtyC4hsgprhqRChHo+s6JAjH+jEBc=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/493376.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/493376.diff"
       }
     },
     "nixpkgs-patcher": {
@@ -270,11 +230,8 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
-        "nixpkgs-kdenlive": "nixpkgs-kdenlive",
         "nixpkgs-master": "nixpkgs-master",
-        "nixpkgs-patch-anki-fix-build": "nixpkgs-patch-anki-fix-build",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
-        "nixpkgs-patch-picosvg-fix-build": "nixpkgs-patch-picosvg-fix-build",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
