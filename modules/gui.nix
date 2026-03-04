@@ -38,7 +38,7 @@
     nur.repos.ymstnt.lunatask
     obsidian
     remnote
-    signal-desktop-bin
+    signal-desktop
     spotify
     teams-for-linux
   ]) ++ (with pkgs; [
