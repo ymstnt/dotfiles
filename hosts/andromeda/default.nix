@@ -5,7 +5,6 @@
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
         "cosmic"
-        "flatpak"
         "fprintd"
         "pantheon"
         "packettracer"
