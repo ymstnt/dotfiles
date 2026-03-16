@@ -14,13 +14,14 @@
     baobab
     epiphany
     evince
+    geary
     gnome-clocks
     gnome-connections
     gnome-maps
     gnome-music
+    gnome-software
     gnome-tour
     snapshot
-    geary
     totem
     yelp
   ]);
