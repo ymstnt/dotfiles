@@ -15,6 +15,7 @@
         "pantheon"
         "plasma"
         "steam"
+        "touchpad"
         "via"
       ];
 
