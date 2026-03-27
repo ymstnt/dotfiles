@@ -2,7 +2,7 @@
 
 {
   hm.home.packages = with pkgs; [
-    protonvpn-gui
+    proton-vpn
     protonmail-desktop
   ];
 
