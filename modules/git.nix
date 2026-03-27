@@ -24,6 +24,7 @@
           pull.rebase = true;
           github.user = "ymstnt";
         };
+        signing.format = "openpgp";
       };
       gitui = {
         enable = true;
