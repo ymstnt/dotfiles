@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   services = {
@@ -96,6 +96,7 @@
         };
       };
       gtk4 = {
+        theme = null;
         extraConfig = {
           gtk-application-prefer-dark-theme = 1;
         };
