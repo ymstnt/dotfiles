@@ -162,7 +162,7 @@
     "nixpkgs-patch-hytale-launcher": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-4k+ByaYaZat0ljQtSpKEZDzEVol6LPSCjNSRnUOb2v8=",
+        "narHash": "sha256-+fF+k8BiwEV68fdEsVGjMKe8CtLwScwCAk0s771843E=",
         "type": "file",
         "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
       },
