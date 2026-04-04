@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   services = {
@@ -52,6 +52,7 @@
           "HiFile.desktop"
           "org.gnome.Nautilus.desktop"
           "lunatask.desktop"
+          "remnote.desktop"
           "spotify.desktop"
         ];
       };
