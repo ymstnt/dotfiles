@@ -91,11 +91,10 @@
       taplo
       texlab
       tinymist
+      typescript-language-server
       vscode-langservers-extracted
       vue-language-server
       yaml-language-server
-    ]) ++ (with pkgs.nodePackages; [
-      typescript-language-server
     ]) ++ (with pkgs.python3Packages; [
       python-lsp-server
     ]);
