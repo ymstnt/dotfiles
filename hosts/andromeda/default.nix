@@ -7,7 +7,6 @@
         "cosmic"
         "fprintd"
         "pantheon"
-        "packettracer"
         "hyprland"
         "kitty"
         "plasma"
