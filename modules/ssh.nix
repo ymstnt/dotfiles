@@ -34,10 +34,16 @@
         forwardX11 = true;
         forwardX11Trusted = true;
       };
+      "raspi-doboz" = {
+        port = 42727;
+      };
       "raspi5.tchfoo.com" = {
         port = 42728;
         forwardX11 = true;
         forwardX11Trusted = true;
+      };
+      "raspi5-doboz" = {
+        port = 42728;
       };
       "git.tchfoo.com" = {
         port = 42728;
