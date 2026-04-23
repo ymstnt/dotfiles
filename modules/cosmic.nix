@@ -24,7 +24,6 @@ in
       applets = {
         app-list.settings = {
           favorites = [
-            "firefox-devedition"
             "brave-origin-nightly"
             "thunderbird"
             "discord"
