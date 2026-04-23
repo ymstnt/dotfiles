@@ -32,6 +32,10 @@
       url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
       flake = false;
     };
+    nixpkgs-patch-brawe-origin = {
+      url = "https://github.com/NixOS/nixpkgs/pull/511131.diff";
+      flake = false;
+    };
   };
 
   outputs =
