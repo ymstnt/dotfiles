@@ -43,6 +43,7 @@
 
         favorite-apps = [
           "firefox-devedition.desktop"
+          "brave-origin-nightly.desktop"
           "thunderbird.desktop"
           "discord.desktop"
           "TeamSpeak.desktop"
