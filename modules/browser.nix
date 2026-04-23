@@ -176,7 +176,7 @@
       };
       chromium = {
         enable = true;
-        package = pkgs.brave;
+        package = pkgs.brave-origin;
       };
     };
 
