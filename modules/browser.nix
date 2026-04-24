@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   hm = {
@@ -6,6 +6,7 @@
       firefox = {
         enable = true;
         package = pkgs.firefox-devedition;
+        configPath = config.hm.xdg.configHome;
         profiles.dev-edition-default = {
           isDefault = true;
           search = {
