@@ -162,7 +162,7 @@
     "nixpkgs-patch-brawe-origin": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-/gUborBqQPWymd2TCIj5i+pMXaBeYl4IhJ4aDqxs9mM=",
+        "narHash": "sha256-NuaO6+s1LhlIctcbED5I4MwVFspbgRgh1hcKiEZXxV8=",
         "type": "file",
         "url": "https://github.com/NixOS/nixpkgs/pull/511131.diff"
       },
