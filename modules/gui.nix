@@ -9,7 +9,7 @@
     gimp3
     gparted
     inkscape-with-extensions
-    nur.repos.ymstnt.lifeograph
+    lifeograph
     mpv
     master.hifile
     obs-studio
