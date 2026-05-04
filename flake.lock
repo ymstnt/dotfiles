@@ -183,6 +183,18 @@
         "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
       }
     },
+    "nixpkgs-patch-wireshark-hash-fix": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-aEOXV6DEnFFN/cLQhMvDEctk2ComPt+4xQa4qxGSFnA=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/515269.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/515269.diff"
+      }
+    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1776988475,
@@ -245,6 +257,7 @@
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-patch-brawe-origin": "nixpkgs-patch-brawe-origin",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
+        "nixpkgs-patch-wireshark-hash-fix": "nixpkgs-patch-wireshark-hash-fix",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"

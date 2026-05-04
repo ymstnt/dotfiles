@@ -36,6 +36,10 @@
       url = "https://github.com/NixOS/nixpkgs/pull/511131.diff";
       flake = false;
     };
+    nixpkgs-patch-wireshark-hash-fix = {
+      url = "https://github.com/NixOS/nixpkgs/pull/515269.diff";
+      flake = false;
+    };
   };
 
   outputs =
