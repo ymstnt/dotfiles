@@ -26,7 +26,7 @@
       limine = {
         enable = true;
         extraEntries = ''
-          /Windows
+          /Windows 11
             protocol: efi
             path: boot():/EFI/Microsoft/Boot/bootmgfw.efi
         '';
