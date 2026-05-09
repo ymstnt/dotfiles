@@ -33,6 +33,8 @@
         maxGenerations = 10;
         secureBoot.enable = true;
       };
+      grub.enable = false;
+      systemd-boot.enable = false;
     };
 
     initrd = {
