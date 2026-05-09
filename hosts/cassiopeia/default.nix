@@ -1,4 +1,4 @@
-{ self, ... }:
+{ self, pkgs, ... }:
 
 {
   imports =
@@ -30,6 +30,8 @@
             protocol: efi
             path: boot():/EFI/Microsoft/Boot/bootmgfw.efi
         '';
+        maxGenerations = 10;
+        secureBoot.enable = true;
       };
     };
 
@@ -45,6 +47,8 @@
       };
     };
   };
+
+  environment.systemPackages = [ pkgs.sbctl ];
 
   networking.hostName = "cassiopeia";
 
