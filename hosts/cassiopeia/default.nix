@@ -31,6 +31,11 @@
             path: boot():/EFI/Microsoft/Boot/bootmgfw.efi
         '';
         maxGenerations = 10;
+        style = {
+          wallpapers = [
+            /home/ymstnt/Pictures/Wallpapers/limine_cassiopeia.jpg
+          ];
+        };
         secureBoot.enable = true;
       };
       grub.enable = false;
