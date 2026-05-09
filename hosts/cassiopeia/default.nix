@@ -23,8 +23,13 @@
     loader = {
       timeout = 3;
       efi.canTouchEfiVariables = true;
-      systemd-boot = {
+      limine = {
         enable = true;
+        extraEntries = ''
+          /Windows
+            protocol: efi
+            path: boot():/EFI/Microsoft/Boot/bootmgfw.efi
+        '';
       };
     };
 
