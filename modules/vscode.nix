@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  hm.programs.vscode = {
+  hm.programs.vscodium = {
     enable = true;
     package = pkgs.vscodium;
     profiles.default = {
