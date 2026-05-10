@@ -35,6 +35,9 @@
           wallpapers = [
             /home/ymstnt/Pictures/Wallpapers/limine_cassiopeia.jpg
           ];
+          interface = {
+            helpHidden = true;
+          };
         };
         secureBoot.enable = true;
       };

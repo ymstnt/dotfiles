@@ -28,6 +28,9 @@
           wallpapers = [
             /home/ymstnt/Pictures/Wallpapers/limine_andromeda.jpg
           ];
+          interface = {
+            helpHidden = true;
+          };
         };
       };
       grub.enable = false;
