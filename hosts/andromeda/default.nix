@@ -16,14 +16,22 @@
     loader = {
       timeout = 3;
       efi.canTouchEfiVariables = true;
-      systemd-boot = {
+      limine = {
         enable = true;
-        windows.windows = {
-          title = "Windows 11";
-          efiDeviceHandle = "HD1b65535a1";
+        extraEntries = ''
+          /Windows 11
+            protocol: efi
+            path: uuid(6db2c526-be97-4ab8-bf2f-a5867ba6cda0):/EFI/Microsoft/Boot/bootmgfw.efi
+        '';
+        maxGenerations = 10;
+        style = {
+          wallpapers = [
+            /home/ymstnt/Pictures/Wallpapers/limine_andromeda.jpg
+          ];
         };
       };
       grub.enable = false;
+      systemd-boot.enable = false;
     };
   };
 
