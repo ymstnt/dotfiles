@@ -39,6 +39,7 @@
           "quick-touchpad-toggle@kramo.hu"
           "status-icons@gnome-shell-extensions.gcampax.github.com"
           "system-monitor@gnome-shell-extensions.gcampax.github.com"
+          "window-calls@domandoman.xyz"
         ];
 
         favorite-apps = [
@@ -126,6 +127,8 @@
       quick-touchpad-toggle
       status-icons
       system-monitor
+      window-calls
     ]);
   };
 }
+
