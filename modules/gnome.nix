@@ -42,7 +42,7 @@
         ];
 
         favorite-apps = [
-          "brave-origin-nightly.desktop"
+          "brave-origin-beta.desktop"
           "thunderbird.desktop"
           "discord.desktop"
           "TeamSpeak.desktop"
@@ -129,4 +129,3 @@
     ]);
   };
 }
-
