@@ -24,29 +24,29 @@
   hm.programs.ssh = {
     enable = true;
     enableDefaultConfig = false;
-    matchBlocks = {
+    settings = {
       "*" = {
-        extraOptions.StrictHostKeyChecking = "no";
-        identityFile = "~/.ssh/id_ed25519";
+        StrictHostKeyChecking = "no";
+        IdentityFile = "~/.ssh/id_ed25519";
       };
       "raspi.tchfoo.com" = {
-        port = 42727;
-        forwardX11 = true;
-        forwardX11Trusted = true;
+        Port = 42727;
+        ForwardX11 = true;
+        ForwardX11Trusted = true;
       };
       "raspi-doboz" = {
-        port = 42727;
+        Port = 42727;
       };
       "raspi5.tchfoo.com" = {
-        port = 42728;
-        forwardX11 = true;
-        forwardX11Trusted = true;
+        Port = 42728;
+        ForwardX11 = true;
+        ForwardX11Trusted = true;
       };
       "raspi5-doboz" = {
-        port = 42728;
+        Port = 42728;
       };
       "git.tchfoo.com" = {
-        port = 42728;
+        Port = 42728;
       };
     };
   };
