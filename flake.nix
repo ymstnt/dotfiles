@@ -36,6 +36,8 @@
       url = "https://github.com/NixOS/nixpkgs/pull/511131.diff";
       flake = false;
     };
+    nixpkgs-patch-python-lsp-server-test = {
+      url = "https://github.com/NixOS/nixpkgs/pull/522650.diff";
       flake = false;
     };
   };

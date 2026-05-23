@@ -189,6 +189,16 @@
       },
       "original": {
         "type": "file",
+    "nixpkgs-patch-python-lsp-server-test": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-XdpRt2dSdowqL/TKKpxjAn4X+J4t9KiW9wQdeCex/P4=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/522650.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/522650.diff"
       }
     },
     "nixpkgs-patcher": {
@@ -253,6 +263,7 @@
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-patch-brawe-origin": "nixpkgs-patch-brawe-origin",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
+        "nixpkgs-patch-python-lsp-server-test": "nixpkgs-patch-python-lsp-server-test",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
