@@ -36,8 +36,6 @@
       url = "https://github.com/NixOS/nixpkgs/pull/511131.diff";
       flake = false;
     };
-    nixpkgs-patch-openasar = {
-      url = "https://github.com/NixOS/nixpkgs/pull/520078.diff";
       flake = false;
     };
   };

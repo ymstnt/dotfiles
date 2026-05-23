@@ -183,16 +183,12 @@
         "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
       }
     },
-    "nixpkgs-patch-openasar": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-cR2e6KOQcfU0gqguxVtOIRz8JzhADy57ruWkmW3IY40=",
         "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/520078.diff"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/520078.diff"
       }
     },
     "nixpkgs-patcher": {
@@ -257,7 +253,6 @@
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-patch-brawe-origin": "nixpkgs-patch-brawe-origin",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
-        "nixpkgs-patch-openasar": "nixpkgs-patch-openasar",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur"
