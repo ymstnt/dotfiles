@@ -40,6 +40,10 @@
       url = "https://github.com/NixOS/nixpkgs/pull/522650.diff";
       flake = false;
     };
+    nixpkgs-patch-python-language-server-tests = {
+      url = "https://github.com/NixOS/nixpkgs/pull/522705.diff";
+      flake = false;
+    };
   };
 
   outputs =
