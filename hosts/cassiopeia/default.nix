@@ -33,7 +33,7 @@
         maxGenerations = 10;
         style = {
           wallpapers = [
-            /home/ymstnt/Pictures/Wallpapers/limine_cassiopeia.jpg
+            ./limine_cassiopeia.jpg
           ];
           interface = {
             helpHidden = true;
