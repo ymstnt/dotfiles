@@ -1,0 +1,9 @@
+keys:
+  - &andromeda-host age19h3u55pjhdsdsz0j86jp0zh09xte8h6ppr429tmz7jm8rastjc5qamyl34
+  - &andromeda-ymstnt age1wua7529nr4f3a7nkuj6e8mvvjl9pp9mklnnzcxny0urz7mwes4vqkhu23s
+creation_rules:
+  - path_regex: secrets/secrets.yaml$
+    key_groups:
+      - age:
+        - *andromeda-host
+        - *andromeda-ymstnt
