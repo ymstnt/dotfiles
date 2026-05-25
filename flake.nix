@@ -22,11 +22,9 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    agenix = {
-      url = "github:ryantm/agenix";
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
-      inputs.darwin.follows = "";
     };
     nixpkgs-patch-hytale-launcher = {
       url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
@@ -53,6 +51,7 @@
       nixpkgs-patcher,
       home-manager,
       cosmic-manager,
+      sops-nix,
       ...
     }@inputs:
     {
@@ -65,6 +64,7 @@
               modules = [
                 ./overlays
                 home-manager.nixosModules.default
+                sops-nix.nixosModules.sops
                 host
               ];
               specialArgs = inputs;
