@@ -26,7 +26,7 @@
         maxGenerations = 10;
         style = {
           wallpapers = [
-            /home/ymstnt/Pictures/Wallpapers/limine_andromeda.jpg
+            ./limine_andromeda.jpg
           ];
           interface = {
             helpHidden = true;
