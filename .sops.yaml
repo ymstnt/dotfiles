@@ -1,9 +1,13 @@
 keys:
-  - &andromeda-host age19h3u55pjhdsdsz0j86jp0zh09xte8h6ppr429tmz7jm8rastjc5qamyl34
-  - &andromeda-ymstnt age1wua7529nr4f3a7nkuj6e8mvvjl9pp9mklnnzcxny0urz7mwes4vqkhu23s
+  - &andromeda age19h3u55pjhdsdsz0j86jp0zh09xte8h6ppr429tmz7jm8rastjc5qamyl34
+  - &andromeda_ymstnt age1wua7529nr4f3a7nkuj6e8mvvjl9pp9mklnnzcxny0urz7mwes4vqkhu23s
+  - &cassiopeia age14zt0vdepscpwym95nqqku49kje9prwm4ufy929wq4mcu8q59yd9sp0s5lf
+  - &cassiopeia_ymstnt age1zugse00qnfdw28utfuhsljhz27yxgzgkl3cc67dmc7zvr47t89qsn82ryl
 creation_rules:
   - path_regex: secrets/secrets.yaml$
     key_groups:
       - age:
-        - *andromeda-host
-        - *andromeda-ymstnt
+        - *andromeda
+        - *andromeda_ymstnt
+        - *cassiopeia
+        - *cassiopeia_ymstnt
