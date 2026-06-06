@@ -5,11 +5,15 @@
     content = ''
       [Resolve]
       DNS=${config.sops.placeholder."dns/${config.networking.hostName}"}
+      Domains=~.
     '';
     owner = "systemd-resolve";
     group = "systemd-resolve";
     restartUnits = [ "systemd-resolved.service" ];
   };
+
+  systemd.services.systemd-resolved.wantedBy = [ "sops-secrets-populator.service" ];
+  systemd.services.systemd-resolved.after = [ "sops-secrets-populator.service" ];
 
   systemd.tmpfiles.rules = [
     "d /run/systemd/resolved.conf.d 0755 root root -"
