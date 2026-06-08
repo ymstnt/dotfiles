@@ -34,12 +34,6 @@
       url = "https://github.com/NixOS/nixpkgs/pull/528170.diff";
       flake = false;
     };
-    nixpkgs-patch-python-lsp-server-test = {
-      url = "https://github.com/NixOS/nixpkgs/pull/522650.diff";
-      flake = false;
-    };
-    nixpkgs-patch-python-language-server-tests = {
-      url = "https://github.com/NixOS/nixpkgs/pull/522705.diff";
     nixpkgs-patch-brave-origin = {
       url = "https://github.com/NixOS/nixpkgs/pull/513143.diff";
       flake = false;

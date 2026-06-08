@@ -146,6 +146,18 @@
         "url": "https://github.com/NixOS/nixpkgs/pull/528170.diff"
       }
     },
+    "nixpkgs-patch-brave-origin": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-Hrx+XLq0X78Ke2EMP8LHEMdkTpDwS22A8Z8mM2Gw7ws=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/513143.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/513143.diff"
+      }
+    },
     "nixpkgs-patch-hytale-launcher": {
       "flake": false,
       "locked": {
@@ -156,31 +168,6 @@
       "original": {
         "type": "file",
         "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
-      }
-    },
-    "nixpkgs-patch-python-language-server-tests": {
-    "nixpkgs-patch-brave-origin": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-Hrx+XLq0X78Ke2EMP8LHEMdkTpDwS22A8Z8mM2Gw7ws=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/513143.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/522705.diff"
-      }
-    },
-    "nixpkgs-patch-python-lsp-server-test": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-XdpRt2dSdowqL/TKKpxjAn4X+J4t9KiW9wQdeCex/P4=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/522650.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/522650.diff"
       }
     },
     "nixpkgs-patcher": {
@@ -245,8 +232,6 @@
         "nixpkgs-patch-brave": "nixpkgs-patch-brave",
         "nixpkgs-patch-brave-origin": "nixpkgs-patch-brave-origin",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
-        "nixpkgs-patch-python-language-server-tests": "nixpkgs-patch-python-language-server-tests",
-        "nixpkgs-patch-python-lsp-server-test": "nixpkgs-patch-python-lsp-server-test",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur",
