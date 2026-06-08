@@ -134,16 +134,16 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-brawe-origin": {
+    "nixpkgs-patch-brave": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-rwwkop20278YtqiqwGK2mgfpvs8wsm8itFQYjCEhDk0=",
+        "narHash": "sha256-5RsY9BpcWBKZEyf3Ub1zOTUCCEH7zyuP5uftZABGp+o=",
         "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/511131.diff"
+        "url": "https://github.com/NixOS/nixpkgs/pull/528170.diff"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/511131.diff"
+        "url": "https://github.com/NixOS/nixpkgs/pull/528170.diff"
       }
     },
     "nixpkgs-patch-hytale-launcher": {
@@ -159,11 +159,12 @@
       }
     },
     "nixpkgs-patch-python-language-server-tests": {
+    "nixpkgs-patch-brave-origin": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-kkb4VBal47yhIhGiWXifQ1YdZ05GRx0PD6mJQkoF1gA=",
+        "narHash": "sha256-Hrx+XLq0X78Ke2EMP8LHEMdkTpDwS22A8Z8mM2Gw7ws=",
         "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/522705.diff"
+        "url": "https://github.com/NixOS/nixpkgs/pull/513143.diff"
       },
       "original": {
         "type": "file",
@@ -241,7 +242,8 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
-        "nixpkgs-patch-brawe-origin": "nixpkgs-patch-brawe-origin",
+        "nixpkgs-patch-brave": "nixpkgs-patch-brave",
+        "nixpkgs-patch-brave-origin": "nixpkgs-patch-brave-origin",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
         "nixpkgs-patch-python-language-server-tests": "nixpkgs-patch-python-language-server-tests",
         "nixpkgs-patch-python-lsp-server-test": "nixpkgs-patch-python-lsp-server-test",

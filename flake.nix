@@ -30,8 +30,8 @@
       url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
       flake = false;
     };
-    nixpkgs-patch-brawe-origin = {
-      url = "https://github.com/NixOS/nixpkgs/pull/511131.diff";
+    nixpkgs-patch-brave = {
+      url = "https://github.com/NixOS/nixpkgs/pull/528170.diff";
       flake = false;
     };
     nixpkgs-patch-python-lsp-server-test = {
@@ -40,6 +40,8 @@
     };
     nixpkgs-patch-python-language-server-tests = {
       url = "https://github.com/NixOS/nixpkgs/pull/522705.diff";
+    nixpkgs-patch-brave-origin = {
+      url = "https://github.com/NixOS/nixpkgs/pull/513143.diff";
       flake = false;
     };
   };
