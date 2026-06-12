@@ -43,7 +43,7 @@
         ];
 
         favorite-apps = [
-          "brave-origin-beta.desktop"
+          "brave-origin.desktop"
           "thunderbird.desktop"
           "discord.desktop"
           "TeamSpeak.desktop"
