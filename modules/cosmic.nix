@@ -24,7 +24,7 @@ in
       applets = {
         app-list.settings = {
           favorites = [
-            "brave-origin-beta"
+            "brave-origin-stable"
             "thunderbird"
             "discord"
             "TeamSpeak"
