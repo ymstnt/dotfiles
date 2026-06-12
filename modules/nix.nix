@@ -1,6 +1,10 @@
-{ config, pkgs, ... }:
+{ config, pkgs, nix-index-database, ... }:
 
 {
+  imports = [
+    nix-index-database.nixosModules.nix-index
+  ];
+
   nixpkgs.config.allowUnfree = true;
 
   nix = {
@@ -33,6 +37,8 @@
     enable = true;
     flake = "${config.hm.home.homeDirectory}/dotfiles";
   };
+
+  programs.nix-index-database.comma.enable = true;
 
   hm.home.packages = with pkgs; [
     cachix

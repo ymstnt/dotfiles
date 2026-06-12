@@ -26,6 +26,10 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "";
+    };
     nixpkgs-patch-hytale-launcher = {
       url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
       flake = false;
