@@ -167,7 +167,7 @@
     "nixpkgs-patch-brave-origin": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-Hrx+XLq0X78Ke2EMP8LHEMdkTpDwS22A8Z8mM2Gw7ws=",
+        "narHash": "sha256-N3M11W/ImHeFEDAdo5r1cZWjJCVf2aG+qAuu5maVdmk=",
         "type": "file",
         "url": "https://github.com/NixOS/nixpkgs/pull/513143.diff"
       },
