@@ -29,7 +29,6 @@
       sqlite
       thonny
       typst
-      xpipe
       zola
     ]) ++ (with pkgs.python3Packages; [
       pikepdf
