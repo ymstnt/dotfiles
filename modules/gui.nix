@@ -5,7 +5,6 @@
 
   hm.home.packages = (with pkgs; [
     cryptomator
-    deskflow
     gimp3
     gparted
     inkscape-with-extensions
@@ -14,10 +13,7 @@
     master.hifile
     obs-studio
     onlyoffice-desktopeditors
-    plexamp
     qalculate-gtk
-    rquickshare
-    stable.rustdesk-flutter
     teamspeak6-client
     telegram-desktop
     tenacity
@@ -26,12 +22,10 @@
     xournalpp
   ]) ++ (with pkgs; [
     # Electron apps
-    anytype
     nur.repos.ymstnt.beeper
     nur.repos.ymstnt.deepdwn
     discord
     drawio
-    equibop
     filen-desktop
     grayjay
     itch
