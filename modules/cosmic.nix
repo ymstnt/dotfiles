@@ -35,6 +35,7 @@ in
             "com.system76.CosmicFiles"
             "lunatask"
             "remnote"
+            "anki"
             "spotify"
           ];
         };
