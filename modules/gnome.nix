@@ -53,6 +53,7 @@
           "org.gnome.Nautilus.desktop"
           "lunatask.desktop"
           "remnote.desktop"
+          "anki.desktop"
           "spotify.desktop"
         ];
       };
