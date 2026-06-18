@@ -27,7 +27,6 @@ in
             "brave-origin"
             "thunderbird"
             "discord"
-            "TeamSpeak"
             "beepertexts"
             "signal"
             "com.system76.CosmicTerm"
