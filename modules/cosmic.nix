@@ -16,6 +16,8 @@ in
     displayManager.cosmic-greeter.enable = true;
   };
 
+  services.system76-scheduler.enable = true;
+  
   programs.seahorse.enable = true;
 
   hm = {
