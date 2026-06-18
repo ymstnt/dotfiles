@@ -45,7 +45,6 @@
           "brave-origin.desktop"
           "thunderbird.desktop"
           "discord.desktop"
-          "TeamSpeak.desktop"
           "beepertexts.desktop"
           "signal.desktop"
           "org.gnome.Console.desktop"
