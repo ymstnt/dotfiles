@@ -62,13 +62,6 @@
 
   networking.hostName = "cassiopeia";
 
-  networking.networkmanager.settings = {
-    main = {
-      dns = "none";
-      systemd-resolved = "false";
-    };
-  };
-
   services.timesyncd.enable = true;
 
   # GPU
