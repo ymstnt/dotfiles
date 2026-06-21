@@ -34,10 +34,6 @@
       url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
       flake = false;
     };
-    nixpkgs-patch-brave = {
-      url = "https://github.com/NixOS/nixpkgs/pull/528170.diff";
-      flake = false;
-    };
     nixpkgs-patch-brave-origin = {
       url = "https://github.com/NixOS/nixpkgs/pull/513143.diff";
       flake = false;

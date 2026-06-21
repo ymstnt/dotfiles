@@ -152,18 +152,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-brave": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-5RsY9BpcWBKZEyf3Ub1zOTUCCEH7zyuP5uftZABGp+o=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/528170.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/528170.diff"
-      }
-    },
     "nixpkgs-patch-brave-origin": {
       "flake": false,
       "locked": {
@@ -248,7 +236,6 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
-        "nixpkgs-patch-brave": "nixpkgs-patch-brave",
         "nixpkgs-patch-brave-origin": "nixpkgs-patch-brave-origin",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
         "nixpkgs-patcher": "nixpkgs-patcher",
