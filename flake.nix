@@ -30,12 +30,9 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "";
     };
+    nixpkgs-brave-origin.url = "https://github.com/NixOS/nixpkgs/archive/refs/pull/513143/head.tar.gz";
     nixpkgs-patch-hytale-launcher = {
       url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
-      flake = false;
-    };
-    nixpkgs-patch-brave-origin = {
-      url = "https://github.com/NixOS/nixpkgs/pull/513143.diff";
       flake = false;
     };
   };
