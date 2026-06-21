@@ -59,14 +59,6 @@ in
             value = [ "/home/ymstnt/Documents/Egyetem" ];
             variant = "Path";
           })
-          # (cosmicLib.cosmic.mkRON "enum" {
-          #   value = [ "/home/ymstnt/Documents/Iskola" ];
-          #   variant = "Path";
-          # })
-          (cosmicLib.cosmic.mkRON "enum" {
-            value = [ "/home/ymstnt/Documents/Munka" ];
-            variant = "Path";
-          })
           (cosmicLib.cosmic.mkRON "enum" {
             value = [ "/home/ymstnt/dotfiles" ];
             variant = "Path";
