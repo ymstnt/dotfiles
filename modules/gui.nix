@@ -31,7 +31,6 @@
     itch
     nur.repos.ymstnt.lunatask
     obsidian
-    remnote
     signal-desktop
     spotify
     teams-for-linux
