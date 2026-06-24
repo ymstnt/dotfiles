@@ -5,7 +5,6 @@
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
         "cosmic"
-        "pantheon"
         "plasma"
       ];
 

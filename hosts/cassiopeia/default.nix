@@ -9,7 +9,6 @@
         "games"
         "gnome"
         "packettracer"
-        "pantheon"
         "plasma"
         "steam"
         "touchpad"
