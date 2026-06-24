@@ -11,7 +11,7 @@
   services.resolved = {
     enable = true;
     settings.Resolve = {
-      DNSSEC = "true";
+      DNSSEC = "allow-downgrade";
       DNSOverTLS = "true";
     };
   };
