@@ -8,7 +8,6 @@
         "flatpak"
         "games"
         "gnome"
-        "hyprland"
         "packettracer"
         "pantheon"
         "plasma"

@@ -6,7 +6,6 @@
       self.nixosModules.allImportsExcept [
         "cosmic"
         "pantheon"
-        "hyprland"
         "plasma"
       ];
 
