@@ -6,7 +6,6 @@
       self.nixosModules.allImportsExcept [
         "borgbackup"
         "flatpak"
-        "fprintd"
         "games"
         "gnome"
         "hyprland"
