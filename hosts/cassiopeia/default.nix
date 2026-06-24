@@ -9,7 +9,6 @@
         "games"
         "gnome"
         "hyprland"
-        "kitty"
         "packettracer"
         "pantheon"
         "plasma"

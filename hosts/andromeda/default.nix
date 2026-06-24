@@ -7,7 +7,6 @@
         "cosmic"
         "pantheon"
         "hyprland"
-        "kitty"
         "plasma"
       ];
 
