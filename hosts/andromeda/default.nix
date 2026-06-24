@@ -5,7 +5,6 @@
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
         "cosmic"
-        "plasma"
       ];
 
   boot = {

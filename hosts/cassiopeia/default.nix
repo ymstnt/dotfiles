@@ -9,7 +9,6 @@
         "games"
         "gnome"
         "packettracer"
-        "plasma"
         "steam"
         "touchpad"
         "via"
