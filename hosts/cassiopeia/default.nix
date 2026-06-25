@@ -7,7 +7,6 @@
         "borgbackup"
         "flatpak"
         "games"
-        "gnome"
         "packettracer"
         "steam"
         "touchpad"
