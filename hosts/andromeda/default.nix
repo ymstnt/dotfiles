@@ -4,7 +4,6 @@
   imports =
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
-        "cosmic"
       ];
 
   boot = {
