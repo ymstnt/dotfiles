@@ -8,7 +8,7 @@
         settings = {
           user = {
             name = "ymstnt";
-            email = "21342713+ymstnt@users.noreply.github.com";
+            email = "ymstnt@ymstnt.com";
           };
           alias = {
             s = "status -uno";
