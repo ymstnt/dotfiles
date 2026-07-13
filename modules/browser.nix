@@ -4,7 +4,7 @@
   hm = {
     programs = {
       firefox = {
-        enable = true;
+        enable = false;
         package = pkgs.firefox-devedition;
         configPath = config.hm.xdg.configHome;
         profiles.dev-edition-default = {
