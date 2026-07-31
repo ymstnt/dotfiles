@@ -7,6 +7,7 @@
         "borgbackup"
         "flatpak"
         "games"
+        "gpu-screen-recorder"
         "packettracer"
         "steam"
         "touchpad"
