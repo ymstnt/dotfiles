@@ -26,6 +26,9 @@
     yelp
   ]);
 
+  # Disable session restart upon rebuild
+  systemd.user.services.gnome-session-monitor.restartIfChanged = false;
+
   hm = {
     dconf.settings = {
       "org/gnome/shell" = {
