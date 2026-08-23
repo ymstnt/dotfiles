@@ -23,6 +23,7 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "";
     };
+    singularity-desktop.url = "github:mateoalfaro/singularity-flake";
     nixpkgs-brave-origin.url = "https://github.com/NixOS/nixpkgs/archive/refs/pull/513143/head.tar.gz";
     nixpkgs-patch-hytale-launcher = {
       url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
@@ -37,6 +38,7 @@
       nixpkgs-patcher,
       home-manager,
       sops-nix,
+      singularity-desktop,
       ...
     }@inputs:
     {
@@ -50,6 +52,7 @@
                 ./overlays
                 home-manager.nixosModules.default
                 sops-nix.nixosModules.sops
+                singularity-desktop.nixosModules.default
                 host
               ];
               specialArgs = inputs;

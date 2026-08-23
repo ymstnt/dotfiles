@@ -4,6 +4,8 @@
   imports =
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
+        "gnome"
+        "controld"
       ];
 
   boot = {
