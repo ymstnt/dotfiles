@@ -7,6 +7,7 @@
     # Optional: you can also exclude bundled applications from the system profile.
     excludePackages = with pkgs; [
       singularity-store
+      singularity-music
     ];
 
     greeter = {
