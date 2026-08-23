@@ -9,11 +9,12 @@
     gparted
     inkscape-with-extensions
     lifeograph
-    mpv
     localsend
     master.hifile
+    mpv
     obs-studio
     onlyoffice-desktopeditors
+    overlayed
     qalculate-gtk
     teamspeak6-client
     telegram-desktop
