@@ -10,6 +10,7 @@
     inkscape-with-extensions
     lifeograph
     mpv
+    localsend
     master.hifile
     obs-studio
     onlyoffice-desktopeditors
