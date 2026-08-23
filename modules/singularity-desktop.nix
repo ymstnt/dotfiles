@@ -5,8 +5,9 @@
     enable = true;
 
     # Optional: you can also exclude bundled applications from the system profile.
-    #excludePackages = with pkgs; [
-    #];
+    excludePackages = with pkgs; [
+      singularity-store
+    ];
 
     greeter = {
       enable = false; # Enables the singularity greeter (default = false)
