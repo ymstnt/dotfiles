@@ -9,7 +9,7 @@
     #];
 
     greeter = {
-      enable = true; # Enables the singularity greeter (default = false)
+      enable = false; # Enables the singularity greeter (default = false)
       #background = /path/to/image.jpg # You can also customize greetd by replacing the default background image (default = stock wallpaper)
     };
   };
