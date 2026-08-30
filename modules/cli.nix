@@ -2,6 +2,7 @@
 
 {
   hm.home.packages = with pkgs; [
+    audiosource
     bat
     btop
     codeberg-cli
