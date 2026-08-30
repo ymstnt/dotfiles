@@ -32,6 +32,10 @@
       dates = "weekly";
       options = "--delete-older-than 30d";
     };
+    optimise = {
+      automatic = true;
+      dates = [ "02:00 "];
+    };
   };
 
   programs.nh = {
