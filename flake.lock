@@ -131,6 +131,18 @@
         "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
       }
     },
+    "nixpkgs-patch-stirling-pdf": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-ig9153Hs+P01oNyf2iWtEBhArn8lvrK47r+6TraeQ64=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/557809.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/557809.diff"
+      }
+    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1787266535,
@@ -192,6 +204,7 @@
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
+        "nixpkgs-patch-stirling-pdf": "nixpkgs-patch-stirling-pdf",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur",
