@@ -28,10 +28,6 @@
       url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
       flake = false;
     };
-    nixpkgs-patch-stirling-pdf = {
-      url = "https://github.com/NixOS/nixpkgs/pull/557809.diff";
-      flake = false;
-    };
   };
 
   outputs =
