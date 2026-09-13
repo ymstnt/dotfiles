@@ -4,6 +4,7 @@
   hm = {
     home.packages = (with pkgs; [
       android-tools
+      arduino-ide
       appimage-run
       bruno
       bun
