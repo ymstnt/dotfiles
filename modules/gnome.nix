@@ -49,7 +49,6 @@
           "thunderbird.desktop"
           "discord.desktop"
           "beepertexts.desktop"
-          "signal.desktop"
           "org.gnome.Console.desktop"
           "HiFile.desktop"
           "org.gnome.Nautilus.desktop"

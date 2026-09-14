@@ -33,7 +33,6 @@
     itch
     nur.repos.ymstnt.lunatask
     obsidian
-    signal-desktop
     spotify
     teams-for-linux
   ]) ++ (with pkgs; [
