@@ -23,6 +23,7 @@
                 "node.passive" = true;
               };
               "playback.props" = {
+                "node.name" = "lewitt_clean_mic";
                 "media.class" = "Audio/Source";
                 "audio.position" = [ "FL" "FR" ];
               };
@@ -61,6 +62,11 @@
             };
           }
         ];
+      };
+      "99-default-mic" = {
+        "wireplumber.settings" = {
+          "default.configured.audio.source" = "lewitt_clean_mic";
+        };
       };
     };
   };
