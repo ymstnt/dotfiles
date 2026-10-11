@@ -14,7 +14,6 @@
     mpv
     obs-studio
     onlyoffice-desktopeditors
-    overlayed
     qalculate-gtk
     teamspeak6-client
     telegram-desktop
