@@ -177,7 +177,7 @@
       };
       chromium = {
         enable = true;
-        package = pkgs.nur.repos.ymstnt.brave-origin;
+        package = pkgs.brave-origin;
       };
     };
 
