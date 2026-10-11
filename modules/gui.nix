@@ -44,6 +44,7 @@
     pika-backup
     rnote
     stable.mission-center
+    typesetter
   ]) ++ (with pkgs.kdePackages; [
     kdenlive
   ]);
