@@ -139,6 +139,18 @@
         "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
       }
     },
+    "nixpkgs-patch-lix-fix-build": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-+MNX3SB8dTY/SJOIo/X7s1ndDgMsigYiaRNYJIccww8=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/573938.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/573938.diff"
+      }
+    },
     "nixpkgs-patcher": {
       "locked": {
         "lastModified": 1789143781,
@@ -200,6 +212,7 @@
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
+        "nixpkgs-patch-lix-fix-build": "nixpkgs-patch-lix-fix-build",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur",
