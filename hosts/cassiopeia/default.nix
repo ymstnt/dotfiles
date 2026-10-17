@@ -12,6 +12,7 @@
         "steam"
         "touchpad"
         "via"
+        "virtualbox"
       ];
 
   boot = {
