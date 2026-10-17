@@ -9,7 +9,6 @@
     gparted
     inkscape-with-extensions
     lifeograph
-    localsend
     master.hifile
     mpv
     obs-studio
