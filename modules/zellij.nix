@@ -5,7 +5,11 @@
     enable = true;
     enableZshIntegration = true;
     settings = {
-      keyings = {
+      show_startup_tips = false;
+      session_name = "main";
+      attach_to_session = true;
+      mouse_hover_tips = false;
+      keybinds = {
         shared_except = {
           _args = [ "locked" ];
           _children = [
