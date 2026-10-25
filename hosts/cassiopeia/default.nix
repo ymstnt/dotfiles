@@ -13,6 +13,7 @@
         "touchpad"
         "via"
         "virtualbox"
+        "vmware"
       ];
 
   boot = {
