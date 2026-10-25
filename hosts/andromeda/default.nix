@@ -4,6 +4,7 @@
   imports =
     [ ./hardware-configuration.nix ] ++
       self.nixosModules.allImportsExcept [
+        "vmware"
       ];
 
   boot = {
