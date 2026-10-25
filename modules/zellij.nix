@@ -9,6 +9,7 @@
       session_name = "main";
       attach_to_session = true;
       mouse_hover_tips = false;
+      nested_session_handling = "descend";
       keybinds = {
         shared_except = {
           _args = [ "locked" ];
