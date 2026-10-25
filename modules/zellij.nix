@@ -28,6 +28,50 @@
             }
           ];
         };
+        pane._children = [
+          {
+            bind = {
+              _args = [ "q" ];
+              _children = [
+                {
+                  CloseFocus = { };
+                }
+                {
+                  SwitchToMode = {
+                    _args = [ "Normal" ];
+                  };
+                }
+              ];
+            };
+          }
+          {
+            unbind = {
+              _args = [ "x" ];
+            };
+          }
+        ];
+        tab._children = [
+          {
+            bind = {
+              _args = [ "q" ];
+              _children = [
+                {
+                  CloseTab = { };
+                }
+                {
+                  SwitchToMode = {
+                    _args = [ "Normal" ];
+                  };
+                }
+              ];
+            };
+          }
+          {
+            unbind = {
+              _args = [ "x" ];
+            };
+          }
+        ];
       };
     };
   };
