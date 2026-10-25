@@ -31,10 +31,6 @@
       url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
       flake = false;
     };
-    nixpkgs-patch-lix-fix-build = {
-      url = "https://github.com/NixOS/nixpkgs/pull/573938.diff";
-      flake = false;
-    };
   };
 
   outputs =
