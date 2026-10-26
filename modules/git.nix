@@ -31,7 +31,6 @@
       };
     };
     home.packages = with pkgs; [
-      ungit
       git-extras
     ];
   };
