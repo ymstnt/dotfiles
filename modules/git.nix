@@ -32,6 +32,7 @@
     };
     home.packages = with pkgs; [
       git-extras
+      git-lfs
     ];
   };
 }
