@@ -5,7 +5,6 @@
     audiosource
     bat
     btop
-    codeberg-cli
     coreutils
     exercism
     exiftool
@@ -13,6 +12,7 @@
     fastfetch
     ffmpegthumbnailer
     filen-cli
+    forgejo-cli
     gh
     glab
     glow
