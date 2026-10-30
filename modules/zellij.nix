@@ -10,6 +10,7 @@
       attach_to_session = true;
       mouse_hover_tips = false;
       nested_session_handling = "descend";
+      session_serialization = true;
       keybinds = {
         shared_except = {
           _args = [ "locked" ];
