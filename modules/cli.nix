@@ -31,7 +31,6 @@
     rclone
     ripgrep
     scrcpy
-    skate
     smartmontools
     sof-firmware
     sshfs
