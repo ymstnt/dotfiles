@@ -27,7 +27,6 @@
     nvtopPackages.full
     p7zip
     pfetch
-    pop
     progress
     rclone
     ripgrep
