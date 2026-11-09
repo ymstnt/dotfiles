@@ -33,7 +33,6 @@
     smartmontools
     sof-firmware
     sshfs
-    stirling-pdf
     superfile
     termscp
     unrar
