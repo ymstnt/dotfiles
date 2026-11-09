@@ -14,7 +14,6 @@
     filen-cli
     forgejo-cli
     gh
-    glab
     gnupg
     hck
     jq
