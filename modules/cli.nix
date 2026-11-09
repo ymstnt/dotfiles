@@ -15,7 +15,6 @@
     forgejo-cli
     gh
     glab
-    glow
     gnupg
     hck
     jq
