@@ -12,7 +12,6 @@
     fastfetch
     ffmpegthumbnailer
     filen-cli
-    forgejo-cli
     gh
     gnupg
     hck
