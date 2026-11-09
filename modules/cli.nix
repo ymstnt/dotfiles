@@ -33,7 +33,6 @@
     smartmontools
     sof-firmware
     sshfs
-    sshx
     stirling-pdf
     superfile
     termscp
