@@ -18,7 +18,6 @@
     glow
     gnupg
     hck
-    jocalsend
     jq
     libinput
     msedit
