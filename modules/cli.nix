@@ -11,7 +11,6 @@
     eza
     fastfetch
     ffmpegthumbnailer
-    filen-cli
     gh
     gnupg
     hck
