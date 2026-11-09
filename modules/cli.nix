@@ -33,7 +33,6 @@
     smartmontools
     sof-firmware
     sshfs
-    termscp
     unrar
     unzip
     wev
