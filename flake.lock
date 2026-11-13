@@ -127,30 +127,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-discord-openasar-fix-launch": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-XYPFcxqKh8IMefLluQ8iNfcT8x+03fbX4WLPezDoG6Y=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/582751.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/582751.diff"
-      }
-    },
-    "nixpkgs-patch-discord-vencord-1-15-16": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-pUpjbdEBLq9ngUa2w8DNt50flnpaaaOktcbdNNBI4Xs=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/584169.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/584169.diff"
-      }
-    },
     "nixpkgs-patch-hytale-launcher": {
       "flake": false,
       "locked": {
@@ -223,8 +199,6 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
-        "nixpkgs-patch-discord-openasar-fix-launch": "nixpkgs-patch-discord-openasar-fix-launch",
-        "nixpkgs-patch-discord-vencord-1-15-16": "nixpkgs-patch-discord-vencord-1-15-16",
         "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
