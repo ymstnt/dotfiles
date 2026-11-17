@@ -24,6 +24,7 @@
     # Electron apps
     nur.repos.ymstnt.beeper
     nur.repos.ymstnt.deepdwn
+    nur.repos.ymstnt.eidos-lite
     discord
     drawio
     filen-desktop
