@@ -182,7 +182,7 @@
     };
 
     home.packages = with pkgs; [
-      nur.repos.ymstnt.surf
+      nur.repos.ymstnt.deta-surf
     ];
   };
 }
