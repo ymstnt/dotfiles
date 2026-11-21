@@ -2,6 +2,7 @@
 
 {
   hm.home.packages = with pkgs; [
+    lumo-desktop
     proton-vpn
     protonmail-desktop
   ];

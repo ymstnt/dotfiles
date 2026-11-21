@@ -31,6 +31,10 @@
       url = "https://github.com/NixOS/nixpkgs/pull/479368.diff";
       flake = false;
     };
+    nixpkgs-patch-lumo-desktop = {
+      url = "https://github.com/NixOS/nixpkgs/pull/589916.diff";
+      flake = false;
+    };
   };
 
   outputs =
