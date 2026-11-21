@@ -12,15 +12,19 @@
   # GNOME debloat
   environment.gnome.excludePackages = (with pkgs; [
     baobab
+    decibels
     epiphany
     evince
     geary
     gnome-clocks
     gnome-connections
+    gnome-extensions-app
+    gnome-logs
     gnome-maps
     gnome-music
     gnome-software
     gnome-tour
+    showtime
     snapshot
     totem
     yelp
