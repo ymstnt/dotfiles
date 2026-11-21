@@ -127,18 +127,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-hytale-launcher": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-Dl9vbG0d/t46h3GAdGg4v0JGQSFk7Rc440ZrYA3PFmQ=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/pull/479368.diff"
-      }
-    },
     "nixpkgs-patch-lumo-desktop": {
       "flake": false,
       "locked": {
@@ -211,7 +199,6 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-develop": "nixpkgs-develop",
         "nixpkgs-master": "nixpkgs-master",
-        "nixpkgs-patch-hytale-launcher": "nixpkgs-patch-hytale-launcher",
         "nixpkgs-patch-lumo-desktop": "nixpkgs-patch-lumo-desktop",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "nixpkgs-stable": "nixpkgs-stable",
