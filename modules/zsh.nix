@@ -27,7 +27,6 @@ with lib; with pkgs;
       completionInit = "autoload -U compinit && compinit -C"; # add caching to save ~50ms load time
       shellAliases = {
         ls = "${getExe eza} --color=always --icons=auto --group-directories-first";
-        cat = "${getExe bat} --style snip --style changes --style header";
         grep = "${getExe ripgrep} -i --color=auto";
 
         nvd = "dix";
