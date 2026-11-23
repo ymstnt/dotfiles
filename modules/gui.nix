@@ -20,6 +20,7 @@
     vlc
     xclicker
     xournalpp
+    zotero
   ]) ++ (with pkgs; [
     # Electron apps
     nur.repos.ymstnt.beeper
@@ -51,5 +52,6 @@
 
   nixpkgs.config.permittedInsecurePackages = [
     "temurin-bin-19.0.2"
+    "firefox-esr-140-bin-unwrapped-140.17.0esr"
   ];
 }
